@@ -10,25 +10,25 @@ export default function Capabilities() {
       title: "1. CAD/CAM Design",
       desc: "Our engineering department utilizes SolidWorks and MasterCAM to design 3D models and generate optimized G-code for complex CNC machining.",
       icon: <Laptop className="w-8 h-8 text-brand-dark" />,
-      img: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon"
+      img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800"
     },
     {
       title: "2. Precision Machining",
       desc: "Raw blocks of premium tool steel are machined on 3-axis and 4-axis VMCs, achieving tolerances up to 5 microns.",
       icon: <Factory className="w-8 h-8 text-brand-dark" />,
-      img: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon"
+      img: "https://images.unsplash.com/photo-1581092580497-e0d23cb71b14?auto=format&fit=crop&q=80&w=800"
     },
     {
       title: "3. Wire Cut & EDM",
       desc: "For intricate cavities and sharp corners, our Spark Erosion (EDM) and Wire-Cut machines deliver flawless surface finishes.",
       icon: <PenTool className="w-8 h-8 text-brand-dark" />,
-      img: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon"
+      img: "https://images.unsplash.com/photo-1565439390115-08a5141e610b?auto=format&fit=crop&q=80&w=800"
     },
     {
       title: "4. Assembly & Trials",
       desc: "Experienced toolmakers assemble the die, followed by rigorous in-house trials on our own injection moulding machines to validate the design.",
       icon: <PackageCheck className="w-8 h-8 text-brand-dark" />,
-      img: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon"
+      img: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&q=80&w=800"
     }
   ];
 

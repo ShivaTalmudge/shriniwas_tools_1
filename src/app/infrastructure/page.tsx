@@ -17,7 +17,7 @@ export default function Infrastructure() {
           className="absolute inset-0 z-10"
         >
           <Image
-            src="https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon"
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"
             alt="Factory Floor"
             fill
             className="object-cover mix-blend-overlay grayscale"

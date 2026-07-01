@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Cpu, Power, Maximize } from "lucide-react";
 
 export default function Machinery() {
-  const demoImage = "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon";
+  const demoImage = "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800";
 
   const machines = [
     {

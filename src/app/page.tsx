@@ -259,7 +259,7 @@ export default function Home() {
                 className="relative z-10 rounded-2xl overflow-hidden aspect-[4/3] border border-white/10"
               >
                 <Image
-                  src="https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon"
+                  src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800"
                   alt="Quality Inspection"
                   fill
                   className="object-cover"

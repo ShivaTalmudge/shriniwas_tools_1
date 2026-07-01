@@ -11,28 +11,28 @@ const products = [
     title: "Plastic Injection Moulds",
     desc: "High-precision multi-cavity moulds for automotive and consumer electronics.",
     icon: <Box className="w-8 h-8 text-brand-accent" />,
-    image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    image: "https://images.unsplash.com/photo-1518982251702-8693893661eb?auto=format&fit=crop&q=80&w=800",
     slug: "plastic-moulds"
   },
   {
     title: "Press Tools & Stamping",
     desc: "Progressive and compound dies for complex sheet metal forming.",
     icon: <Hammer className="w-8 h-8 text-brand-accent" />,
-    image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=800",
     slug: "press-tools"
   },
   {
     title: "Die Casting Dies",
     desc: "Premium PDC & GDC dies engineered for thermal balance and longevity.",
     icon: <Settings className="w-8 h-8 text-brand-accent" />,
-    image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    image: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80&w=800",
     slug: "die-casting"
   },
   {
     title: "Jigs & Fixtures",
     desc: "Custom-built inspection gauges and machining fixtures.",
     icon: <Layers className="w-8 h-8 text-brand-accent" />,
-    image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    image: "https://images.unsplash.com/photo-1527018601619-a508a2be00cd?auto=format&fit=crop&q=80&w=800",
     slug: "jigs-fixtures"
   }
 ];
