@@ -99,7 +99,7 @@ export default function Navbar() {
                   </button>
                 ) : (
                   <Link
-                    href={link.href}
+                    href={link.href || "#"}
                     className={`flex items-center gap-1 font-medium transition-colors hover:text-brand-accent ${scrolled ? "text-brand-dark" : "text-white"
                       }`}
                   >
@@ -192,7 +192,7 @@ export default function Navbar() {
                     </button>
                   ) : (
                     <Link
-                      href={link.href}
+                      href={link.href || "#"}
                       className="text-lg font-heading font-medium text-white hover:text-brand-accent transition-colors"
                       onClick={() => setMobileMenuOpen(false)}
                     >
