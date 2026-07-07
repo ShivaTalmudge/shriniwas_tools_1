@@ -2,33 +2,33 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Plastic Injection Moulding | Shriniwas Tools",
-  description: "High-precision plastic injection moulding and mould manufacturing services. ISO certified quality.",
+  title: "Plastic Injection Moulding Manufacturer in Pune, India | Shriniwas Tools",
+  description: "Leading plastic injection moulding manufacturer in Pune. High-volume precision plastic components and injection moulds for automotive & electrical sectors.",
 };
 
 const data: ServiceData = {
   serviceName: "Plastic Injection Moulding",
   hero: {
-    title: "Precision Plastic Injection Moulding",
-    subtitle: "High-volume, flawless plastic component manufacturing backed by advanced tooling and ISO-certified processes.",
+    title: "Plastic Injection Moulding Manufacturer",
+    subtitle: "High-volume precision plastic components and injection moulds for automotive, electrical, and engineering sectors across India.",
     bgImage: "/images/hero_products.png",
   },
   overview: {
-    title: "End-to-End Injection Moulding Solutions",
+    title: "End-to-End Plastic Injection Moulding Services in Pune",
     description: (
       <>
         <p className="mb-4">
-          Plastic injection moulding is the cornerstone of modern mass production. At Shriniwas Tools, we offer comprehensive injection moulding services, from initial mould design and tool manufacturing to high-volume production of complex plastic components.
+          Shriniwas Tools & Equipments is a premier <strong>plastic injection moulding manufacturer in Pune, India</strong>. Since 2006, we have specialized in delivering high-volume, defect-free plastic components that meet the stringent requirements of industrial buyers.
         </p>
         <p className="mb-4">
-          Our advanced facility is equipped with state-of-the-art injection moulding machines capable of processing a wide variety of engineering plastics, including ABS, PC, Nylon, and POM. We cater to stringent tolerances and critical surface finish requirements demanded by the automotive, medical, and electronics industries.
+          Our advanced Pune-based manufacturing facility is equipped with state-of-the-art injection moulding machines, allowing us to process a comprehensive range of engineering plastics. From ABS and Polycarbonate to specialized glass-filled grades, we manufacture components with tight dimensional tolerances and exceptional surface finishes.
         </p>
         <p>
-          Whether you need a prototype run or millions of parts, our rigorous quality control ensures zero defects and unparalleled consistency across every batch.
+          We provide a complete turnkey solution—from in-house tool room mould design to final part production. Whether you are an automotive OEM or an electronics manufacturer, our ISO 9001:2015 certified processes guarantee consistency across millions of cycles.
         </p>
       </>
     ),
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800",
+    image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   },
   keyFeatures: [
     { title: "High Precision", description: "Micron-level accuracy for critical components.", icon: "CheckCircle2" },
@@ -56,37 +56,37 @@ const data: ServiceData = {
       capacity: "300 Tons",
       specs: "Servo-hydraulic, high-speed injection",
       applications: "Large automotive and appliance parts",
-      image: "https://images.unsplash.com/photo-1621644723048-b3d97f95fcb6?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     },
     {
       name: "Yizumi 120 TON",
       capacity: "120 Tons",
       specs: "Precision electric injection",
       applications: "Small intricate electronic components",
-      image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1af?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     },
     {
       name: "CNC Machining Center",
       capacity: "1000x500x500mm",
       specs: "12000 RPM Spindle",
       applications: "Mould core and cavity cutting",
-      image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     }
   ],
   materials: [
-    { name: "ABS", image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=300" },
-    { name: "Polycarbonate (PC)", image: "https://images.unsplash.com/photo-1517420704952-d9f39ae62871?auto=format&fit=crop&q=80&w=300" },
-    { name: "Nylon (PA66)", image: "https://images.unsplash.com/photo-1580828369019-ea23709bc872?auto=format&fit=crop&q=80&w=300" },
-    { name: "POM (Delrin)", image: "https://images.unsplash.com/photo-1591124611422-bc57ccff472e?auto=format&fit=crop&q=80&w=300" },
-    { name: "HDPE", image: "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&q=80&w=300" },
+    { name: "ABS", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "Polycarbonate (PC)", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "Nylon (PA66)", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "POM (Delrin)", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "HDPE", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   gallery: [
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1563906660682-1bf738f61536?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1621644723048-b3d97f95fcb6?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&q=80&w=600"
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon"
   ],
   specs: [
     { label: "Tolerance", value: "±0.01 mm to ±0.05 mm" },
@@ -97,15 +97,15 @@ const data: ServiceData = {
     { label: "Lead Time", value: "2 to 6 weeks for tooling" },
   ],
   faqs: [
-    { question: "What plastics can you inject?", answer: "We work with almost all engineering and commodity plastics including ABS, PC, Nylon, POM, PP, PE, and specialized glass-filled grades." },
-    { question: "Do you manufacture the moulds in-house?", answer: "Yes, we have a fully equipped in-house tool room with CNC and EDM machines to manufacture precision moulds." },
-    { question: "What is your minimum order quantity (MOQ)?", answer: "While we specialize in high-volume production, we are flexible and can accommodate lower minimum order quantities for specialized components." },
-    { question: "Can you achieve mirror finishes?", answer: "Yes, using SPI A1 polishing standards, we can achieve flawless mirror finishes required for optical or highly aesthetic parts." }
+    { question: "Are you a plastic injection moulding manufacturer in Pune?", answer: "Yes, Shriniwas Tools & Equipments operates a full-scale plastic injection moulding facility and tool room in MIDC Bhosari, Pune, serving clients across India." },
+    { question: "Do you design and manufacture the injection moulds in-house?", answer: "Absolutely. We have a fully equipped in-house tool room with advanced CNC and EDM machinery to design and manufacture precision injection moulds before starting production." },
+    { question: "What engineering plastics do you mould?", answer: "We process a wide range of materials including ABS, Polycarbonate (PC), Nylon (PA66), POM (Delrin), and various glass-filled engineering plastics required by the automotive and electrical sectors." },
+    { question: "What is your typical production capacity?", answer: "With machines ranging up to 300 Tons clamping force, we handle both specialized low-volume runs and high-volume mass production of up to millions of components." }
   ],
   relatedServices: [
-    { title: "CNC Wire Cut EDM", href: "/services/cnc-wire-cut", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=400" },
-    { title: "DMC Moulding", href: "/services/dmc-molding-pune", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=400" },
-    { title: "Rubber Moulds", href: "/services/rubber-molds", image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=400" }
+    { title: "CNC Wire Cut EDM", href: "/services/cnc-wire-cut", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { title: "DMC Moulding", href: "/services/dmc-molding-pune", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { title: "Rubber Moulds", href: "/services/rubber-molds", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" }
   ],
   testimonials: [
     { quote: "The injection moulds manufactured by Shriniwas Tools have run for over 500,000 cycles without any degradation. Exceptional quality.", author: "Production Head", company: "Leading Automotive Tier 1" },

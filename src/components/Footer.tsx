@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 mt-4 text-sm max-w-sm">
-              Established in 2006, Shriniwas Tools & Equipments has emerged as a premier manufacturer specializing in Thermoplastics, Thermoset Moulds, and high-precision Engineering components.
+              Since 2006, Shriniwas Tools & Equipments has been a trusted manufacturer of precision plastic injection moulds, DMC moulds, rubber moulds, and engineering components in Pune, India. ISO 9001:2015 certified.
             </p>
             <div className="flex gap-4 mt-6">
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-accent transition-colors">
@@ -52,23 +52,29 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
               <li><Link href="/products" className="text-gray-400 hover:text-white transition-colors">Products</Link></li>
-              <li><Link href="/capabilities" className="text-gray-400 hover:text-white transition-colors">Manufacturing Capabilities</Link></li>
+              <li><Link href="/industries" className="text-gray-400 hover:text-white transition-colors">Industries We Serve</Link></li>
+              <li><Link href="/capabilities" className="text-gray-400 hover:text-white transition-colors">Manufacturing Process</Link></li>
               <li><Link href="/machinery" className="text-gray-400 hover:text-white transition-colors">Our Machinery</Link></li>
-              <li><Link href="/career" className="text-gray-400 hover:text-white transition-colors">Career</Link></li>
+              <li><Link href="/quality" className="text-gray-400 hover:text-white transition-colors">Quality Assurance</Link></li>
+              <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
+              <li><Link href="/careers" className="text-gray-400 hover:text-white transition-colors">Careers</Link></li>
               <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
-          {/* Products */}
+          {/* Our Services */}
           <div>
-            <h4 className="text-lg font-heading font-bold mb-4 md:mb-6 border-b border-white/10 pb-2 md:pb-4">Products</h4>
+            <h4 className="text-lg font-heading font-bold mb-4 md:mb-6 border-b border-white/10 pb-2 md:pb-4">Our Services</h4>
             <ul className="space-y-3">
-              <li><Link href="/products/plastic-moulds" className="text-gray-400 hover:text-white transition-colors">Plastic Injection Moulds</Link></li>
-              <li><Link href="/products/press-tools" className="text-gray-400 hover:text-white transition-colors">Press Tools</Link></li>
-              <li><Link href="/products/rubber-moulds" className="text-gray-400 hover:text-white transition-colors">Rubber Moulds</Link></li>
-              <li><Link href="/products/die-casting" className="text-gray-400 hover:text-white transition-colors">PDC & GDC Dies</Link></li>
-              <li><Link href="/products/jigs-fixtures" className="text-gray-400 hover:text-white transition-colors">Jigs & Fixtures</Link></li>
-              <li><Link href="/products/precision" className="text-gray-400 hover:text-white transition-colors">Precision Components</Link></li>
+              <li><Link href="/services/plastic-molding-dies" className="text-gray-400 hover:text-white transition-colors">Plastic Injection Moulding</Link></li>
+              <li><Link href="/services/dmc-molding-pune" className="text-gray-400 hover:text-white transition-colors">DMC Moulding</Link></li>
+              <li><Link href="/services/cnc-vmc-machining" className="text-gray-400 hover:text-white transition-colors">CNC & VMC Machining</Link></li>
+              <li><Link href="/services/cnc-wire-cut" className="text-gray-400 hover:text-white transition-colors">CNC Wire Cut EDM</Link></li>
+              <li><Link href="/services/dmc-dies" className="text-gray-400 hover:text-white transition-colors">DMC Moulds</Link></li>
+              <li><Link href="/services/backlite-dies-components" className="text-gray-400 hover:text-white transition-colors">Bakelite Moulds</Link></li>
+              <li><Link href="/services/rubber-molds" className="text-gray-400 hover:text-white transition-colors">Rubber Moulds</Link></li>
+              <li><Link href="/services/jigs-fixtures" className="text-gray-400 hover:text-white transition-colors">Jigs & Fixtures</Link></li>
+              <li><Link href="/services/press-tools" className="text-gray-400 hover:text-white transition-colors">Press Tools</Link></li>
             </ul>
           </div>
 
@@ -80,7 +86,7 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-brand-accent shrink-0 mt-1" />
                 <span className="text-gray-400 text-sm">
                   S-96, MIDC, Bhosari,<br />
-                  Pune - 411026, India
+                  Pune - 411026, Maharashtra, India
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -93,8 +99,8 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-brand-accent shrink-0" />
                 <div className="flex flex-col text-sm text-gray-400">
-                  <span>shriniwas_tools@rediffmail.com</span>
                   <span>shriniwastools2020@gmail.com</span>
+                  <span>shriniwas_tools@rediffmail.com</span>
                 </div>
               </li>
             </ul>

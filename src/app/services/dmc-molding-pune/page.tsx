@@ -2,33 +2,33 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "DMC Moulding Services in Pune | Shriniwas Tools",
-  description: "Specialized DMC (Dough Moulding Compound) moulding services in Pune for heavy electrical and automotive components.",
+  title: "DMC Moulding Manufacturer in Pune | Shriniwas Tools",
+  description: "Leading DMC moulding manufacturer in Pune, India. Specializing in high-strength thermoset Dough Moulding Compound parts for electrical & automotive sectors.",
 };
 
 const data: ServiceData = {
   serviceName: "DMC Moulding",
   hero: {
-    title: "DMC Moulding Services",
+    title: "DMC Moulding Manufacturer",
     subtitle: "High-strength, thermoset Dough Moulding Compound solutions for superior electrical insulation and heat resistance.",
     bgImage: "/images/hero_machinery.png",
   },
   overview: {
-    title: "Thermoset Moulding Excellence",
+    title: "Thermoset Moulding Excellence in Pune",
     description: (
       <>
         <p className="mb-4">
           Dough Moulding Compound (DMC) is a vital thermosetting polymer used where exceptional electrical insulation, mechanical strength, and dimensional stability at high temperatures are required. 
         </p>
         <p className="mb-4">
-          Based in Pune, Shriniwas Tools is a leading manufacturer of precision DMC components. Our hydraulic compression moulding presses and highly trained operators ensure that every DMC part is fully cured and free from porosity.
+          As a prominent <strong>DMC moulding manufacturer</strong> based in Pune, Shriniwas Tools & Equipments produces high-performance thermoset components. Our facility utilizes advanced hydraulic compression moulding presses operated by a highly trained team, ensuring every DMC part is fully cured, dimensionally accurate, and free from porosity.
         </p>
         <p>
-          We cater heavily to the electrical switchgear and heavy machinery sectors, producing components that can withstand arc resistance, track resistance, and severe thermal shock without compromising their structural integrity.
+          We cater heavily to the electrical switchgear, heavy machinery, and automotive sectors. Our components are designed to withstand severe thermal shock, high arc resistance, and track resistance without compromising their structural integrity.
         </p>
       </>
     ),
-    image: "https://images.unsplash.com/photo-1621644723048-b3d97f95fcb6?auto=format&fit=crop&q=80&w=800",
+    image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   },
   keyFeatures: [
     { title: "High Heat Resistance", description: "Maintains stability in extreme temperatures.", icon: "Zap" },
@@ -56,26 +56,26 @@ const data: ServiceData = {
       capacity: "200 Tons",
       specs: "Heated platens, programmable curing cycles",
       applications: "Large switchgear enclosures",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     },
     {
       name: "Hydraulic Compression Press 100T",
       capacity: "100 Tons",
       specs: "Fast approach speed, accurate tonnage",
       applications: "Busbar supports, MCB parts",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     }
   ],
   materials: [
-    { name: "DMC (Glass Filled)", image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=300" },
-    { name: "SMC (Sheet Moulding)", image: "https://images.unsplash.com/photo-1517420704952-d9f39ae62871?auto=format&fit=crop&q=80&w=300" },
-    { name: "Phenolic Resin", image: "https://images.unsplash.com/photo-1580828369019-ea23709bc872?auto=format&fit=crop&q=80&w=300" },
+    { name: "DMC (Glass Filled)", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "SMC (Sheet Moulding)", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "Phenolic Resin", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   gallery: [
-    "https://images.unsplash.com/photo-1621644723048-b3d97f95fcb6?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1af?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   ],
   specs: [
     { label: "Moulding Tonnage", value: "50 to 300 Tons" },
@@ -86,12 +86,13 @@ const data: ServiceData = {
   ],
   faqs: [
     { question: "What is DMC?", answer: "Dough Moulding Compound (DMC) is a fiberglass-reinforced thermosetting polymer primarily consisting of polyester resin, chopped glass fibers, and mineral fillers." },
-    { question: "Why use DMC over standard plastics?", answer: "DMC does not melt once cured. It offers vastly superior heat resistance, arc resistance, and mechanical strength compared to standard thermoplastics." },
-    { question: "Can inserts be moulded into DMC parts?", answer: "Yes, we routinely mould brass and steel threaded inserts directly into DMC components for strong fastening points in electrical applications." }
+    { question: "Why should we choose you as our DMC moulding manufacturer?", answer: "We bring over 18 years of tooling and moulding expertise. Our in-house tool room ensures mould precision, while our dedicated compression moulding facility guarantees consistent, high-quality thermoset production." },
+    { question: "Can inserts be moulded into DMC parts?", answer: "Yes, we routinely mould brass and steel threaded inserts directly into DMC components to provide strong fastening points for heavy electrical switchgear applications." },
+    { question: "Do you manufacture the DMC moulds as well?", answer: "Yes, we design and manufacture the heavy-duty DMC compression moulds in our own tool room before starting mass production." }
   ],
   relatedServices: [
-    { title: "DMC Moulds", href: "/services/dmc-dies", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=400" },
-    { title: "Bakelite Moulds", href: "/services/backlite-dies-components", image: "https://images.unsplash.com/photo-1517420704952-d9f39ae62871?auto=format&fit=crop&q=80&w=400" },
+    { title: "DMC Moulds", href: "/services/dmc-dies", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { title: "Bakelite Moulds", href: "/services/backlite-dies-components", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   testimonials: [
     { quote: "Their DMC moulding quality is second to none. The switchgear components we receive are always free of porosity and dimensionally perfect.", author: "VP Operations", company: "National Electrical Grid Supplier" }

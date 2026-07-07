@@ -1,83 +1,80 @@
-"use client";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tool Room Machinery & Equipment List | Shriniwas Tools Pune",
+  description: "Explore our state-of-the-art tool room machinery in Pune, featuring multi-axis VMCs, 9 Wire Cut EDM machines, and precision metrology equipment.",
+};
 
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Cpu, Power, Maximize } from "lucide-react";
 
 export default function Machinery() {
-  const demoImage = "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800";
+  const demoImage = "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon";
 
   const machines = [
     {
-      name: "BATILI BOI / AMS",
-      type: "VMC Machine",
-      capacity: "1300x600x600, 1000x500x500, 500x400x400",
+      name: "High-Speed VMC (BATLIBOI / AMS)",
+      type: "Vertical Machining Center",
+      capacity: "1300x600x600, 1000x500x500, 500x400x400 mm",
       qty: "03",
-      application: "Precision Machining",
+      application: "3-axis precision milling of hardened tool steel blocks for mould bases and cavities, delivering volumetric accuracy down to 5 microns.",
       image: demoImage
     },
     {
-      name: "Electronica",
-      type: "CNC Wirecut",
-      capacity: "400x300x200",
+      name: "Electronica Wire Cut",
+      type: "CNC Wire Cut EDM",
+      capacity: "400x300x200 mm",
       qty: "09",
-      application: "Complex Tool Cutting",
+      application: "Micron-level slicing of intricate profiles and extrusion dies using 0.25mm brass wire, completely eliminating mechanical stress on workpieces.",
       image: demoImage
     },
     {
-      name: "Electronica",
-      type: "Sparking",
-      capacity: "500X300X200",
+      name: "Plunge EDM (Sparking)",
+      type: "Electrical Discharge Machining",
+      capacity: "500X300X200 mm",
       qty: "01",
-      application: "Spark Erosion",
+      application: "Precision erosion of complex blind cavities and sharp internal corners where traditional rotating cutting tools cannot reach.",
       image: demoImage
     },
     {
-      name: "Jones-Shipman",
-      type: "Surface grinder",
-      capacity: "600x300X300",
+      name: "Jones & Shipman Grinder",
+      type: "Precision Surface Grinder",
+      capacity: "600x300X300 mm",
       qty: "02",
-      application: "Surface Finishing",
+      application: "High-precision surface finishing of die plates and inserts to achieve perfect flatness and mirror-like surface textures.",
       image: demoImage
     },
     {
-      name: "Bridgeport / Jasjit Machine",
-      type: "M1TR",
-      capacity: "350x700, 1270X254MM",
+      name: "Bridgeport Milling",
+      type: "M1TR Turret Milling",
+      capacity: "350x700, 1270X254 mm",
       qty: "02",
-      application: "General Milling",
+      application: "Versatile manual milling for custom jigs, fixtures, and rapid squaring of raw material blocks prior to CNC operations.",
       image: demoImage
     },
     {
-      name: "Varnier",
-      type: "Milling Machine",
-      capacity: "1000x400x800",
+      name: "EDM Hole Popper (Taiwan)",
+      type: "High-Speed EDM Drill",
+      capacity: "200X300 mm",
       qty: "01",
-      application: "General Machining",
+      application: "Rapid electrical drilling of start holes in hardened tool steel blocks to facilitate subsequent wire cut operations.",
       image: demoImage
     },
     {
-      name: "TAIWAN",
-      type: "EDM Drill",
-      capacity: "200X300",
-      qty: "01",
-      application: "Hole Drilling",
-      image: demoImage
-    },
-    {
-      name: "Haitian",
-      type: "Moulding M/C",
-      capacity: "90 / 300 TON",
+      name: "Haitian Injection Moulding",
+      type: "Servo-Hydraulic IMM",
+      capacity: "90 to 300 Tons",
       qty: "02",
-      application: "Mass Production",
+      application: "High-volume mass production and rigorous in-house mould proving for automotive and consumer plastic components.",
       image: demoImage
     },
     {
-      name: "YUZUMI",
-      type: "Moulding M/C",
-      capacity: "120 TON",
+      name: "Yizumi Injection Moulding",
+      type: "Precision IMM",
+      capacity: "120 Tons",
       qty: "01",
-      application: "Mass Production",
+      application: "High-speed injection moulding specifically calibrated for small, intricate engineering plastic and electrical components.",
       image: demoImage
     }
   ];
@@ -90,20 +87,16 @@ export default function Machinery() {
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
           style={{ backgroundImage: 'url(/images/hero_machinery.png)' }}
         >
-          <div className="absolute inset-0 bg-brand-dark/75" />
+          <div className="absolute inset-0 bg-brand-dark/80" />
         </div>
         
         <div className="container mx-auto px-4 md:px-8 relative z-10 text-center mt-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-4">Our Machinery</h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light">
-              A highly advanced, temperature-controlled facility equipped with the finest machinery.
+          <div className="animate-in fade-in slide-in-from-bottom-5 duration-700">
+            <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-6">Our Machinery & Infrastructure</h1>
+            <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+              Precision requires the right tools. Our state-of-the-art, temperature-controlled facility in Pune is equipped with a formidable battery of advanced VMCs, Wire Cut EDMs, and high-tonnage moulding presses to handle the most demanding manufacturing challenges.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -111,13 +104,10 @@ export default function Machinery() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {machines.map((machine, i) => (
-              <motion.div
+              <div
                 key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group border border-gray-100 rounded-3xl overflow-hidden hover:border-brand-accent transition-colors bg-white shadow-xl shadow-gray-200/50"
+                className="group border border-gray-100 rounded-3xl overflow-hidden hover:border-brand-accent transition-colors bg-white shadow-xl shadow-gray-200/50 animate-in fade-in slide-in-from-bottom-8 duration-700"
+                style={{ animationDelay: `${i * 100}ms`, animationFillMode: "both" }}
               >
                 <div className="aspect-[4/3] relative overflow-hidden bg-gray-100">
                   <Image
@@ -152,7 +142,7 @@ export default function Machinery() {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

@@ -2,33 +2,33 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Rubber Mould Manufacturing | Shriniwas Tools",
-  description: "High-precision compression, transfer, and injection moulds for elastomeric and silicone rubber components.",
+  title: "Rubber Mould Manufacturer in Pune | Shriniwas Tools",
+  description: "Expert rubber mould manufacturer in Pune. We engineer high-precision compression, transfer, and injection moulds for elastomeric components.",
 };
 
 const data: ServiceData = {
   serviceName: "Rubber Mould Manufacturing",
   hero: {
-    title: "Precision Rubber Moulds",
-    subtitle: "Expertly engineered compression and transfer moulds for tear-free, flashless elastomeric components.",
+    title: "Rubber Mould Manufacturer",
+    subtitle: "Expertly engineered compression and transfer moulds for tear-free, flashless elastomeric components across industrial sectors.",
     bgImage: "/images/hero_capabilities.png",
   },
   overview: {
-    title: "Elastomeric Tooling Specialists",
+    title: "Elastomeric Tooling Specialists in Pune",
     description: (
       <>
         <p className="mb-4">
-          Moulding rubber requires a deep understanding of elastomer flow, vulcanization temperatures, and significant post-cure shrinkage. Shriniwas Tools engineers rubber moulds that account for these variables, ensuring accurate, flash-free final components.
+          Moulding rubber requires a deep understanding of elastomer flow, vulcanization temperatures, and significant post-cure shrinkage. As a leading <strong>rubber mould manufacturer</strong> in Pune, Shriniwas Tools engineers tooling that accounts for these complex variables, ensuring accurate, flash-free final components.
         </p>
         <p className="mb-4">
-          We manufacture compression, transfer, and injection moulds for a wide variety of elastomers including Silicone, EPDM, NBR (Nitrile), and Viton. Our advanced CNC and EDM machining capabilities allow us to create highly intricate cavities for O-rings, complex gaskets, and bellows.
+          We manufacture compression, transfer, and injection moulds for a wide variety of elastomers including Silicone, EPDM, NBR (Nitrile), and Viton. Our advanced CNC and EDM machining capabilities allow us to create highly intricate cavities for O-rings, complex gaskets, and industrial bellows.
         </p>
         <p>
-          We also specialize in tooling for rubber-to-metal bonded components, heavily utilized in automotive vibration dampening and industrial hydraulics.
+          We also specialize in tooling for rubber-to-metal bonded components, which are heavily utilized in automotive vibration dampening and hydraulic systems. Our moulds are designed to optimize cycle times and eliminate manual deflashing.
         </p>
       </>
     ),
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800",
+    image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   },
   keyFeatures: [
     { title: "Flashless Design", description: "Precision tear-trim designs for zero post-processing.", icon: "CheckCircle2" },
@@ -55,25 +55,25 @@ const data: ServiceData = {
       capacity: "1000x500x500 mm",
       specs: "12,000 RPM Spindle",
       applications: "Mould cavity profiling",
-      image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     },
     {
       name: "Sparking EDM",
       capacity: "500X300X200 mm",
       specs: "Fine finish eroding",
       applications: "Deep intricate grooves",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     }
   ],
   materials: [
-    { name: "P20 Tool Steel", image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=300" },
-    { name: "Aluminum (Prototype)", image: "https://images.unsplash.com/photo-1517420704952-d9f39ae62871?auto=format&fit=crop&q=80&w=300" },
+    { name: "P20 Tool Steel", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "Aluminum (Prototype)", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   gallery: [
-    "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   ],
   specs: [
     { label: "Mould Types", value: "Compression, Transfer, LSR Injection" },
@@ -82,12 +82,13 @@ const data: ServiceData = {
     { label: "Precision", value: "±0.01 mm" },
   ],
   faqs: [
-    { question: "What is a tear-trim mould?", answer: "A tear-trim design includes a specialized microscopic groove around the cavity. This creates a very thin membrane of flash on the rubber part that can be easily torn off by hand, eliminating the need for cryogenic deflashing." },
-    { question: "Do you design moulds for Liquid Silicone Rubber (LSR)?", answer: "Yes, we engineer LSR injection moulds which require exceptionally tight tolerances to prevent the highly viscous liquid silicone from flashing." }
+    { question: "What types of rubber moulds do you manufacture?", answer: "As a comprehensive rubber mould manufacturer, we design and build compression moulds, transfer moulds, and highly complex Liquid Silicone Rubber (LSR) injection moulds." },
+    { question: "What is a tear-trim mould?", answer: "A tear-trim design includes a specialized microscopic groove around the cavity. This creates a very thin membrane of flash on the rubber part that can be easily torn off by hand, eliminating the need for expensive cryogenic deflashing." },
+    { question: "Can you design moulds for rubber-to-metal bonding?", answer: "Yes, we specialize in tooling that securely locates and holds metal inserts (like bushes or plates) during the rubber injection or compression process, ensuring a perfect bond for anti-vibration mounts." }
   ],
   relatedServices: [
-    { title: "Plastic Injection Moulding", href: "/services/plastic-molding-dies", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=400" },
-    { title: "CNC VMC Machining", href: "/services/cnc-vmc-machining", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=400" },
+    { title: "Plastic Injection Moulding", href: "/services/plastic-molding-dies", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { title: "CNC VMC Machining", href: "/services/cnc-vmc-machining", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   testimonials: [
     { quote: "The multi-cavity O-ring mould they built for us reduced our cycle time by 20% and completely eliminated our manual deflashing process.", author: "Production Manager", company: "Industrial Seals & Hydraulics" }

@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, Globe, Search, Phone, Mail, Clock } from "lucide-react";
+import { Menu, X, ChevronDown, Globe, Search, Phone, Mail, Clock, Building2, Settings, Award, LineChart, Trophy, Image as ImageIcon, Handshake, Factory, Hexagon, Cpu, Zap, Box, Component, Disc, Wrench, Hammer } from "lucide-react";
 import { openQuoteModal } from "./QuoteModal";
 
 const navLinks = [
@@ -14,10 +14,32 @@ const navLinks = [
   {
     name: "Services",
     hasDropdown: true,
+    dropdownItems: [
+      { name: "Plastic Injection Moulding", href: "/services/plastic-molding-dies", icon: Factory },
+      { name: "DMC Moulding", href: "/services/dmc-molding-pune", icon: Hexagon },
+      { name: "CNC & VMC Machining", href: "/services/cnc-vmc-machining", icon: Cpu },
+      { name: "CNC Wire Cut EDM", href: "/services/cnc-wire-cut", icon: Zap },
+      { name: "DMC Moulds", href: "/services/dmc-dies", icon: Box },
+      { name: "Bakelite Moulds & Components", href: "/services/backlite-dies-components", icon: Component },
+      { name: "Rubber Moulds", href: "/services/rubber-molds", icon: Disc },
+      { name: "Jigs & Fixtures", href: "/services/jigs-fixtures", icon: Wrench },
+      { name: "Press Tools", href: "/services/press-tools", icon: Hammer },
+    ]
   },
-  { name: "Capabilities", href: "/capabilities" },
-  { name: "Machinery", href: "/machinery" },
-  { name: "Quality", href: "/quality" },
+  {
+    name: "Company",
+    hasDropdown: true,
+    dropdownItems: [
+      { name: "Infrastructure", href: "/infrastructure", icon: Building2 },
+      { name: "Machines", href: "/machinery", icon: Settings },
+      { name: "Quality Assurance", href: "/quality", icon: Award },
+      { name: "Capabilities", href: "/capabilities", icon: LineChart },
+      { name: "Achievements", href: "/achievements", icon: Trophy },
+      { name: "Gallery", href: "/gallery", icon: ImageIcon },
+      { name: "Clients", href: "/clients", icon: Handshake },
+    ]
+  },
+  { name: "Industries", href: "/industries" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -106,18 +128,15 @@ export default function Navbar() {
                     {link.name}
                   </Link>
                 )}
-                {link.hasDropdown && (
+                {link.hasDropdown && link.dropdownItems && (
                   <div className="absolute top-full left-0 mt-4 w-72 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 max-h-[70vh] overflow-y-auto">
                     <div className="p-4 flex flex-col gap-3">
-                      <Link href="/services/plastic-molding-dies" className="text-brand-dark hover:text-brand-accent transition-colors font-medium">Plastic Injection Moulding</Link>
-                      <Link href="/services/dmc-molding-pune" className="text-brand-dark hover:text-brand-accent transition-colors font-medium">DMC Moulding</Link>
-                      <Link href="/services/cnc-vmc-machining" className="text-brand-dark hover:text-brand-accent transition-colors font-medium">CNC & VMC Machining</Link>
-                      <Link href="/services/cnc-wire-cut" className="text-brand-dark hover:text-brand-accent transition-colors font-medium">CNC Wire Cut EDM</Link>
-                      <Link href="/services/dmc-dies" className="text-brand-dark hover:text-brand-accent transition-colors font-medium">DMC Moulds</Link>
-                      <Link href="/services/backlite-dies-components" className="text-brand-dark hover:text-brand-accent transition-colors font-medium">Bakelite Moulds & Components</Link>
-                      <Link href="/services/rubber-molds" className="text-brand-dark hover:text-brand-accent transition-colors font-medium">Rubber Moulds</Link>
-                      <Link href="/services/jigs-fixtures" className="text-brand-dark hover:text-brand-accent transition-colors font-medium">Jigs & Fixtures</Link>
-                      <Link href="/services/press-tools" className="text-brand-dark hover:text-brand-accent transition-colors font-medium">Press Tools</Link>
+                      {link.dropdownItems.map((item) => (
+                        <Link key={item.name} href={item.href} className="text-brand-dark hover:text-brand-accent transition-colors font-medium flex items-center gap-3">
+                          {item.icon && <item.icon className="w-5 h-5 text-brand-accent" />}
+                          {item.name}
+                        </Link>
+                      ))}
                     </div>
                   </div>
                 )}
@@ -201,7 +220,7 @@ export default function Navbar() {
                   )}
                   
                   <AnimatePresence>
-                    {link.hasDropdown && mobileExpandedDropdown === link.name && (
+                    {link.hasDropdown && mobileExpandedDropdown === link.name && link.dropdownItems && (
                       <motion.div
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
@@ -209,15 +228,12 @@ export default function Navbar() {
                         className="overflow-hidden"
                       >
                         <div className="flex flex-col gap-4 pl-4 py-3 border-l-2 border-brand-accent mt-2 bg-brand-primary/10 rounded-r-lg">
-                          <Link href="/services/plastic-molding-dies" className="text-sm font-normal text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>Plastic Injection Moulding</Link>
-                          <Link href="/services/dmc-molding-pune" className="text-sm font-normal text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>DMC Moulding</Link>
-                          <Link href="/services/cnc-vmc-machining" className="text-sm font-normal text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>CNC & VMC Machining</Link>
-                          <Link href="/services/cnc-wire-cut" className="text-sm font-normal text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>CNC Wire Cut EDM</Link>
-                          <Link href="/services/dmc-dies" className="text-sm font-normal text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>DMC Moulds</Link>
-                          <Link href="/services/backlite-dies-components" className="text-sm font-normal text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>Bakelite Moulds & Components</Link>
-                          <Link href="/services/rubber-molds" className="text-sm font-normal text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>Rubber Moulds</Link>
-                          <Link href="/services/jigs-fixtures" className="text-sm font-normal text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>Jigs & Fixtures</Link>
-                          <Link href="/services/press-tools" className="text-sm font-normal text-gray-300 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(false)}>Press Tools</Link>
+                          {link.dropdownItems.map((item) => (
+                            <Link key={item.name} href={item.href} className="text-sm font-normal text-gray-300 hover:text-white transition-colors flex items-center gap-3" onClick={() => setMobileMenuOpen(false)}>
+                              {item.icon && <item.icon className="w-4 h-4 text-brand-accent" />}
+                              {item.name}
+                            </Link>
+                          ))}
                         </div>
                       </motion.div>
                     )}

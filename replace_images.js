@@ -14,12 +14,12 @@ walkDir('./src', function(filePath) {
     let content = fs.readFileSync(filePath, 'utf8');
     let original = content;
 
-    // Replace background images (Hero sections)
-    content = content.replace(/url\(https:\/\/images\.unsplash\.com\/photo-[a-zA-Z0-9-]+\?q=[0-9]+&w=[0-9]+&auto=format&fit=crop\)/g, 
+    // Replace background images (Hero sections) where it starts with url(https://images.unsplash.com...
+    content = content.replace(/url\(https:\/\/images\.unsplash\.com\/[^)]+\)/g, 
       "url(https://placehold.co/1920x1080/1a1a1a/ffffff/png?text=Image+Uploading+Soon)");
 
-    // Replace src properties (next/image or string properties in arrays)
-    content = content.replace(/"https:\/\/images\.unsplash\.com\/photo-[a-zA-Z0-9-]+\?q=[0-9]+&w=[0-9]+&auto=format&fit=crop"/g, 
+    // Replace src properties
+    content = content.replace(/"https:\/\/images\.unsplash\.com\/[^"]+"/g, 
       "\"https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon\"");
 
     if (content !== original) {

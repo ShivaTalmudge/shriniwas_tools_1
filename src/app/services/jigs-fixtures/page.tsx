@@ -2,33 +2,33 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Jigs & Fixtures Manufacturing | Shriniwas Tools",
-  description: "Custom engineered workholding solutions, inspection jigs, and assembly fixtures for precision manufacturing.",
+  title: "Jigs and Fixtures Manufacturer in Pune | Shriniwas Tools",
+  description: "Leading jigs and fixtures manufacturer in Pune. We engineer custom workholding solutions, inspection gauges, and automated assembly fixtures.",
 };
 
 const data: ServiceData = {
   serviceName: "Jigs & Fixtures",
   hero: {
-    title: "Custom Jigs & Fixtures",
-    subtitle: "Robust, ergonomic workholding and inspection solutions designed to eliminate errors and drastically improve production throughput.",
+    title: "Jigs and Fixtures Manufacturer",
+    subtitle: "Robust, ergonomic workholding and inspection solutions engineered to eliminate assembly errors and drastically improve production throughput.",
     bgImage: "/images/hero_quality.png",
   },
   overview: {
-    title: "Optimizing the Assembly Line",
+    title: "Optimizing the Assembly Line in Pune",
     description: (
       <>
         <p className="mb-4">
-          Precision manufacturing and high-speed assembly rely entirely on robust, accurate, and ergonomic workholding. Shriniwas Tools engineers custom jigs and fixtures that ensure perfect repeatability on your shop floor while reducing operator fatigue.
+          Precision manufacturing and high-speed assembly rely entirely on robust, accurate, and ergonomic workholding. As a specialized <strong>jigs and fixtures manufacturer</strong> in Pune, Shriniwas Tools engineers custom solutions that ensure perfect repeatability on your shop floor while reducing operator fatigue.
         </p>
         <p className="mb-4">
-          From heavy-duty CNC machining fixtures holding immense clamping forces, to delicate Go/No-Go inspection gauges and poka-yoke assembly jigs, our team builds solutions that prevent human error.
+          From heavy-duty CNC machining fixtures engineered to hold immense clamping forces, to delicate Go/No-Go inspection gauges and poka-yoke assembly jigs, our tooling team builds solutions that physically prevent human error during mass production.
         </p>
         <p>
-          We integrate advanced pneumatic and hydraulic clamping systems into our fixtures for automated, one-touch part loading and unloading.
+          We also integrate advanced pneumatic and hydraulic clamping systems into our fixtures for automated, one-touch part loading and unloading, significantly reducing cycle times for automotive and heavy engineering clients.
         </p>
       </>
     ),
-    image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1af?auto=format&fit=crop&q=80&w=800",
+    image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   },
   keyFeatures: [
     { title: "Poka-Yoke Design", description: "Fool-proof designs that prevent incorrect part loading.", icon: "ShieldCheck" },
@@ -55,26 +55,26 @@ const data: ServiceData = {
       capacity: "1300x600x600 mm",
       specs: "Large bed for fixture plates",
       applications: "Machining large base plates",
-      image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     },
     {
       name: "Surface Grinder",
       capacity: "600x300X300 mm",
       specs: "Micron-level flatness",
       applications: "Grinding resting pads",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     }
   ],
   materials: [
-    { name: "Aluminum (6061)", image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=300" },
-    { name: "Tool Steel (O1, D2)", image: "https://images.unsplash.com/photo-1517420704952-d9f39ae62871?auto=format&fit=crop&q=80&w=300" },
-    { name: "Delrin / PTFE", image: "https://images.unsplash.com/photo-1580828369019-ea23709bc872?auto=format&fit=crop&q=80&w=300" },
+    { name: "Aluminum (6061)", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "Tool Steel (O1, D2)", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "Delrin / PTFE", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   gallery: [
-    "https://images.unsplash.com/photo-1563906660682-1bf738f61536?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1af?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1621644723048-b3d97f95fcb6?auto=format&fit=crop&q=80&w=600",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   ],
   specs: [
     { label: "Fixture Types", value: "Machining, Welding, Assembly, Inspection" },
@@ -83,12 +83,13 @@ const data: ServiceData = {
     { label: "Materials", value: "Mild Steel, Aluminum, Tool Steel, Delrin" },
   ],
   faqs: [
-    { question: "What is a Poka-Yoke fixture?", answer: "Poka-Yoke is a Japanese term meaning 'mistake-proofing'. We design fixtures with physical barriers or specific locating pins that make it physically impossible for an operator to load the part in the wrong orientation." },
-    { question: "Do you provide CMM reports for inspection jigs?", answer: "Yes, all inspection receiver gauges and jigs are delivered with a full Coordinate Measuring Machine (CMM) dimensional report to guarantee accuracy." }
+    { question: "What is a Poka-Yoke fixture?", answer: "Poka-Yoke is a Japanese term meaning 'mistake-proofing'. As a precision jigs and fixtures manufacturer, we design tooling with physical barriers or specific locating pins that make it physically impossible for an operator to load a part in the wrong orientation." },
+    { question: "Do you provide CMM reports for inspection jigs?", answer: "Yes, all inspection receiver gauges and verification jigs we manufacture are delivered with a comprehensive Coordinate Measuring Machine (CMM) dimensional report to guarantee accuracy." },
+    { question: "Can you automate the clamping process on a machining fixture?", answer: "Absolutely. We routinely integrate pneumatic cylinders or hydraulic clamping arrays into our CNC fixtures, allowing the operator to lock and unlock the workpiece with the flip of a single switch." }
   ],
   relatedServices: [
-    { title: "CNC & VMC Machining", href: "/services/cnc-vmc-machining", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=400" },
-    { title: "Press Tools", href: "/services/press-tools", image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=400" },
+    { title: "CNC & VMC Machining", href: "/services/cnc-vmc-machining", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { title: "Press Tools", href: "/services/press-tools", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   testimonials: [
     { quote: "The pneumatic welding fixtures built by Shriniwas Tools cut our frame assembly time in half. Brilliant engineering.", author: "Manufacturing Engineer", company: "Heavy Machinery Corp" }

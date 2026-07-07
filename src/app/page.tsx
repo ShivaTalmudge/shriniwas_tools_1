@@ -39,7 +39,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <span className="inline-block py-1 px-3 rounded-full bg-brand-accent/20 border border-brand-accent/50 text-brand-accent font-medium text-sm mb-6 tracking-wider uppercase">
-              ISO 9001:2015 Certified Company
+              ISO 9001:2015 Certified Tool Room in Pune
             </span>
           </motion.div>
 
@@ -49,9 +49,9 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-5xl md:text-7xl lg:text-8xl font-heading font-extrabold tracking-tight mb-6"
           >
-            Precision Engineered <br className="hidden md:block" />
+            Plastic Injection Moulding <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">
-              For The Future
+              & Precision Machining
             </span>
           </motion.h1>
 
@@ -61,7 +61,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 font-light"
           >
-            Global leaders in high-precision Plastic Injection Moulds, Press Tools, and Die Casting solutions for Fortune 500 companies.
+            Since 2006, Shriniwas Tools has been India's trusted engineering partner for high-precision plastic injection moulds, DMC moulds, rubber moulds, and robust press tools.
           </motion.p>
 
           <motion.div
@@ -91,10 +91,10 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-white/20 text-center">
             {[
-              { number: "18+", label: "Years Experience" },
-              { number: "150+", label: "Moulds Delivered" },
-              { number: "25+", label: "Skilled Team" },
-              { number: "5 Cr", label: "Turnover Potential" }
+              { number: "18+", label: "Years of Experience" },
+              { number: "500+", label: "Moulds Delivered" },
+              { number: "100+", label: "Clients Served" },
+              { number: "25+", label: "Skilled Engineers" }
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -116,56 +116,56 @@ export default function Home() {
       <section className="py-24 bg-brand-light">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Our Expertise</h2>
-            <h3 className="text-4xl md:text-5xl font-heading font-bold text-brand-dark mb-6">World-Class Manufacturing Capabilities</h3>
-            <p className="text-gray-600 text-lg">We leverage state-of-the-art machinery and decades of engineering expertise to deliver components with micrometer precision.</p>
+            <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Industrial Tooling Solutions</h2>
+            <h3 className="text-4xl md:text-5xl font-heading font-bold text-brand-dark mb-6">Manufacturing Capabilities</h3>
+            <p className="text-gray-600 text-lg">Our Pune-based engineering tool room is equipped to handle complex manufacturing challenges, from prototype design to mass production.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: "DMC Moulding Services in Pune",
-                desc: "High-strength, thermoset DMC solutions for superior electrical insulation.",
+                title: "Plastic Injection Moulding",
+                desc: "High-volume precision manufacturing of plastic components for automotive and electrical sectors.",
+                href: "/services/plastic-molding-dies"
+              },
+              {
+                title: "DMC Moulding Services",
+                desc: "Thermoset Dough Moulding Compound (DMC) parts offering exceptional electrical insulation and strength.",
                 href: "/services/dmc-molding-pune"
               },
               {
-                title: "CNC & VMC Precision Machining",
-                desc: "Aerospace-grade precision using advanced multi-axis machining centers.",
+                title: "CNC & VMC Machining",
+                desc: "High-tolerance precision machining for complex industrial components and aerospace-grade parts.",
                 href: "/services/cnc-vmc-machining"
               },
               {
                 title: "CNC Wire Cut EDM",
-                desc: "Micron-level accuracy in the hardest conductive materials via spark erosion.",
+                desc: "Micron-level accuracy cutting for hard conductive metals, ideal for complex mould cavities.",
                 href: "/services/cnc-wire-cut"
               },
               {
-                title: "Plastic Injection Moulding",
-                desc: "High-volume plastic component manufacturing with ISO-certified processes.",
-                href: "/services/plastic-molding-dies"
-              },
-              {
                 title: "DMC Mould Manufacturing",
-                desc: "Robust, heavy-duty thermoset tooling for immense compression.",
+                desc: "Robust, heavy-duty compression moulds engineered to withstand high temperatures and pressures.",
                 href: "/services/dmc-dies"
               },
               {
                 title: "Bakelite Moulds & Components",
-                desc: "Turnkey thermoset tooling and manufacturing for high heat applications.",
+                desc: "Custom tooling and manufacturing for heat-resistant Bakelite electrical components.",
                 href: "/services/backlite-dies-components"
               },
               {
                 title: "Rubber Mould Manufacturing",
-                desc: "Expertly engineered moulds for tear-free, flashless elastomeric parts.",
+                desc: "Precision transfer and compression moulds designed for flashless elastomeric products.",
                 href: "/services/rubber-molds"
               },
               {
                 title: "Jigs & Fixtures",
-                desc: "Robust workholding and inspection solutions to eliminate assembly errors.",
+                desc: "Custom workholding, assembly, and inspection fixtures to improve your production accuracy.",
                 href: "/services/jigs-fixtures"
               },
               {
                 title: "Press Tools",
-                desc: "High-speed progressive and compound dies for sheet metal stamping.",
+                desc: "High-speed progressive, compound, and forming dies for consistent sheet metal stamping.",
                 href: "/services/press-tools"
               }
             ].map((item, i) => (
@@ -209,12 +209,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Precision Injection Mould", category: "Plastic Moulding", image: "/images/hero_products.png" },
-              { name: "Automotive PDC Die", category: "Die Casting", image: "/images/hero_capabilities.png" },
-              { name: "High-Speed Press Tool", category: "Sheet Metal", image: "/images/hero_machinery.png" },
-              { name: "Multi-Cavity Hot Runner", category: "Plastic Moulding", image: "/images/hero_quality.png" },
-              { name: "Engine Block Core Box", category: "Gravity Die Casting", image: "/images/hero_home.png" },
-              { name: "Aerospace Inspection Jig", category: "Jigs & Fixtures", image: "/images/hero_about.png" }
+              { name: "Plastic Component", category: "Plastic Moulding", image: "/images/products-cropped/shriniwas-precision-moulded-product-10.webp" },
+              { name: "Plastic Component", category: "Plastic Moulding", image: "/images/products-cropped/shriniwas-precision-moulded-product-11.webp" },
+              { name: "Plastic Component", category: "Plastic Moulding", image: "/images/products-cropped/shriniwas-precision-moulded-product-26.webp" }
             ].map((product, i) => (
               <motion.div
                 key={i}
@@ -230,7 +227,7 @@ export default function Home() {
                       src={product.image}
                       alt={product.name}
                       fill
-                      className="object-cover group-hover:scale-110 group-hover:rotate-1 transition-transform duration-700 ease-in-out"
+                      className="object-contain p-4 rounded-[10px] group-hover:scale-110 group-hover:rotate-1 transition-transform duration-700 ease-in-out"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
                       <span className="text-brand-accent font-bold text-sm tracking-wider uppercase mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{product.category}</span>
@@ -259,7 +256,7 @@ export default function Home() {
                 className="relative z-10 rounded-2xl overflow-hidden aspect-[4/3] border border-white/10"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800"
+                  src="https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon"
                   alt="Quality Inspection"
                   fill
                   className="object-cover"
@@ -271,14 +268,14 @@ export default function Home() {
             </div>
 
             <div className="lg:w-1/2">
-              <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Why Partner With Us</h2>
-              <h3 className="text-4xl md:text-5xl font-heading font-bold mb-8">Engineering Excellence As Standard</h3>
+              <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Why Choose Shriniwas Tools</h2>
+              <h3 className="text-4xl md:text-5xl font-heading font-bold mb-8">Your Trusted Engineering Partner in Pune</h3>
               
               <div className="space-y-6">
                 {[
-                  { title: "Stringent Quality Control", desc: "Every component undergoes rigorous CMM inspection and metallurgical testing." },
-                  { title: "Advanced Technology", desc: "State-of-the-art CNC, VMC, and EDM machinery from global leaders." },
-                  { title: "End-to-End Solutions", desc: "From CAD/CAM design to final assembly, we manage the entire lifecycle." }
+                  { title: "Stringent Quality Control", desc: "Every mould and component undergoes rigorous dimensional inspection using precision instruments." },
+                  { title: "Advanced Tool Room", desc: "Equipped with high-end CNC, VMC, and Wire Cut EDM machinery for sub-micron accuracy." },
+                  { title: "Industry Expertise", desc: "Over 18 years of experience catering to OEM manufacturers, automotive, and electronics sectors." }
                 ].map((item, i) => (
                   <motion.div
                     key={i}
@@ -334,8 +331,8 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto bg-brand-dark/20 backdrop-blur-xl border border-white/10 p-12 md:p-16 rounded-3xl shadow-2xl"
           >
-            <h2 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6">Ready to start your next manufacturing project?</h2>
-            <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">Get in touch with our engineering team today to discuss your requirements and get a detailed quotation.</p>
+            <h2 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6">Looking for a Reliable Tool Manufacturer?</h2>
+            <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">Share your technical drawings with our Pune-based engineering team for a competitive quotation and expert manufacturing advice.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <button
                 onClick={openQuoteModal}

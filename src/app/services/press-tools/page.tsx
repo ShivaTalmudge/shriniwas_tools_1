@@ -2,33 +2,33 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Press Tools & Stamping Dies | Shriniwas Tools",
-  description: "High-speed progressive, compound, and deep draw press tools for high-volume sheet metal stamping.",
+  title: "Press Tool Manufacturer in Pune | Shriniwas Tools",
+  description: "Leading press tool manufacturer in Pune. High-speed progressive, compound, and deep draw dies engineered for millions of flawless stamping cycles.",
 };
 
 const data: ServiceData = {
   serviceName: "Press Tools",
   hero: {
-    title: "Advanced Press Tools",
+    title: "Press Tool Manufacturer",
     subtitle: "High-speed progressive and compound dies engineered for millions of flawless sheet metal stamping cycles.",
     bgImage: "/images/hero_products.png",
   },
   overview: {
-    title: "Sheet Metal Stamping Excellence",
+    title: "Sheet Metal Stamping Excellence in Pune",
     description: (
       <>
         <p className="mb-4">
-          Sheet metal stamping demands tooling that can endure extreme impact forces millions of times without losing its cutting edge. Shriniwas Tools engineers and manufactures high-performance press tools designed to maximize your stamping press uptime.
+          Sheet metal stamping demands tooling that can endure extreme impact forces millions of times without losing its cutting edge. As a premier <strong>press tool manufacturer</strong> in Pune, Shriniwas Tools engineers and builds high-performance stamping dies designed to maximize your press uptime.
         </p>
         <p className="mb-4">
-          Using top-grade D2, powder metallurgy steels, and Tungsten Carbide inserts, coupled with our ultra-precise Wire EDM capabilities, we create punches and matrices with exact clearances. 
+          Utilizing top-grade D2, powder metallurgy steels, and Tungsten Carbide inserts, coupled with our ultra-precise in-house Wire EDM capabilities, we create punch and matrix assemblies with exact clearances down to the micron level.
         </p>
         <p>
-          Whether you require a high-speed progressive die with multiple bending and forming stages for automotive clips, or a highly concentric compound die for washers, we deliver tooling that performs relentlessly.
+          Whether you require a high-speed progressive die with multiple bending and forming stages for automotive clips, or a highly concentric compound die for industrial washers, we deliver robust press tooling that performs relentlessly across high-volume production runs.
         </p>
       </>
     ),
-    image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=800",
+    image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   },
   keyFeatures: [
     { title: "Progressive Dies", description: "Multi-station tools for high-speed automated stamping.", icon: "TrendingUp" },
@@ -55,25 +55,25 @@ const data: ServiceData = {
       capacity: "400x300x200 mm",
       specs: "0.25mm wire, fine skimming",
       applications: "Punch and matrix cutting",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     },
     {
       name: "High-Speed VMC",
       capacity: "1000x500x500 mm",
       specs: "Heavy rigid milling",
       applications: "Die set and backing plates",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     }
   ],
   materials: [
-    { name: "D2 Tool Steel", image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=300" },
-    { name: "Tungsten Carbide", image: "https://images.unsplash.com/photo-1517420704952-d9f39ae62871?auto=format&fit=crop&q=80&w=300" },
+    { name: "D2 Tool Steel", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "Tungsten Carbide", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   gallery: [
-    "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1621644723048-b3d97f95fcb6?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   ],
   specs: [
     { label: "Tooling Types", value: "Progressive, Compound, Deep Draw, Blanking" },
@@ -82,12 +82,13 @@ const data: ServiceData = {
     { label: "Clearance Accuracy", value: "±0.005 mm" },
   ],
   faqs: [
-    { question: "What is a Progressive Die?", answer: "A progressive die feeds a continuous coil of sheet metal through multiple stations in the die. Each station performs a different operation (piercing, bending, forming) so that one complete part drops out with every single stroke of the press." },
-    { question: "How do you ensure punches don't break on thick materials?", answer: "We use high-grade shock-resisting tool steels, calculate precise cutting clearances, and utilize guided stripper plates to support the punch right down to the material surface." }
+    { question: "What is a Progressive Die?", answer: "A progressive die feeds a continuous coil of sheet metal through multiple stations. Each station performs a different operation (piercing, bending, forming) so that one complete part drops out with every single stroke of the press. We specialize in manufacturing these complex multi-stage tools." },
+    { question: "How do you ensure punches don't break on thick materials?", answer: "As an experienced press tool manufacturer, we use high-grade shock-resisting tool steels, calculate precise cutting clearances via CAD simulation, and utilize guided stripper plates to support the punch right down to the material surface." },
+    { question: "Can you manufacture dies with Tungsten Carbide?", answer: "Yes, for extremely high-volume production or abrasive sheet metals, we utilize Tungsten Carbide inserts for the punches and matrices, significantly increasing the die's lifespan between sharpenings." }
   ],
   relatedServices: [
-    { title: "CNC Wire Cut EDM", href: "/services/cnc-wire-cut", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=400" },
-    { title: "Jigs & Fixtures", href: "/services/jigs-fixtures", image: "https://images.unsplash.com/photo-1563906660682-1bf738f61536?auto=format&fit=crop&q=80&w=400" },
+    { title: "CNC Wire Cut EDM", href: "/services/cnc-wire-cut", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { title: "Jigs & Fixtures", href: "/services/jigs-fixtures", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   testimonials: [
     { quote: "The 12-stage progressive die designed by Shriniwas Tools runs at 200 SPM without a hitch. It's increased our output significantly.", author: "Plant Head", company: "AutoStamping Inc." }

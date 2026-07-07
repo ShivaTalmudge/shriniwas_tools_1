@@ -2,33 +2,33 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Bakelite Moulds & Components | Shriniwas Tools",
-  description: "Precision Bakelite thermoset compression moulds and end-component manufacturing.",
+  title: "Bakelite Components Manufacturer in Pune | Shriniwas Tools",
+  description: "Leading Bakelite components manufacturer in Pune. We provide end-to-end thermoset tooling and manufacturing for highly heat-resistant electrical parts.",
 };
 
 const data: ServiceData = {
   serviceName: "Bakelite Moulds & Components",
   hero: {
-    title: "Bakelite Moulds & Components",
-    subtitle: "High-precision thermoset tooling and manufacturing for superior electrical insulation and heat-resistant applications.",
+    title: "Bakelite Components Manufacturer",
+    subtitle: "High-precision thermoset tooling and turnkey manufacturing for superior electrical insulation and heat-resistant industrial applications.",
     bgImage: "/images/hero_machinery.png",
   },
   overview: {
-    title: "The Standard for Heat Resistance",
+    title: "End-to-End Bakelite Manufacturing",
     description: (
       <>
         <p className="mb-4">
           Bakelite (Phenolic resin) remains one of the most reliable thermosetting plastics for applications demanding extremely high heat resistance and electrical non-conductivity. 
         </p>
         <p className="mb-4">
-          Shriniwas Tools offers an end-to-end Bakelite solution. We design and manufacture highly polished, abrasion-resistant compression moulds specifically tailored for phenolic materials. Additionally, we operate a dedicated press shop to manufacture the final Bakelite components for our clients.
+          As a prominent <strong>Bakelite components manufacturer</strong> in Pune, Shriniwas Tools offers a complete end-to-end solution. We design and build highly polished, abrasion-resistant compression moulds specifically tailored for phenolic materials in our advanced tool room. Furthermore, we operate a dedicated press shop to manufacture the final Bakelite components for our OEM clients.
         </p>
         <p>
-          From intricate electrical switches to robust kitchenware handles, we ensure flash-free moulding and excellent dimensional stability across millions of cycles.
+          From intricate electrical switches and relays to robust industrial and kitchenware handles, we ensure flash-free moulding and excellent dimensional stability across millions of production cycles.
         </p>
       </>
     ),
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
+    image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   },
   keyFeatures: [
     { title: "High Polish Finish", description: "SPI A2/A3 finishes for glossy components.", icon: "Award" },
@@ -55,25 +55,25 @@ const data: ServiceData = {
       capacity: "100 Tons",
       specs: "Multi-cavity Bakelite moulding",
       applications: "Electrical sockets, handles",
-      image: "https://images.unsplash.com/photo-1621644723048-b3d97f95fcb6?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     },
     {
       name: "CNC VMC",
       capacity: "1000x500x500 mm",
       specs: "10,000 RPM Spindle",
       applications: "Core and cavity machining",
-      image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     }
   ],
   materials: [
-    { name: "Phenolic Resin (Bakelite)", image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=300" },
-    { name: "Tool Steel (H13)", image: "https://images.unsplash.com/photo-1517420704952-d9f39ae62871?auto=format&fit=crop&q=80&w=300" },
+    { name: "Phenolic Resin (Bakelite)", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "Tool Steel (H13)", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   gallery: [
-    "https://images.unsplash.com/photo-1517420704952-d9f39ae62871?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1621644723048-b3d97f95fcb6?auto=format&fit=crop&q=80&w=600",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   ],
   specs: [
     { label: "Mould Size", value: "Up to 800 x 600 mm" },
@@ -82,12 +82,13 @@ const data: ServiceData = {
     { label: "Post-Processing", value: "Tumbling, Drilling, Tapping" },
   ],
   faqs: [
-    { question: "Do you only make the mould, or can you produce the Bakelite parts?", answer: "We offer both. We can manufacture the mould and ship it to you, or we can keep the mould in our facility and manufacture the Bakelite components for you as a turnkey solution." },
-    { question: "Why is Bakelite still used instead of modern plastics?", answer: "Bakelite is unmatched for its combination of extreme heat resistance (it doesn't melt, it only chars at very high temps), electrical non-conductivity, and rigidity, making it essential for cookware handles and electrical switchgear." }
+    { question: "Are you a full-service Bakelite components manufacturer?", answer: "Yes. We offer turnkey solutions. We can manufacture the precision Bakelite mould and either ship it to your facility, or keep it in our Pune press shop to manufacture the final Bakelite components for you." },
+    { question: "Why is Bakelite still used instead of modern thermoplastics?", answer: "Bakelite is unmatched for its combination of extreme heat resistance (it does not melt, it only chars at very high temperatures), electrical insulation, and structural rigidity, making it essential for heavy electrical switchgear and heat-exposed handles." },
+    { question: "Can you achieve a glossy finish on Bakelite parts?", answer: "Yes, our tool room achieves SPI A2/A3 mirror finishes on the mould cavities, which translates to a flawless, glossy surface finish directly on the moulded Bakelite component." }
   ],
   relatedServices: [
-    { title: "DMC Moulding", href: "/services/dmc-molding-pune", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=400" },
-    { title: "Plastic Injection Moulding", href: "/services/plastic-molding-dies", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=400" },
+    { title: "DMC Moulding", href: "/services/dmc-molding-pune", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { title: "Plastic Injection Moulding", href: "/services/plastic-molding-dies", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   testimonials: [
     { quote: "Our kitchenware handles require a flawless glossy finish direct from the mould. Shriniwas Tools delivered perfectly.", author: "Product Manager", company: "Premium Cookware Brand" }

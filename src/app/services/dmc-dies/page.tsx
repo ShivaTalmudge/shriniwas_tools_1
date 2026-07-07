@@ -2,33 +2,33 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "DMC Moulds Manufacturing | Shriniwas Tools",
-  description: "Heavy-duty DMC compression mould manufacturing engineered for high heat and pressure resistance.",
+  title: "DMC Mould Manufacturer in Pune | Shriniwas Tools",
+  description: "Leading DMC mould manufacturer in Pune. We engineer robust, heavy-duty thermoset compression moulds for electrical and industrial applications.",
 };
 
 const data: ServiceData = {
   serviceName: "DMC Moulds",
   hero: {
-    title: "DMC Mould Manufacturing",
-    subtitle: "Robust, heavy-duty thermoset tooling engineered to withstand immense compression and high-temperature curing cycles.",
+    title: "DMC Mould Manufacturer",
+    subtitle: "Robust, heavy-duty thermoset tooling engineered in Pune to withstand immense compression and high-temperature curing cycles.",
     bgImage: "/images/hero_products.png",
   },
   overview: {
-    title: "Tooling for Tough Environments",
+    title: "Heavy-Duty Compression Tooling",
     description: (
       <>
         <p className="mb-4">
-          Dough Moulding Compound (DMC) requires a fundamentally different tooling approach compared to thermoplastic injection moulding. DMC moulds must endure extreme compressive forces and sustained high temperatures to bake the thermoset material.
+          Dough Moulding Compound (DMC) requires a fundamentally different tooling approach compared to thermoplastic injection moulding. DMC moulds must endure extreme compressive forces and sustained high temperatures to bake the thermoset material effectively.
         </p>
         <p className="mb-4">
-          Our engineering team designs ultra-rigid compression dies using premium H13 and P20 tool steels. We incorporate optimized heating cartridge layouts to ensure uniform heat distribution across the cavity, which is critical for preventing un-cured spots in the final DMC part.
+          As an expert <strong>DMC mould manufacturer</strong> in Pune, Shriniwas Tools & Equipments designs and builds ultra-rigid compression dies using premium H13 and P20 tool steels. Our engineering team incorporates optimized heating cartridge layouts to ensure uniform heat distribution across the cavity, which is critical for preventing un-cured spots in the final DMC part.
         </p>
         <p>
-          From intricate switchgear components to large structural automotive insulators, we deliver DMC moulds that guarantee millions of cycles without flashing or degradation.
+          From intricate electrical switchgear components to large structural insulators, we deliver thermoset moulds that guarantee millions of cycles without flashing or degradation, ensuring your production line runs seamlessly.
         </p>
       </>
     ),
-    image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=800",
+    image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   },
   keyFeatures: [
     { title: "Thermal Optimization", description: "Uniform heating arrays for perfect curing.", icon: "Zap" },
@@ -55,25 +55,25 @@ const data: ServiceData = {
       capacity: "1300x600x600 mm",
       specs: "High torque spindle",
       applications: "Large DMC mould bases",
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     },
     {
       name: "Surface Grinder",
       capacity: "600x300X300 mm",
       specs: "Micron-level flatness",
       applications: "Parting line optimization",
-      image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1af?auto=format&fit=crop&q=80&w=600",
+      image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
     }
   ],
   materials: [
-    { name: "H13 Tool Steel", image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=300" },
-    { name: "P20 Alloy Steel", image: "https://images.unsplash.com/photo-1517420704952-d9f39ae62871?auto=format&fit=crop&q=80&w=300" },
+    { name: "H13 Tool Steel", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { name: "P20 Alloy Steel", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   gallery: [
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600",
-    "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1af?auto=format&fit=crop&q=80&w=600",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
+    "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon",
   ],
   specs: [
     { label: "Mould Size", value: "Up to 1000 x 800 mm" },
@@ -82,12 +82,13 @@ const data: ServiceData = {
     { label: "Ejection", value: "Hydraulic or Mechanical Pin Ejection" },
   ],
   faqs: [
-    { question: "Why do DMC moulds need hard chrome plating?", answer: "DMC contains highly abrasive glass fibers that can rapidly wear down steel cavities during compression. Hard chrome plating provides a frictionless, wear-resistant barrier that drastically extends mould life." },
-    { question: "Can you run trials of the mould before shipping?", answer: "Absolutely. We have 100T and 200T compression presses in-house to run T0 and T1 trials and provide you with production-ready samples." }
+    { question: "Why do DMC moulds need hard chrome plating?", answer: "DMC contains highly abrasive glass fibers that can rapidly wear down steel cavities during compression. As an experienced DMC mould manufacturer, we hard chrome plate our cavities to provide a frictionless, wear-resistant barrier that drastically extends mould life." },
+    { question: "Can you run trials of the mould before shipping?", answer: "Absolutely. We have our own 100T and 200T compression presses in-house to run T0 and T1 trials and provide you with production-ready samples for approval." },
+    { question: "How do you ensure uniform heating in the mould?", answer: "We use thermal analysis during the CAD stage to design optimized electrical cartridge or oil heating layouts, ensuring zero cold spots and perfect curing of the thermoset compound." }
   ],
   relatedServices: [
-    { title: "DMC Moulding", href: "/services/dmc-molding-pune", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=400" },
-    { title: "Bakelite Moulds", href: "/services/backlite-dies-components", image: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=400" },
+    { title: "DMC Moulding", href: "/services/dmc-molding-pune", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
+    { title: "Bakelite Moulds", href: "/services/backlite-dies-components", image: "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon" },
   ],
   testimonials: [
     { quote: "The DMC mould we commissioned for our heavy-duty insulators performs beautifully. Zero flash and perfectly uniform curing.", author: "Head of Tooling", company: "PowerGrid Equipments" }

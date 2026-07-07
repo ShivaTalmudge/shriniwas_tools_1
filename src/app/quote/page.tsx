@@ -1,4 +1,9 @@
-"use client";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Request a Tooling Quote | Shriniwas Tools Pune",
+  description: "Upload your CAD drawings and request a technical proposal for plastic moulds, press tools, die casting dies, and precision CNC machined components.",
+};
 
 import { motion } from "framer-motion";
 import { UploadCloud, CheckCircle2 } from "lucide-react";
@@ -16,16 +21,12 @@ export default function Quote() {
         </div>
 
         <div className="container mx-auto px-4 md:px-8 relative z-10 text-center mt-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-4">Request a Quote</h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light">
-              Upload your drawings or 3D models and our engineering team will get back to you with a detailed technical and commercial proposal within 48 hours.
+          <div className="animate-in fade-in slide-in-from-bottom-5 duration-700">
+            <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-6">Request a Tooling Quote</h1>
+            <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+              Upload your 2D drawings or 3D CAD models. Our senior tooling engineers in Pune will analyze your requirements and provide a detailed technical and commercial proposal within 48 hours.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -65,10 +66,14 @@ export default function Quote() {
                     <div className="space-y-2">
                       <label className="text-sm font-bold text-gray-700 uppercase tracking-wider">Requirement Type</label>
                       <select className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all">
-                        <option>Plastic Injection Mould</option>
-                        <option>Press Tool / Stamping Die</option>
-                        <option>Die Casting Die</option>
-                        <option>Precision Component Machining</option>
+                        <option>Plastic Injection Moulding</option>
+                        <option>DMC Moulding / Components</option>
+                        <option>CNC & VMC Machining</option>
+                        <option>CNC Wire Cut EDM</option>
+                        <option>Rubber Moulds</option>
+                        <option>Bakelite Moulds</option>
+                        <option>Jigs & Fixtures</option>
+                        <option>Press Tools</option>
                         <option>Other</option>
                       </select>
                     </div>
