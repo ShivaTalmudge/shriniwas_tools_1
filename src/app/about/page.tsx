@@ -153,16 +153,17 @@ export default function About() {
       </section>
 
       {/* Interactive Timeline */}
-      <section className="py-16 md:py-20 lg:py-24 bg-brand-dark text-white">
+      <section className="py-16 md:py-20 lg:py-24 bg-brand-dark text-white border-t border-white/5">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-heading font-bold mb-4">Our Journey</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">From a small workshop to a massive industrial presence.</p>
+          <div className="text-left max-w-3xl mx-auto mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Our Journey</h2>
+            <div className="w-20 h-1 bg-brand-accent mb-6" />
+            <p className="text-gray-300 text-lg">From a small workshop to a massive industrial presence, building precision into every era.</p>
           </div>
 
-          <div className="max-w-4xl mx-auto relative">
+          <div className="max-w-3xl mx-auto relative">
             {/* Timeline Line */}
-            <div className="absolute left-2 md:left-1/2 top-0 bottom-0 w-[2px] bg-brand-primary/30 md:-translate-x-1/2"></div>
+            <div className="absolute left-[15px] md:left-[23px] top-4 bottom-0 w-[2px] bg-white/10"></div>
             
             {[
               { year: "2006", title: "The Beginning", desc: "Shriniwas Tools was founded in Bhosari, Pune by Nagendra M. Sheregar to provide reliable tooling solutions." },
@@ -173,23 +174,24 @@ export default function About() {
             ].map((milestone, i) => (
               <motion.div 
                 key={i}
-                initial={{ opacity: 0, x: 50 }}
+                initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.2 }}
-                className="relative pl-10 md:pl-0 mb-12 flex flex-col md:flex-row items-start md:items-center group"
+                transition={{ duration: 0.5, delay: i * 0.15 }}
+                className="relative pl-12 md:pl-20 mb-10 group"
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-2 md:left-1/2 -translate-x-1/2 mt-2.5 md:mt-0 w-4 h-4 bg-brand-accent rounded-full border-4 border-brand-dark group-hover:scale-150 transition-transform z-10" />
+                <div className="absolute left-2 md:left-4 top-4 w-4 h-4 bg-brand-dark border-[3px] border-brand-accent rounded-full group-hover:bg-brand-accent group-hover:shadow-[0_0_15px_rgba(249,115,22,0.5)] transition-all duration-300 z-10" />
                 
-                <div className="w-full md:w-1/2 md:text-right md:pr-12 mb-2 md:mb-0">
-                  <div className="text-3xl font-heading font-black text-brand-primary opacity-50 group-hover:opacity-100 transition-opacity">{milestone.year}</div>
-                </div>
-                
-                <div className="w-full md:w-1/2 md:pl-12">
-                  <div className="bg-white/5 p-6 rounded-xl border border-white/10 group-hover:bg-white/10 group-hover:-translate-y-1 group-hover:shadow-xl transition-all duration-300">
-                    <h4 className="text-xl font-bold mb-2 text-brand-accent">{milestone.title}</h4>
-                    <p className="text-gray-400">{milestone.desc}</p>
+                <div className="bg-white/5 border border-white/10 hover:border-brand-accent/50 p-6 md:p-8 rounded-2xl group-hover:bg-white/10 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 mb-3">
+                    <span className="text-3xl md:text-4xl font-heading font-black text-brand-primary opacity-60 group-hover:opacity-100 transition-opacity">
+                      {milestone.year}
+                    </span>
+                    <h4 className="text-xl md:text-2xl font-bold text-white group-hover:text-brand-accent transition-colors">
+                      {milestone.title}
+                    </h4>
                   </div>
+                  <p className="text-gray-400 leading-relaxed">{milestone.desc}</p>
                 </div>
               </motion.div>
             ))}
