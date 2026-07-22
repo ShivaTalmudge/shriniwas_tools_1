@@ -98,7 +98,7 @@ export default function Industries() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-3xl sm:text-4xl md:text-6xl font-heading font-extrabold tracking-tight mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-heading font-extrabold tracking-tight mb-6 leading-tight"
           >
             Industries <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">

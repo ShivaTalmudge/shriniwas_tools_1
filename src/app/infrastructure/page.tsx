@@ -99,7 +99,7 @@ export default function Infrastructure() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">
               Our Infrastructure
             </h1>
             <div className="w-24 h-1 bg-brand-accent mb-6" />

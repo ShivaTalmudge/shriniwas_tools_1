@@ -47,7 +47,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-heading font-extrabold tracking-tight mb-6 leading-tight"
           >
             Precision Tooling & <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">
@@ -68,17 +68,17 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-4"
+            className="flex flex-col sm:flex-row items-center sm:items-center justify-start gap-6"
           >
             <button
               onClick={openQuoteModal}
-              className="px-8 py-4 bg-brand-accent hover:bg-orange-600 text-white font-bold uppercase tracking-wider rounded-sm hover:-translate-y-1 hover:shadow-xl shadow-brand-accent/20 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-2"
+              className="px-8 py-4 bg-brand-accent hover:bg-orange-600 text-white font-bold uppercase tracking-wider rounded-full hover:-translate-y-1 hover:shadow-xl shadow-brand-accent/20 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-3"
             >
               Request a Quote <ArrowRight className="w-5 h-5" />
             </button>
             <Link
               href="/services"
-              className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold uppercase tracking-wider rounded-sm border border-white/30 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 w-full sm:w-auto text-center"
+              className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold uppercase tracking-wider rounded-full border border-white/30 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 w-full sm:w-auto flex items-center justify-center"
             >
               Explore Our Services
             </Link>
