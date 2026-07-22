@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Award, Briefcase, PenTool, Laptop, Factory, PackageCheck , ChevronRight} from "lucide-react";
+import { Award, Briefcase, PenTool, Laptop, Factory, PackageCheck , ChevronRight, PhoneCall } from "lucide-react";
 
 export default function About() {
   const steps = [
@@ -212,6 +212,79 @@ export default function About() {
                 </motion.div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Structure */}
+      <section className="py-16 md:py-24 bg-brand-light">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-4">Leadership Team</h2>
+            <div className="w-20 h-1 bg-brand-accent mx-auto" />
+          </div>
+
+          <div className="max-w-5xl mx-auto flex flex-col items-center">
+            {/* Director Node */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-white border-2 border-brand-primary rounded-2xl shadow-xl p-6 text-center w-72 relative z-10"
+            >
+              <div className="bg-brand-primary text-white py-2 px-6 rounded-lg font-bold text-lg mb-4 -mt-11 mx-auto w-max shadow-md uppercase tracking-wider">
+                Director
+              </div>
+              <h3 className="font-heading font-black text-2xl text-brand-dark mb-1">Nagendra Sheregar</h3>
+              <p className="text-brand-accent font-bold flex items-center justify-center gap-2">
+                <PhoneCall className="w-4 h-4" />
+                +91 98608 22818
+              </p>
+            </motion.div>
+
+            {/* Desktop Connecting Lines */}
+            <div className="relative w-full hidden md:block h-16">
+              <div className="absolute left-1/2 top-0 w-[2px] h-1/2 bg-brand-primary/30 -translate-x-1/2"></div>
+              <div className="absolute top-1/2 left-[12.5%] right-[12.5%] h-[2px] bg-brand-primary/30"></div>
+              <div className="absolute top-1/2 left-[12.5%] w-[2px] h-1/2 bg-brand-primary/30 -translate-x-1/2"></div>
+              <div className="absolute top-1/2 left-[37.5%] w-[2px] h-1/2 bg-brand-primary/30 -translate-x-1/2"></div>
+              <div className="absolute top-1/2 left-[62.5%] w-[2px] h-1/2 bg-brand-primary/30 -translate-x-1/2"></div>
+              <div className="absolute top-1/2 left-[87.5%] w-[2px] h-1/2 bg-brand-primary/30 -translate-x-1/2"></div>
+            </div>
+
+            {/* Children Nodes */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-0 w-full mt-8 md:mt-0 relative z-10">
+              {[
+                { role: "Design Head", name: "Sandip Sutar", phone: "" },
+                { role: "Production Head", name: "Sachin Patil", phone: "+91 97307 68067" },
+                { role: "QA Head", name: "Avadhesh", phone: "+91 84849 07364" },
+                { role: "Maintenance Head", name: "Ganesh", phone: "+91 97307 67465" }
+              ].map((member, i) => (
+                <motion.div 
+                  key={i} 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className="flex flex-col items-center px-2"
+                >
+                  {/* Mobile Connecting Line */}
+                  <div className="w-[2px] h-8 bg-brand-primary/30 block md:hidden -mt-8 mb-0"></div>
+                  
+                  <div className="bg-white border border-gray-200 rounded-2xl shadow-lg p-5 text-center w-full max-w-[240px] hover:border-brand-accent hover:shadow-xl transition-all duration-300 relative group flex flex-col items-center">
+                    <div className="bg-brand-dark group-hover:bg-brand-accent transition-colors text-white py-1.5 px-4 rounded-lg font-bold text-sm mb-4 -mt-9 mx-auto w-max shadow-md uppercase tracking-wider text-center">
+                      {member.role}
+                    </div>
+                    <h3 className="font-heading font-bold text-lg text-brand-dark mb-1 text-center">{member.name}</h3>
+                    {member.phone && (
+                      <p className="text-gray-500 text-sm font-medium flex items-center justify-center gap-1.5 mt-2">
+                        <PhoneCall className="w-3.5 h-3.5 shrink-0" /> {member.phone}
+                      </p>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
