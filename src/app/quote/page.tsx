@@ -1,9 +1,6 @@
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Request a Tooling Quote | Shriniwas Tools Pune",
-  description: "Upload your CAD drawings and request a technical proposal for plastic moulds, press tools, die casting dies, and precision CNC machined components.",
-};
+
 
 import { motion } from "framer-motion";
 import { UploadCloud, CheckCircle2 } from "lucide-react";

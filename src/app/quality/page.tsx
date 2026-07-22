@@ -1,9 +1,6 @@
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Quality Assurance & ISO 9001:2015 | Shriniwas Tools Pune",
-  description: "Explore our stringent quality control processes. As an ISO 9001:2015 certified manufacturer in Pune, we guarantee zero-defect precision tooling and components.",
-};
+
 
 import { motion } from "framer-motion";
 import { CheckCircle2, Activity, Ruler } from "lucide-react";

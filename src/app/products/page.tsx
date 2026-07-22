@@ -1,9 +1,6 @@
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Precision Tooling Products | Shriniwas Tools Pune",
-  description: "Explore our comprehensive range of high-precision manufacturing products including Plastic Injection Moulds, Press Tools, Die Casting Dies, and Custom Jigs & Fixtures manufactured in Pune.",
-};
+
 
 import { motion } from "framer-motion";
 import Image from "next/image";
