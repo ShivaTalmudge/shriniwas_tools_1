@@ -45,8 +45,8 @@ export default function Careers() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">Build Your Career With Us</h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl font-light leading-relaxed">
+            <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Build Your Career With Us</h1>
+            <p className="text-lg md:text-xl lg:text-xl text-gray-300 max-w-3xl font-light leading-relaxed">
               Join a team of passionate engineers shaping the future of precision manufacturing in India.
             </p>
           </motion.div>
@@ -94,7 +94,7 @@ export default function Careers() {
           <div className="flex flex-col md:flex-row justify-between items-end mb-16">
             <div>
               <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Join the Team</h2>
-              <h3 className="text-3xl md:text-5xl font-heading font-bold">Open Positions</h3>
+              <h3 className="text-3xl md:text-3xl font-heading font-bold">Open Positions</h3>
             </div>
             <div className="mt-6 md:mt-0">
               <a href="mailto:shriniwastools2020@gmail.com" className="bg-brand-accent hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg flex items-center gap-2 transition-colors">

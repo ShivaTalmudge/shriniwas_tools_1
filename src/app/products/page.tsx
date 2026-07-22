@@ -55,11 +55,11 @@ export default function Products() {
                 <Box className="w-4 h-4" />
                 <span className="text-sm font-semibold tracking-wide uppercase">Precision Manufacturing</span>
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">
                 Engineered <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">Products</span>
               </h1>
-              <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 font-light leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-xl text-gray-300 mb-8 font-light leading-relaxed">
                 A showcase of our high-quality injection moulded components, complex press parts, and heavy-duty thermoset insulators.
               </p>
             </motion.div>

@@ -49,10 +49,10 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">
               About Us
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl font-light leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-xl text-gray-300 max-w-3xl font-light leading-relaxed">
               Since 2006, Shriniwas Tools & Equipments has operated as a leading engineering tool room in Pune, specializing in high-precision plastic injection moulds, DMC moulds, and industrial press tools.
             </p>
           </motion.div>
@@ -84,7 +84,7 @@ export default function About() {
             </motion.div>
 
             <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">Vision & Mission</h2>
+              <h2 className="text-3xl md:text-3xl font-heading font-bold text-brand-dark mb-6">Vision & Mission</h2>
               <div className="prose prose-lg text-gray-600 mb-10">
                 <p>
                   <strong>Our Vision:</strong> To establish Shriniwas Tools as the benchmark for precision tool-making in India by consistently adopting advanced machining technologies and delivering robust, defect-free moulds.
@@ -116,7 +116,7 @@ export default function About() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
             <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Our Capabilities</h2>
-            <h3 className="text-3xl md:text-5xl font-heading font-bold text-brand-dark mb-6">Manufacturing Process</h3>
+            <h3 className="text-3xl md:text-3xl font-heading font-bold text-brand-dark mb-6">Manufacturing Process</h3>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">Experience a seamless workflow from digital CAD concept to physical mass production reality. Our fully integrated in-house capabilities in Pune ensure absolute quality control at every stage.</p>
           </div>
           
@@ -155,46 +155,55 @@ export default function About() {
       {/* Interactive Timeline */}
       <section className="py-16 md:py-20 lg:py-24 bg-brand-dark text-white border-t border-white/5">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="text-left max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Our Journey</h2>
-            <div className="w-20 h-1 bg-brand-accent mb-6" />
-            <p className="text-gray-300 text-lg">From a small workshop to a massive industrial presence, building precision into every era.</p>
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-3xl font-heading font-bold mb-4">Our Journey</h2>
+            <div className="w-20 h-1 bg-brand-accent mx-auto mb-6" />
+            <p className="text-gray-400 text-base md:text-lg">From a small workshop to a massive industrial presence, building precision into every era.</p>
           </div>
 
-          <div className="max-w-3xl mx-auto relative">
-            {/* Timeline Line */}
-            <div className="absolute left-[15px] md:left-[23px] top-4 bottom-0 w-[2px] bg-white/10"></div>
+          <div className="max-w-5xl mx-auto relative">
+            {/* Center Timeline Line (Desktop) / Left Line (Mobile) */}
+            <div className="absolute left-[15px] lg:left-1/2 top-4 bottom-0 w-[2px] bg-white/10 lg:-translate-x-1/2"></div>
             
             {[
-              { year: "2006", title: "The Beginning", desc: "Shriniwas Tools was founded in Bhosari, Pune by Nagendra M. Sheregar to provide reliable tooling solutions." },
+              { year: "2006", title: "The Beginning", desc: "Shriniwas Tools was founded in Bhosari, Pune to provide reliable tooling solutions." },
               { year: "2014", title: "Capacity Expansion", desc: "Expanded the tool room infrastructure and added dedicated plastic injection moulding capabilities." },
               { year: "2018", title: "Advanced CNC & EDM", desc: "Upgraded the facility with high-end CNC VMC and Wire Cut EDM machinery for sub-micron accuracy." },
               { year: "2019", title: "Specialized Moulds", desc: "Mastered the production of high-tolerance DMC and Bakelite compression moulds for electrical sectors." },
               { year: "2020", title: "ISO 9001:2015", desc: "Achieved ISO 9001:2015 certification, formalizing our commitment to strict quality management systems." },
-            ].map((milestone, i) => (
-              <motion.div 
-                key={i}
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.15 }}
-                className="relative pl-12 md:pl-20 mb-10 group"
-              >
-                {/* Timeline Dot */}
-                <div className="absolute left-2 md:left-4 top-4 w-4 h-4 bg-brand-dark border-[3px] border-brand-accent rounded-full group-hover:bg-brand-accent group-hover:shadow-[0_0_15px_rgba(249,115,22,0.5)] transition-all duration-300 z-10" />
-                
-                <div className="bg-white/5 border border-white/10 hover:border-brand-accent/50 p-6 md:p-8 rounded-2xl group-hover:bg-white/10 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
-                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 mb-3">
-                    <span className="text-3xl md:text-4xl font-heading font-black text-brand-primary opacity-60 group-hover:opacity-100 transition-opacity">
-                      {milestone.year}
-                    </span>
-                    <h4 className="text-xl md:text-2xl font-bold text-white group-hover:text-brand-accent transition-colors">
-                      {milestone.title}
-                    </h4>
+            ].map((milestone, i) => {
+              const isEven = i % 2 === 0;
+              return (
+                <motion.div 
+                  key={i}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: i * 0.15 }}
+                  className={`relative pl-12 lg:pl-0 mb-12 flex flex-col lg:flex-row group ${isEven ? 'lg:flex-row-reverse' : ''}`}
+                >
+                  {/* Timeline Dot */}
+                  <div className="absolute left-2 lg:left-1/2 top-4 lg:top-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2 w-4 h-4 bg-brand-dark border-[3px] border-brand-accent rounded-full group-hover:bg-brand-accent group-hover:shadow-[0_0_15px_rgba(249,115,22,0.5)] transition-all duration-300 z-10" />
+                  
+                  {/* Empty space for alternating side on desktop */}
+                  <div className="hidden lg:block lg:w-1/2" />
+                  
+                  {/* Content Box */}
+                  <div className={`lg:w-1/2 flex ${isEven ? 'lg:justify-start lg:pl-12' : 'lg:justify-end lg:pr-12'}`}>
+                    <div className="bg-white/5 border border-white/10 hover:border-brand-accent/50 p-6 rounded-2xl group-hover:bg-white/10 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl w-full text-left">
+                      <div className="flex items-center gap-4 mb-3">
+                        <span className="text-2xl md:text-3xl font-heading font-black text-brand-primary opacity-60 group-hover:opacity-100 transition-opacity">
+                          {milestone.year}
+                        </span>
+                        <h4 className="text-lg md:text-xl font-bold text-white group-hover:text-brand-accent transition-colors">
+                          {milestone.title}
+                        </h4>
+                      </div>
+                      <p className="text-gray-400 text-sm md:text-base leading-relaxed">{milestone.desc}</p>
+                    </div>
                   </div>
-                  <p className="text-gray-400 leading-relaxed">{milestone.desc}</p>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -202,7 +211,7 @@ export default function About() {
       {/* Founder Quote */}
       <section className="py-16 md:py-20 lg:py-24 bg-white text-center">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-          <p className="text-2xl md:text-4xl font-heading font-medium text-brand-dark italic leading-relaxed mb-8">
+          <p className="text-2xl md:text-3xl font-heading font-medium text-brand-dark italic leading-relaxed mb-8">
             &quot;At Shriniwas Tools, our focus has always been on precision and durability. We understand that a flawless mould is the foundation of our clients&apos; success. Our commitment is to engineer reliability into every piece of steel we cut.&quot;
           </p>
           <div className="text-xl font-bold text-brand-primary">— Nagendra M. Sheregar, Founder</div>

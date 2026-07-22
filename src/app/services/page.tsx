@@ -60,7 +60,7 @@ export default function ServicesPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-extrabold text-white mb-6">
+              <h1 className="text-4xl md:text-4xl lg:text-7xl font-heading font-extrabold text-white mb-6">
                 Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">Services</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-300 font-light leading-relaxed">

@@ -23,8 +23,8 @@ export default function Quality() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">Zero Defect Policy</h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl font-light leading-relaxed">
+            <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Zero Defect Policy</h1>
+            <p className="text-lg md:text-xl lg:text-xl text-gray-200 max-w-3xl font-light leading-relaxed">
               Our commitment to manufacturing excellence is absolute. Through stringent metrology and strictly governed ISO 9001:2015 processes, we guarantee dimensional accuracy down to the last micron.
             </p>
           </motion.div>

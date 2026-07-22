@@ -47,7 +47,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-heading font-extrabold tracking-tight mb-6 leading-tight"
+            className="text-3xl sm:text-3xl md:text-4xl lg:text-3xl font-heading font-extrabold tracking-tight mb-6 leading-tight"
           >
             Precision Tooling & <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">
@@ -59,7 +59,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl mb-10 font-light leading-relaxed"
+            className="text-lg md:text-xl lg:text-xl text-gray-300 max-w-3xl mb-10 font-light leading-relaxed"
           >
             We are India&apos;s premier engineering partner for high-volume <strong className="font-medium text-white">Plastic Injection Moulding</strong>, <strong className="font-medium text-white">CNC Machining Services</strong>, and robust <strong className="font-medium text-white">Press Tools</strong>. Driving innovation for automotive and electronics OEMs since 2006.
           </motion.h2>
@@ -132,7 +132,7 @@ export default function Home() {
                 transition={{ delay: i * 0.1, duration: 0.5 }}
                 className="px-4"
               >
-                <div className="text-3xl md:text-4xl font-heading font-black text-brand-accent mb-2">{stat.number}</div>
+                <div className="text-3xl md:text-3xl font-heading font-black text-brand-accent mb-2">{stat.number}</div>
                 <div className="text-xs md:text-sm font-bold uppercase tracking-wider text-gray-400">{stat.label}</div>
               </motion.div>
             ))}
@@ -145,7 +145,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Our Expertise</h2>
-            <h3 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Core Manufacturing Capabilities</h3>
+            <h3 className="text-3xl md:text-3xl font-heading font-black text-brand-dark mb-6">Core Manufacturing Capabilities</h3>
             <p className="text-gray-600 text-lg">We deliver end-to-end industrial solutions across India, maintaining micron-level accuracy from rapid prototyping to mass manufacturing.</p>
           </div>
 
@@ -204,7 +204,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Sectors We Empower</h2>
-            <h3 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Industries We Serve</h3>
+            <h3 className="text-3xl md:text-3xl font-heading font-black text-brand-dark mb-6">Industries We Serve</h3>
             <p className="text-gray-600 text-lg">Partnering with OEM leaders across India&apos;s most demanding manufacturing sectors.</p>
           </div>
 
@@ -244,7 +244,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
               <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Tangible Results</h2>
-              <h3 className="text-3xl md:text-4xl font-heading font-black text-white">Precision Components</h3>
+              <h3 className="text-3xl md:text-3xl font-heading font-black text-white">Precision Components</h3>
             </div>
             <Link href="/products" className="inline-flex items-center justify-center px-8 py-4 bg-brand-primary text-white font-bold uppercase tracking-wider text-sm rounded-sm hover:bg-white hover:text-brand-dark transition-colors whitespace-nowrap shadow-lg">
               View All Products <ArrowRight className="w-5 h-5 ml-2" />
@@ -294,7 +294,7 @@ export default function Home() {
             
             <div className="lg:w-1/2">
               <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">The Shriniwas Advantage</h2>
-              <h3 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-8 leading-tight">Zero-Defect Manufacturing Guaranteed</h3>
+              <h3 className="text-3xl md:text-3xl font-heading font-black text-brand-dark mb-8 leading-tight">Zero-Defect Manufacturing Guaranteed</h3>
               
               <div className="space-y-8">
                 {[
@@ -372,7 +372,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-primary/90 to-brand-primary/80 z-0"></div>
         
         <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">Ready to Scale Your Production with Precision?</h2>
+          <h2 className="text-3xl md:text-3xl font-heading font-black text-white mb-6 leading-tight">Ready to Scale Your Production with Precision?</h2>
           <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto font-light">Join the top OEMs in India who trust Shriniwas Tools for defect-free moulds and components. Let&apos;s discuss your engineering challenges today.</p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

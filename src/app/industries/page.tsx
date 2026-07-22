@@ -98,7 +98,7 @@ export default function Industries() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-3xl sm:text-4xl md:text-5xl font-heading font-extrabold tracking-tight mb-6 leading-tight"
+            className="text-3xl sm:text-3xl md:text-4xl font-heading font-extrabold tracking-tight mb-6 leading-tight"
           >
             Industries <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">
@@ -110,7 +110,7 @@ export default function Industries() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-2xl font-light leading-relaxed"
+            className="text-lg md:text-xl lg:text-xl text-gray-300 max-w-2xl font-light leading-relaxed"
           >
             Delivering ISO 9001:2015 certified tooling and manufacturing solutions tailored to the extreme demands of India&apos;s leading industrial sectors.
           </motion.p>
@@ -180,7 +180,7 @@ export default function Industries() {
                 transition={{ duration: 0.8 }}
               >
                 <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Uncompromising Quality</h2>
-                <h3 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6 leading-tight">Why Leading Sectors Trust Shriniwas Tools</h3>
+                <h3 className="text-3xl md:text-3xl font-heading font-black text-brand-dark mb-6 leading-tight">Why Leading Sectors Trust Shriniwas Tools</h3>
                 <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                   Different industries have vastly different requirements, from the extreme thermal resistance needed in Electrical switchgears to the sub-micron tolerances required by Automotive OEMs. Our facility is engineered to meet them all.
                 </p>
@@ -237,7 +237,7 @@ export default function Industries() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-white mb-6 leading-tight">Have an Industry-Specific Challenge?</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-3xl font-heading font-black text-white mb-6 leading-tight">Have an Industry-Specific Challenge?</h2>
             <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto font-light">Whether you need durable agricultural components or micro-precision automotive moulds, our engineers are ready to solve it.</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

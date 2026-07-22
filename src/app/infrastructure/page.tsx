@@ -87,11 +87,11 @@ export default function Infrastructure() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">
               Our Infrastructure
             </h1>
             <div className="w-24 h-1 bg-brand-accent mb-6" />
-            <p className="text-lg md:text-xl lg:text-2xl text-blue-100 max-w-3xl font-light leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-xl text-blue-100 max-w-3xl font-light leading-relaxed">
               Explore our advanced 50,000 sq.ft manufacturing facility in Pune, powered by world-class CNC technology, temperature-controlled inspection labs, and a robust press shop.
             </p>
           </motion.div>
@@ -128,7 +128,7 @@ export default function Infrastructure() {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2">
               <h2 className="text-sm font-bold text-brand-accent tracking-widest uppercase mb-2">Shop Floor Excellence</h2>
-              <h3 className="text-3xl md:text-5xl font-heading font-bold text-brand-dark mb-6">Optimized Layout</h3>
+              <h3 className="text-3xl md:text-3xl font-heading font-bold text-brand-dark mb-6">Optimized Layout</h3>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">
                 Our Pune manufacturing facility is designed entirely around lean manufacturing principles. Material flows seamlessly from raw tool steel storage, through the high-speed CNC machining centers, and directly into the QA inspection lab without bottlenecks.
               </p>
@@ -166,7 +166,7 @@ export default function Infrastructure() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Equipment List</h2>
-            <h3 className="text-3xl md:text-5xl font-heading font-bold text-brand-dark mb-6">Our Machinery</h3>
+            <h3 className="text-3xl md:text-3xl font-heading font-bold text-brand-dark mb-6">Our Machinery</h3>
             <p className="text-gray-600 text-lg">A formidable battery of advanced VMCs, Wire Cut EDMs, and high-tonnage moulding presses to handle the most demanding manufacturing challenges.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

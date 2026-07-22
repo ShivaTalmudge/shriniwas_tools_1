@@ -112,10 +112,10 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
               <span className="text-white font-medium">{data.serviceName}</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">
               {data.hero.title}
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl font-light mb-10 leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-xl text-gray-300 max-w-3xl font-light mb-10 leading-relaxed">
               {data.hero.subtitle}
             </p>
             
@@ -204,7 +204,7 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
       <section className="py-16 bg-brand-dark text-white">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+            <h2 className="text-3xl md:text-3xl font-heading font-bold mb-4">
               Industries Served
             </h2>
           </div>
@@ -232,7 +232,7 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
       <section className="py-16 bg-white overflow-hidden">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-4">
+            <h2 className="text-3xl md:text-3xl font-heading font-bold text-brand-dark mb-4">
               Manufacturing Process
             </h2>
           </div>
@@ -270,7 +270,7 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
       <section className="py-16 bg-gray-50 relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-8 relative z-10">
            <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-4">
+            <h2 className="text-3xl md:text-3xl font-heading font-bold text-brand-dark mb-4">
               Why Choose Us
             </h2>
           </div>
@@ -290,7 +290,7 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
       {/* 7. FINAL CTA */}
       <section className="py-20 bg-brand-primary text-white text-center">
         <div className="container mx-auto px-4 md:px-8">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+          <h2 className="text-3xl md:text-3xl font-heading font-bold mb-6">
             Ready to Start Your Project?
           </h2>
           <p className="text-lg md:text-xl text-brand-light/90 mb-10 max-w-2xl mx-auto">
