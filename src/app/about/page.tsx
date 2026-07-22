@@ -289,13 +289,21 @@ export default function About() {
         </div>
       </section>
 
-      {/* Founder Quote */}
+      {/* CTA Section */}
       <section className="py-16 md:py-20 lg:py-24 bg-white text-center">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-          <p className="text-2xl md:text-3xl font-heading font-medium text-brand-dark italic leading-relaxed mb-8">
-            &quot;At Shriniwas Tools, our focus has always been on precision and durability. We understand that a flawless mould is the foundation of our clients&apos; success. Our commitment is to engineer reliability into every piece of steel we cut.&quot;
+          <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Ready to Start Your Project?</h2>
+          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+            Partner with Shriniwas Tools for precision engineering and unmatched reliability. Let&apos;s build the foundation of your success together.
           </p>
-          <div className="text-xl font-bold text-brand-primary">— Nagendra M. Sheregar, Founder</div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+            <Link href="/quote" className="w-full sm:w-auto px-8 py-4 bg-brand-accent hover:bg-orange-600 text-white font-bold rounded-full transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-brand-accent/30 flex items-center justify-center gap-2 uppercase tracking-wider text-center">
+              Request a Quote <ChevronRight className="w-5 h-5" />
+            </Link>
+            <Link href="/contact" className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-gray-50 border-2 border-brand-dark text-brand-dark font-bold rounded-full transition-all duration-300 hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2 uppercase tracking-wider text-center">
+              Contact Us <PhoneCall className="w-5 h-5" />
+            </Link>
+          </div>
         </div>
       </section>
     </>
