@@ -6,28 +6,31 @@ export const metadata: Metadata = {
 };
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { ShieldCheck, CheckCircle2, Activity, Ruler } from "lucide-react";
+import { CheckCircle2, Activity, Ruler } from "lucide-react";
 
 export default function Quality() {
   return (
     <>
       {/* Unified Hero Section */}
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[80vh] lg:min-h-[95vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12">
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
-          style={{ backgroundImage: 'url(/images/hero_quality.png)' }}
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat fixed" 
+          style={{ backgroundImage: 'url(/company_machines/bannerimage2.png)' }}
         >
           <div className="absolute inset-0 bg-brand-dark/80" />
         </div>
         
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-center mt-10">
-          <div className="animate-in fade-in slide-in-from-bottom-5 duration-700">
-            <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-6">Zero Defect Policy</h1>
-            <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10 w-full lg:w-2/3">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-white mb-6 leading-tight">Zero Defect Policy</h1>
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl font-light leading-relaxed">
               Our commitment to manufacturing excellence is absolute. Through stringent metrology and strictly governed ISO 9001:2015 processes, we guarantee dimensional accuracy down to the last micron.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 

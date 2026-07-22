@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Briefcase, Lightbulb, Users, Target, ArrowRight } from "lucide-react";
-import Link from "next/link";
 
 const openPositions = [
   {
@@ -32,22 +31,22 @@ export default function Careers() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[80vh] lg:min-h-[95vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12">
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
-          style={{ backgroundImage: 'url(/images/hero_home.png)' }}
+          style={{ backgroundImage: 'url(/company_machines/bannerimage2.png)' }}
         >
           <div className="absolute inset-0 bg-brand-dark/80" />
         </div>
         
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-center mt-10">
+        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10 w-full lg:w-2/3">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-4">Build Your Career With Us</h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-white mb-6 leading-tight">Build Your Career With Us</h1>
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl font-light leading-relaxed">
               Join a team of passionate engineers shaping the future of precision manufacturing in India.
             </p>
           </motion.div>
@@ -72,8 +71,7 @@ export default function Careers() {
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="bg-brand-light p-8 rounded-2xl border border-gray-100 hover:border-brand-primary transition-colors hover:shadow-lg text-center"
               >
@@ -96,7 +94,7 @@ export default function Careers() {
           <div className="flex flex-col md:flex-row justify-between items-end mb-16">
             <div>
               <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Join the Team</h2>
-              <h3 className="text-4xl md:text-5xl font-heading font-bold">Open Positions</h3>
+              <h3 className="text-3xl md:text-5xl font-heading font-bold">Open Positions</h3>
             </div>
             <div className="mt-6 md:mt-0">
               <a href="mailto:shriniwastools2020@gmail.com" className="bg-brand-accent hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg flex items-center gap-2 transition-colors">
@@ -110,8 +108,7 @@ export default function Careers() {
               <motion.div
                 key={i}
                 initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors flex flex-col lg:flex-row gap-6 justify-between items-start lg:items-center"
               >
@@ -138,7 +135,7 @@ export default function Careers() {
           </div>
           
           <div className="mt-12 text-center text-gray-400 text-sm">
-            Don't see a role that fits? Send your resume to <a href="mailto:shriniwastools2020@gmail.com" className="text-brand-accent hover:underline">shriniwastools2020@gmail.com</a> and we'll keep you in mind for future openings.
+            Don&apos;t see a role that fits? Send your resume to <a href="mailto:shriniwastools2020@gmail.com" className="text-brand-accent hover:underline">shriniwastools2020@gmail.com</a> and we&apos;ll keep you in mind for future openings.
           </div>
         </div>
       </section>

@@ -13,7 +13,7 @@ const blogPosts = [
     category: "Technical Guide",
     date: "Oct 15, 2023",
     author: "Engineering Team",
-    image: "https://placehold.co/800x500/f3f4f6/1a1a1a/png?text=Tool+Steel"
+    image: "/company_machines/horizonatl_injection_moulding_machine_1.png"
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const blogPosts = [
     category: "Industry Insight",
     date: "Sep 28, 2023",
     author: "Production Manager",
-    image: "https://placehold.co/800x500/f3f4f6/1a1a1a/png?text=DMC+Moulding"
+    image: "/company_machines/bannerimage2.png"
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const blogPosts = [
     category: "Machining",
     date: "Sep 10, 2023",
     author: "CNC Division",
-    image: "https://placehold.co/800x500/f3f4f6/1a1a1a/png?text=Wire+Cut+EDM"
+    image: "/company_machines/wire_cut.png"
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const blogPosts = [
     category: "Design Tips",
     date: "Aug 22, 2023",
     author: "Design Head",
-    image: "https://placehold.co/800x500/f3f4f6/1a1a1a/png?text=DFM+Process"
+    image: "/company_machines/programmer_office.png"
   }
 ];
 
@@ -48,23 +48,23 @@ export default function Blog() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[80vh] lg:min-h-[95vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12">
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
-          style={{ backgroundImage: 'url(/images/hero_home.png)' }}
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat fixed" 
+          style={{ backgroundImage: 'url(/company_machines/bannerimage2.png)' }}
         >
           <div className="absolute inset-0 bg-brand-dark/80" />
         </div>
         
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-center mt-10">
+        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10 w-full lg:w-2/3">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-4">Technical Blog</h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light">
-              Insights, guides, and best practices from our engineering experts.
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-white mb-6 leading-tight">Engineering Insights</h1>
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl font-light leading-relaxed">
+              Technical articles, industry trends, and manufacturing tips from the tooling experts at Shriniwas Tools.
             </p>
           </motion.div>
         </div>
@@ -78,10 +78,9 @@ export default function Blog() {
               <motion.div
                 key={post.id}
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group flex flex-col h-full"
+                className="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group flex flex-col h-full hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer"
               >
                 <div className="relative aspect-video overflow-hidden">
                   <Image

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Roboto, Montserrat } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
@@ -8,17 +8,19 @@ import FloatingActions from "@/components/FloatingActions";
 import QuoteModal from "@/components/QuoteModal";
 import Script from "next/script";
 
-const inter = Inter({
-  variable: "--font-inter",
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shriniwastools.com"),
   title: {
     default: "Shriniwas Tools & Equipments | Plastic Injection Moulding Manufacturer Pune, India",
     template: "%s | Shriniwas Tools & Equipments, Pune",
@@ -66,7 +68,7 @@ export const metadata: Metadata = {
       "ISO certified manufacturer of plastic injection moulds, DMC moulds, press tools, jigs & fixtures. 18+ years serving automotive, electrical & industrial sectors from Pune, India.",
     images: [
       {
-        url: "/images/hero_home.png",
+        url: "/company_machines/bannerimage1.png",
         width: 1200,
         height: 630,
         alt: "Shriniwas Tools & Equipments Manufacturing Facility in Pune India",
@@ -78,7 +80,7 @@ export const metadata: Metadata = {
     title: "Shriniwas Tools & Equipments | Mould & Tool Manufacturer, Pune",
     description:
       "ISO certified precision mould manufacturer in Pune, India. Plastic injection moulds, DMC moulds, press tools & more.",
-    images: ["/images/hero_home.png"],
+    images: ["/company_machines/bannerimage1.png"],
   },
   alternates: {
     canonical: "https://shriniwastools.com",
@@ -155,10 +157,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${outfit.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${roboto.variable} ${montserrat.variable} h-full antialiased scroll-smooth`}>
       <head>
         <Script
           id="organization-schema"

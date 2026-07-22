@@ -29,22 +29,22 @@ export default function Gallery() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[80vh] lg:min-h-[95vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12">
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
-          style={{ backgroundImage: 'url(/images/hero_home.png)' }}
+          style={{ backgroundImage: 'url(/company_machines/bannerimage1.png)' }}
         >
           <div className="absolute inset-0 bg-brand-dark/80" />
         </div>
         
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-center mt-10">
+        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10 w-full lg:w-2/3">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-4">Media Gallery</h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-white mb-6 leading-tight">Media Gallery</h1>
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl font-light leading-relaxed">
               A visual tour of our precision engineering capabilities, infrastructure, and team.
             </p>
           </motion.div>
@@ -74,7 +74,7 @@ export default function Gallery() {
 
           {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {filteredItems.map((item, i) => (
+            {filteredItems.map((item) => (
               <motion.div
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}

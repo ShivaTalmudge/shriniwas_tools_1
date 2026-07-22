@@ -7,25 +7,29 @@ export default function Contact() {
   return (
     <>
       {/* Unified Hero Section */}
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[80vh] lg:min-h-[95vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12">
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
-          style={{ backgroundImage: 'url(/images/hero_contact.png)' }}
+          style={{ backgroundImage: 'url(/company_machines/bannerimage2.png)' }}
         >
           <div className="absolute inset-0 bg-brand-dark/75" />
         </div>
         
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-center mt-10">
-            <div className="animate-in fade-in slide-in-from-bottom-5 duration-700">
-              <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-6">Contact Our Engineering Team</h1>
-              <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light leading-relaxed">
-                Whether you need a complex progressive die, a multi-cavity injection mould, or precision CNC machining, our tooling experts in Pune are ready to assist you.
-              </p>
-            </div>
+        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10 w-full lg:w-2/3">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-white mb-6 leading-tight">Contact Our Engineering Team</h1>
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl font-light leading-relaxed">
+              Whether you need a complex progressive die, a multi-cavity injection mould, or precision CNC machining, our tooling experts in Pune are ready to assist you.
+            </p>
+          </motion.div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-16 md:py-20 lg:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col lg:flex-row gap-16">
             {/* Contact Form */}
@@ -37,20 +41,20 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-gray-700 uppercase tracking-wider">First Name</label>
-                    <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all" placeholder="John" />
+                    <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all" placeholder="First Name" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-gray-700 uppercase tracking-wider">Last Name</label>
-                    <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all" placeholder="Doe" />
+                    <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all" placeholder="Last Name" />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-gray-700 uppercase tracking-wider">Company Name</label>
-                  <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all" placeholder="Your Company Ltd." />
+                  <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all" placeholder="Company Name" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-gray-700 uppercase tracking-wider">Email Address</label>
-                  <input type="email" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all" placeholder="john@company.com" />
+                  <input type="email" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all" placeholder="email@company.com" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-gray-700 uppercase tracking-wider">Subject</label>
@@ -60,7 +64,7 @@ export default function Contact() {
                   <label className="text-sm font-bold text-gray-700 uppercase tracking-wider">Message</label>
                   <textarea rows={5} className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all" placeholder="Tell us about your project..."></textarea>
                 </div>
-                <button type="button" className="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-4 px-8 rounded-lg w-full md:w-auto flex items-center justify-center gap-2 transition-colors">
+                <button type="button" className="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-4 px-8 rounded-lg w-full md:w-auto flex items-center justify-center gap-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                   <Send className="w-5 h-5" />
                   Send Message
                 </button>
@@ -105,8 +109,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg mb-1">Email</h4>
-                      <p className="text-gray-400">shriniwas_tools@rediffmail.com</p>
-                      <p className="text-gray-400">shriniwastools2020@gmail.com</p>
+                      <p className="text-gray-400 break-all">shriniwas_tools@rediffmail.com</p>
+                      <p className="text-gray-400 break-all">shriniwastools2020@gmail.com</p>
                     </div>
                   </div>
                   

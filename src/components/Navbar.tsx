@@ -1,55 +1,46 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, Globe, Search, Phone, Mail, Clock, Building2, Settings, Award, LineChart, Trophy, Image as ImageIcon, Handshake, Factory, Hexagon, Cpu, Zap, Box, Component, Disc, Wrench, Hammer } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, Mail, Clock, Building2, Award, Factory, Cpu, Zap, Component, Wrench, Hammer } from "lucide-react";
 import { openQuoteModal } from "./QuoteModal";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
-  { name: "Products", href: "/products" },
+  {
+    name: "About Us",
+    hasDropdown: true,
+    dropdownItems: [
+      { name: "Company Profile", href: "/about", icon: Building2 },
+      { name: "Infrastructure & Machinery", href: "/infrastructure", icon: Factory },
+      { name: "Quality Assurance", href: "/quality", icon: Award },
+    ]
+  },
   {
     name: "Services",
     hasDropdown: true,
     dropdownItems: [
       { name: "Plastic Injection Moulding", href: "/services/plastic-molding-dies", icon: Factory },
-      { name: "DMC Moulding", href: "/services/dmc-molding-pune", icon: Hexagon },
       { name: "CNC & VMC Machining", href: "/services/cnc-vmc-machining", icon: Cpu },
       { name: "CNC Wire Cut EDM", href: "/services/cnc-wire-cut", icon: Zap },
-      { name: "DMC Moulds", href: "/services/dmc-dies", icon: Box },
-      { name: "Bakelite Moulds & Components", href: "/services/backlite-dies-components", icon: Component },
-      { name: "Rubber Moulds", href: "/services/rubber-molds", icon: Disc },
+      { name: "DMC & Bakelite Moulds", href: "/services/backlite-dies-components", icon: Component },
       { name: "Jigs & Fixtures", href: "/services/jigs-fixtures", icon: Wrench },
       { name: "Press Tools", href: "/services/press-tools", icon: Hammer },
     ]
   },
-  {
-    name: "Company",
-    hasDropdown: true,
-    dropdownItems: [
-      { name: "Infrastructure", href: "/infrastructure", icon: Building2 },
-      { name: "Machines", href: "/machinery", icon: Settings },
-      { name: "Quality Assurance", href: "/quality", icon: Award },
-      { name: "Capabilities", href: "/capabilities", icon: LineChart },
-      { name: "Achievements", href: "/achievements", icon: Trophy },
-      { name: "Gallery", href: "/gallery", icon: ImageIcon },
-      { name: "Clients", href: "/clients", icon: Handshake },
-    ]
-  },
+  { name: "Products", href: "/products" },
   { name: "Industries", href: "/industries" },
+  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileExpandedDropdown, setMobileExpandedDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const pathname = usePathname();
-
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -86,24 +77,22 @@ export default function Navbar() {
       {/* Main Navigation */}
       <div
         className={`w-full relative transition-all duration-300 ${scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-md py-3"
-          : "bg-transparent py-5"
+          ? "bg-white/95 backdrop-blur-md shadow-md py-2"
+          : "bg-white shadow-sm py-2 md:py-3"
           }`}
       >
         <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-brand-primary rounded-sm flex items-center justify-center text-white font-bold text-xl">
-              S
-            </div>
-            <div
-              className={`font-heading font-bold text-xl leading-none ${scrolled ? "text-brand-primary" : "text-brand-primary md:text-white"
-                }`}
-            >
-              SHRINIWAS
-              <span className="block text-xs font-sans font-normal text-brand-accent">
-                TOOLS & EQUIPMENTS
-              </span>
+            <div className={`flex items-center justify-center transition-all duration-300 ${scrolled ? 'h-10 md:h-12' : 'h-12 md:h-14'}`}>
+              <Image 
+                src="/images/logos/logo_main-bg.png" 
+                alt="Shriniwas Tools & Equipments Logo" 
+                width={643} 
+                height={388} 
+                className="w-auto h-full object-contain transition-transform duration-300"
+                priority
+              />
             </div>
           </Link>
 
@@ -113,8 +102,7 @@ export default function Navbar() {
               <div key={link.name} className="relative group">
                 {link.hasDropdown ? (
                   <button
-                    className={`flex items-center gap-1 font-medium transition-colors hover:text-brand-accent ${scrolled ? "text-brand-dark" : "text-white"
-                      }`}
+                    className="flex items-center gap-1 font-medium transition-colors hover:text-brand-accent text-brand-dark"
                   >
                     {link.name}
                     <ChevronDown className="w-4 h-4" />
@@ -122,8 +110,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     href={link.href || "#"}
-                    className={`flex items-center gap-1 font-medium transition-colors hover:text-brand-accent ${scrolled ? "text-brand-dark" : "text-white"
-                      }`}
+                    className="flex items-center gap-1 font-medium transition-colors hover:text-brand-accent text-brand-dark"
                   >
                     {link.name}
                   </Link>
@@ -157,29 +144,14 @@ export default function Navbar() {
 
           {/* Mobile Toggle */}
           <button
-            className="xl:hidden p-2"
+            className="xl:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-sm focus:outline-none focus:ring-2 focus:ring-brand-accent"
             onClick={() => setMobileMenuOpen(true)}
+            aria-label="Open mobile menu"
           >
-            <Menu className={`w-6 h-6 ${scrolled ? "text-brand-dark" : "text-white"}`} />
+            <Menu className="w-6 h-6 text-brand-dark" />
           </button>
         </div>
 
-        {/* Animated Bottom Line (Visible only when not scrolled) */}
-        <div className={`absolute bottom-0 left-0 h-[1px] w-full bg-white/10 transition-opacity duration-300 ${scrolled ? 'opacity-0' : 'opacity-100'}`}>
-          <motion.div
-            className="h-full bg-white/60"
-            initial={{ width: "0%", x: "0%" }}
-            animate={{
-              width: ["0%", "15%", "0%"],
-              x: ["0%", "85%", "100%"]
-            }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-          />
-        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -194,7 +166,7 @@ export default function Navbar() {
           >
             <div className="p-5 flex justify-between items-center border-b border-white/10">
               <span className="font-heading font-medium text-lg text-white uppercase tracking-wider">Menu</span>
-              <button onClick={() => setMobileMenuOpen(false)} className="p-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors">
+              <button onClick={() => setMobileMenuOpen(false)} className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center bg-white/5 hover:bg-white/10 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent" aria-label="Close mobile menu">
                 <X className="w-5 h-5 text-white" />
               </button>
             </div>
@@ -204,7 +176,7 @@ export default function Navbar() {
                   {link.hasDropdown ? (
                     <button
                       onClick={() => setMobileExpandedDropdown(mobileExpandedDropdown === link.name ? null : link.name)}
-                      className="text-lg font-heading font-medium text-white text-left flex items-center justify-between hover:text-brand-accent transition-colors"
+                      className="text-lg font-heading font-medium text-white text-left flex items-center justify-between hover:text-brand-accent transition-colors py-2"
                     >
                       <span>{link.name}</span>
                       <ChevronDown className={`w-5 h-5 transition-transform ${mobileExpandedDropdown === link.name ? "rotate-180 text-brand-accent" : ""}`} />
@@ -212,7 +184,7 @@ export default function Navbar() {
                   ) : (
                     <Link
                       href={link.href || "#"}
-                      className="text-lg font-heading font-medium text-white hover:text-brand-accent transition-colors"
+                      className="text-lg font-heading font-medium text-white hover:text-brand-accent transition-colors py-2 block"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {link.name}
@@ -229,7 +201,7 @@ export default function Navbar() {
                       >
                         <div className="flex flex-col gap-4 pl-4 py-3 border-l-2 border-brand-accent mt-2 bg-brand-primary/10 rounded-r-lg">
                           {link.dropdownItems.map((item) => (
-                            <Link key={item.name} href={item.href} className="text-sm font-normal text-gray-300 hover:text-white transition-colors flex items-center gap-3" onClick={() => setMobileMenuOpen(false)}>
+                            <Link key={item.name} href={item.href} className="text-sm font-normal text-gray-300 hover:text-white transition-colors flex items-center gap-3 py-1.5" onClick={() => setMobileMenuOpen(false)}>
                               {item.icon && <item.icon className="w-4 h-4 text-brand-accent" />}
                               {item.name}
                             </Link>

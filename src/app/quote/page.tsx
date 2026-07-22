@@ -12,21 +12,25 @@ export default function Quote() {
   return (
     <>
       {/* Unified Hero Section */}
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[80vh] lg:min-h-[95vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12">
         <div
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/images/hero_quote.png)' }}
+          style={{ backgroundImage: 'url(/company_machines/bannerimage2.png)' }}
         >
           <div className="absolute inset-0 bg-brand-dark/75" />
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-center mt-10">
-          <div className="animate-in fade-in slide-in-from-bottom-5 duration-700">
-            <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-6">Request a Tooling Quote</h1>
-            <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10 w-full lg:w-2/3">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-white mb-6 leading-tight">Request a Tooling Quote</h1>
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl font-light leading-relaxed">
               Upload your 2D drawings or 3D CAD models. Our senior tooling engineers in Pune will analyze your requirements and provide a detailed technical and commercial proposal within 48 hours.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 

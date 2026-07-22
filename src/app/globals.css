@@ -8,8 +8,8 @@
   --color-brand-light: #f5f5f5;
   --color-brand-metallic: #8c92ac;
   
-  --font-sans: var(--font-inter);
-  --font-heading: var(--font-outfit);
+  --font-sans: var(--font-roboto);
+  --font-heading: var(--font-montserrat);
 }
 
 :root {
