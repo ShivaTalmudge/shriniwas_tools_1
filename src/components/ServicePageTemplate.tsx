@@ -115,15 +115,15 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">
               {data.hero.title}
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 max-w-2xl font-light mb-10">
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl font-light mb-10 leading-relaxed">
               {data.hero.subtitle}
             </p>
             
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-4">
-              <button onClick={openQuoteModal} className="w-full sm:w-auto px-8 py-4 bg-brand-accent hover:bg-orange-600 text-white font-bold rounded-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow-lg shadow-brand-accent/30 flex items-center justify-center gap-2 text-center">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-4 sm:gap-6">
+              <button onClick={openQuoteModal} className="w-full sm:w-auto px-8 py-4 bg-brand-accent hover:bg-orange-600 text-white font-bold rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow-lg shadow-brand-accent/30 flex items-center justify-center gap-2 uppercase tracking-wider text-center">
                 Request Quote <ChevronRight className="w-5 h-5" />
               </button>
-              <Link href="/contact" className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white font-bold rounded-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2 text-center">
+              <Link href="/contact" className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2 uppercase tracking-wider text-center">
                 Call Now <PhoneCall className="w-5 h-5" />
               </Link>
             </div>
