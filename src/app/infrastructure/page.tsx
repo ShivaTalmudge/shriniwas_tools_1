@@ -78,21 +78,9 @@ export default function Infrastructure() {
     <>
       {/* Infrastructure Hero */}
       <section className="relative min-h-[80vh] lg:min-h-[95vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12">
-        <div className="absolute inset-0 bg-brand-primary z-0" />
-        <motion.div 
-          initial={{ scale: 1.2, opacity: 0 }}
-          animate={{ scale: 1, opacity: 0.3 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
-          className="absolute inset-0 z-10"
-        >
-          <Image
-            src="/company_machines/wire_cut_floor.png"
-            alt="Factory Floor"
-            fill
-            className="object-cover mix-blend-overlay grayscale opacity-40"
-          />
-        </motion.div>
-        
+        <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/company_machines/wire_cut_floor.png)' }}>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/20 z-10" />
+        </div>
         <div className="container relative z-20 px-4 md:px-8 text-left text-white mt-20">
           <motion.div
             initial={{ opacity: 0, y: 50 }}

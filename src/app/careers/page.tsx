@@ -36,7 +36,7 @@ export default function Careers() {
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
           style={{ backgroundImage: 'url(/company_machines/bannerimage2.png)' }}
         >
-          <div className="absolute inset-0 bg-brand-dark/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/20 z-10" />
         </div>
         
         <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10">

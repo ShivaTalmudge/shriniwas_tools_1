@@ -76,7 +76,7 @@ export default function Industries() {
       {/* 1. High-Impact Hero Section */}
       <section className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-start overflow-hidden pt-[120px] pb-10 md:pt-[140px] md:pb-12">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/20 z-10" />
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
             style={{ backgroundImage: 'url(/company_machines/bannerimage2.png)' }}

@@ -49,7 +49,7 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="relative min-h-[80vh] lg:min-h-[95vh] flex flex-col justify-center bg-brand-dark overflow-hidden pt-[140px] pb-16">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/90 to-brand-dark/50 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/20 z-10" />
           <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "40px 40px" }}></div>
         </div>
         
