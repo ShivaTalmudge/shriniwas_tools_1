@@ -97,7 +97,7 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/70 to-transparent" />
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left pb-16 w-full lg:w-2/3">
+        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left pb-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
