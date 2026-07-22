@@ -93,7 +93,7 @@ export default function Infrastructure() {
           />
         </motion.div>
         
-        <div className="container relative z-20 px-4 md:px-8 text-left text-white mt-20 w-full lg:w-2/3">
+        <div className="container relative z-20 px-4 md:px-8 text-left text-white mt-20">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}

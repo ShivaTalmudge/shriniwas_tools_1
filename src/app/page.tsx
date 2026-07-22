@@ -32,7 +32,7 @@ export default function Home() {
           />
         </motion.div>
 
-        <div className="container relative z-10 px-4 md:px-8 text-left text-white mt-16 w-full lg:w-[80%]">
+        <div className="container mx-auto relative z-10 px-4 md:px-8 text-left text-white mt-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row items-center sm:items-center justify-start gap-6"
+            className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-4 sm:gap-6"
           >
             <button
               onClick={openQuoteModal}

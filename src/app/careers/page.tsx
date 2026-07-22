@@ -39,7 +39,7 @@ export default function Careers() {
           <div className="absolute inset-0 bg-brand-dark/80" />
         </div>
         
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10 w-full lg:w-2/3">
+        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}

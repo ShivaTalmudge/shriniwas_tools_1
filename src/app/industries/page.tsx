@@ -83,7 +83,7 @@ export default function Industries() {
           />
         </div>
 
-        <div className="container relative z-10 px-4 md:px-8 text-left text-white mt-10 w-full lg:w-2/3">
+        <div className="container relative z-10 px-4 md:px-8 text-left text-white mt-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
