@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Car, Zap, Cpu, Settings, Smartphone, Factory, Hammer, Tractor, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Car, Zap, Cpu, Settings, Smartphone, Factory, Hammer, Tractor, ShieldCheck, CheckCircle2 , ChevronRight} from "lucide-react";
 
 const industries = [
   {
@@ -89,6 +89,12 @@ export default function Industries() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
+              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-white font-medium">Industries</span>
+            </div>
             <span className="inline-block py-1 px-3 rounded-full bg-brand-accent/20 border border-brand-accent/50 text-brand-accent font-medium text-sm mb-6 tracking-wider uppercase">
               Powering Global Sectors
             </span>

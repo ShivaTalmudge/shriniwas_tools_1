@@ -2,8 +2,9 @@
 
 
 
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { UploadCloud, CheckCircle2 } from "lucide-react";
+import { UploadCloud, CheckCircle2 , ChevronRight} from "lucide-react";
 
 export default function Quote() {
   return (
@@ -23,6 +24,13 @@ export default function Quote() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
+            
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
+              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-white font-medium">Request a Quote</span>
+            </div>
             <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Request a Tooling Quote</h1>
             <p className="text-lg md:text-xl lg:text-xl text-gray-200 max-w-3xl font-light leading-relaxed">
               Upload your 2D drawings or 3D CAD models. Our senior tooling engineers in Pune will analyze your requirements and provide a detailed technical and commercial proposal within 48 hours.

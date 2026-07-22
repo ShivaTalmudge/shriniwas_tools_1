@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Factory, Cpu, Zap, Component, Wrench, Hammer } from "lucide-react";
+import { ArrowRight, Factory, Cpu, Zap, Component, Wrench, Hammer , ChevronRight} from "lucide-react";
 
 export default function ServicesPage() {
   const services = [
@@ -60,7 +60,14 @@ export default function ServicesPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl md:text-4xl lg:text-7xl font-heading font-extrabold text-white mb-6">
+              
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
+              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-white font-medium">Services</span>
+            </div>
+            <h1 className="text-4xl md:text-4xl lg:text-7xl font-heading font-extrabold text-white mb-6">
                 Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">Services</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-300 font-light leading-relaxed">

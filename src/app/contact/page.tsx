@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send , ChevronRight} from "lucide-react";
 
 export default function Contact() {
   return (
@@ -21,6 +22,13 @@ export default function Contact() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
+            
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
+              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-white font-medium">Contact Us</span>
+            </div>
             <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Contact Our Engineering Team</h1>
             <p className="text-lg md:text-xl lg:text-xl text-gray-200 max-w-3xl font-light leading-relaxed">
               Whether you need a complex progressive die, a multi-cavity injection mould, or precision CNC machining, our tooling experts in Pune are ready to assist you.

@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Building2, Settings, Zap, Cpu, Maximize } from "lucide-react";
+import { Building2, Settings, Zap, Cpu, Maximize , ChevronRight} from "lucide-react";
 
 export default function Infrastructure() {
   const demoImage = "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon";
@@ -87,6 +88,13 @@ export default function Infrastructure() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
+            
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
+              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-white font-medium">Infrastructure</span>
+            </div>
             <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">
               Our Infrastructure
             </h1>

@@ -5,7 +5,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Box } from "lucide-react";
+import { ArrowRight, Box , ChevronRight} from "lucide-react";
 
 const productImages = [
   "Image1.png",
@@ -55,7 +55,14 @@ export default function Products() {
                 <Box className="w-4 h-4" />
                 <span className="text-sm font-semibold tracking-wide uppercase">Precision Manufacturing</span>
               </div>
-              <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">
+              
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
+              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-white font-medium">Products</span>
+            </div>
+            <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">
                 Engineered <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">Products</span>
               </h1>

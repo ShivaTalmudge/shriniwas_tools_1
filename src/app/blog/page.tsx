@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Calendar, User, ArrowRight } from "lucide-react";
+import { Calendar, User, ArrowRight , ChevronRight} from "lucide-react";
 
 const blogPosts = [
   {
@@ -62,6 +62,13 @@ export default function Blog() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
+            
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
+              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-white font-medium">Blog</span>
+            </div>
             <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Engineering Insights</h1>
             <p className="text-lg md:text-xl lg:text-xl text-gray-300 max-w-3xl font-light leading-relaxed">
               Technical articles, industry trends, and manufacturing tips from the tooling experts at Shriniwas Tools.

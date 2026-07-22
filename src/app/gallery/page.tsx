@@ -1,9 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { Maximize2 } from "lucide-react";
+import { Maximize2 , ChevronRight} from "lucide-react";
 
 const categories = ["All", "Products", "Machinery", "Team", "Events"];
 
@@ -43,6 +44,13 @@ export default function Gallery() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
+            
+            {/* Breadcrumb */}
+            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
+              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-white font-medium">Gallery</span>
+            </div>
             <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Media Gallery</h1>
             <p className="text-lg md:text-xl lg:text-xl text-gray-300 max-w-3xl font-light leading-relaxed">
               A visual tour of our precision engineering capabilities, infrastructure, and team.
