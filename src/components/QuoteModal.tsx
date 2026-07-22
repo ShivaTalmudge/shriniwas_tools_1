@@ -98,7 +98,7 @@ export default function QuoteModal() {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-xs font-bold text-gray-700 uppercase tracking-wider">Project Details</label>
+                  <label className="text-xs font-bold text-gray-700 uppercase tracking-wider">Justify Your Components</label>
                   <textarea rows={3} className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all text-sm" placeholder="Please describe your requirement in detail..."></textarea>
                 </div>
 

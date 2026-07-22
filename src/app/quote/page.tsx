@@ -70,7 +70,7 @@ export default function Quote() {
 
                 {/* Project Details */}
                 <div>
-                  <h3 className="text-lg font-bold text-brand-dark mb-4 border-b pb-2">2. Project Details</h3>
+                  <h3 className="text-lg font-bold text-brand-dark mb-4 border-b pb-2">2. Justify Your Components</h3>
                   <div className="space-y-6">
                     <div className="space-y-2">
                       <label className="text-sm font-bold text-gray-700 uppercase tracking-wider">Requirement Type</label>
@@ -91,7 +91,7 @@ export default function Quote() {
                       <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all" placeholder="e.g. H13, P20, EN31..." />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-gray-700 uppercase tracking-wider">Project Description / Technical Notes</label>
+                      <label className="text-sm font-bold text-gray-700 uppercase tracking-wider">Justify Your Components</label>
                       <textarea rows={4} className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all"></textarea>
                     </div>
                   </div>
