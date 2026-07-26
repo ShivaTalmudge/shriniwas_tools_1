@@ -1,108 +1,149 @@
 "use client";
 
-
-
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { CheckCircle2, Activity, Ruler , ChevronRight} from "lucide-react";
+import Image from "next/image";
+import { ChevronRight, ShieldCheck, CheckCircle2, PhoneCall } from "lucide-react";
 
-export default function Quality() {
+export default function QualityAssurance() {
   return (
     <>
-      {/* Unified Hero Section */}
-      <section className="relative min-h-[80vh] lg:min-h-[95vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12">
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" 
-          style={{ backgroundImage: 'url(/company_machines/bannerimage2.png)' }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/20 z-10" />
+      {/* Quality Hero */}
+      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12 bg-brand-dark">
+        <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40" style={{ backgroundImage: 'url(/company_machines/surface_plate.jpg)' }}>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/50 z-10" />
         </div>
-        
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10">
+        <div className="container relative z-20 px-4 md:px-8 text-left text-white mt-10">
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            
             {/* Breadcrumb */}
-            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
-              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
+            <div className="flex items-center justify-start gap-2 text-sm text-brand-accent mb-6 uppercase tracking-wider font-bold">
+              <Link href="/" className="hover:text-white transition-colors">Home</Link>
               <ChevronRight className="w-4 h-4" />
-              <span className="text-white font-medium">Quality</span>
+              <span className="text-white">Quality Assurance</span>
             </div>
-            <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Zero Defect Policy</h1>
-            <p className="text-lg md:text-xl lg:text-xl text-gray-200 max-w-3xl font-light leading-relaxed">
-              Our commitment to manufacturing excellence is absolute. Through stringent metrology and strictly governed ISO 9001:2015 processes, we guarantee dimensional accuracy down to the last micron.
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-6 leading-tight tracking-tight">
+              Quality Assurance
+            </h1>
+            <div className="w-24 h-1 bg-brand-accent mb-6" />
+            <p className="text-lg md:text-xl text-gray-300 max-w-3xl font-light leading-relaxed">
+              Quality isn&apos;t a final check for us — it&apos;s built into every stage, from design sign-off to the last inspection before a part leaves our shop floor.
             </p>
           </motion.div>
         </div>
       </section>
 
-      <section className="py-24 bg-brand-light">
+      {/* Certification & Process Section */}
+      <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
-            <div>
-              <h2 className="text-3xl font-heading font-bold text-brand-dark mb-6">ISO 9001:2015 Certified</h2>
-              <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                At Shriniwas Tools & Equipments, quality assurance is deeply ingrained into every stage of our production cycle. Operating out of our Pune facility, our dedicated quality control department ensures that every tool, die, and component strictly adheres to international manufacturing standards.
-              </p>
-              
-              <ul className="space-y-4">
-                {[
-                  "Rigorous in-process inspection at every machining stage",
-                  "100% Final Inspection before any dispatch",
-                  "Complete material traceability and authentic certification",
-                  "Scheduled periodic calibration of all testing instruments"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                     <CheckCircle2 className="w-6 h-6 text-brand-primary shrink-0 mt-0.5" />
-                     <span className="text-gray-700 font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="flex flex-col lg:flex-row gap-16 items-center">
             
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center animate-in zoom-in-95 duration-500 hover:-translate-y-1 transition-transform">
-                <Ruler className="w-10 h-10 text-brand-accent mb-4" />
-                <h4 className="font-bold text-brand-dark">CMM Inspection</h4>
-                <p className="text-sm text-gray-500 mt-2">Zeiss Coordinate Measuring Machine</p>
+            <div className="lg:w-1/2">
+              <div className="mb-12">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6 tracking-tight">Certification</h2>
+                <div className="p-8 bg-brand-light rounded-2xl border border-gray-200 flex items-start gap-4">
+                  <ShieldCheck className="w-10 h-10 text-brand-accent shrink-0" />
+                  <p className="text-gray-700 leading-relaxed text-lg font-medium">
+                    We are <strong className="text-brand-dark">ISO 9001:2015 certified</strong> (Certificate No. 305022091354Q, issued by QRO Certification LLP) for the manufacture of dies, moulds and moulded products.
+                  </p>
+                </div>
               </div>
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center mt-8 animate-in zoom-in-95 duration-500 delay-150 hover:-translate-y-1 transition-transform">
-                <Activity className="w-10 h-10 text-brand-accent mb-4" />
-                <h4 className="font-bold text-brand-dark">Surface Finish</h4>
-                <p className="text-sm text-gray-500 mt-2">Mitutoyo Surface Roughness Testers</p>
-              </div>
-            </div>
-          </div>
 
-          {/* Testing Equipment */}
-          <div className="bg-brand-dark text-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary rounded-full blur-3xl opacity-20 translate-x-1/2 -translate-y-1/2"></div>
-            
-            <div className="relative z-10">
-              <h3 className="text-2xl md:text-3xl font-heading font-bold mb-8 text-center">Advanced Metrology & Testing Lab</h3>
-              <p className="text-gray-400 text-center max-w-2xl mx-auto mb-12">Our quality control lab is equipped with precision instruments to measure tolerances down to 0.001mm.</p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {[
-                  "Digital Vernier Calipers (Mitutoyo)",
-                  "Digital Micrometers (Mitutoyo)",
-                  "Digital Height Gauges",
-                  "Slip Gauge Blocks (Grade 0)",
-                  "Dial Indicators & Bore Gauges",
-                  "Surface Roughness Testers",
-                  "Hardness Testing Machine",
-                  "Profile Projector"
-                ].map((equip, idx) => (
-                  <div key={idx} className="bg-white/5 border border-white/10 p-4 rounded-xl flex items-center gap-3">
-                    <div className="w-2 h-2 rounded-full bg-brand-accent"></div>
-                    <span className="text-sm font-medium text-gray-200">{equip}</span>
-                  </div>
-                ))}
+              <div>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6 tracking-tight">Our Inspection Process</h2>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Every component is checked using calibrated digital vernier calipers, outside micrometers, bore gauges, height gauges, and surface plates before it leaves our facility. Our QA team, led by our Quality Head, signs off at critical stages during production — not just at final inspection — so issues get caught while they&apos;re still cheap to fix.
+                </p>
               </div>
             </div>
+
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="lg:w-1/2 flex justify-center lg:justify-end"
+            >
+              {/* ISO Certificate Placeholder */}
+              <div className="relative w-full max-w-md aspect-[3/4] bg-gray-200 rounded-2xl shadow-2xl border-2 border-dashed border-gray-400 overflow-hidden flex flex-col items-center justify-center p-8 text-center">
+                <span className="text-gray-500 font-bold uppercase tracking-widest text-lg">[PLACEHOLDER: Add iso-9001-2015-certificate.png here in full readable size]</span>
+              </div>
+            </motion.div>
+            
+          </div>
+        </div>
+      </section>
+
+      {/* Inspection Capability Table */}
+      <section className="py-20 bg-brand-light border-y border-gray-200">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="mb-10 text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-4">Inspection Capability</h2>
+            <div className="w-16 h-1 bg-brand-accent mx-auto"></div>
+          </div>
+          
+          <div className="overflow-x-auto max-w-4xl mx-auto bg-white rounded-xl shadow-lg border border-gray-100">
+            <table className="w-full text-left border-collapse min-w-[600px]">
+              <thead>
+                <tr className="bg-brand-dark text-white">
+                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Instrument</th>
+                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Range</th>
+                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Least Count</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="py-4 px-6 font-medium text-brand-dark flex items-center gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-brand-accent" /> Digital Vernier Caliper
+                  </td>
+                  <td className="py-4 px-6 text-gray-600">0-250</td>
+                  <td className="py-4 px-6 text-gray-600">0.01</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                  <td className="py-4 px-6 font-medium text-brand-dark flex items-center gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-brand-accent" /> Outside Micrometer
+                  </td>
+                  <td className="py-4 px-6 text-gray-600">50-150</td>
+                  <td className="py-4 px-6 text-gray-600">0.01</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="py-4 px-6 font-medium text-brand-dark flex items-center gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-brand-accent" /> Bore Gauge
+                  </td>
+                  <td className="py-4 px-6 text-gray-600">50 x 150</td>
+                  <td className="py-4 px-6 text-gray-600">0.01</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                  <td className="py-4 px-6 font-medium text-brand-dark flex items-center gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-brand-accent" /> Height Gauge
+                  </td>
+                  <td className="py-4 px-6 text-gray-600">0-600</td>
+                  <td className="py-4 px-6 text-gray-600">0.01</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="py-4 px-6 font-medium text-brand-dark flex items-center gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-brand-accent" /> Surface Plate
+                  </td>
+                  <td className="py-4 px-6 text-gray-600">600 x 400</td>
+                  <td className="py-4 px-6 text-gray-600">—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 md:py-28 bg-white text-center">
+        <div className="container mx-auto px-4 md:px-8 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Questions about our quality process?</h2>
+          <div className="mt-10">
+            <Link href="/contact" className="inline-flex items-center justify-center px-10 py-5 bg-brand-primary hover:bg-brand-secondary text-white font-bold rounded-md transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-xl uppercase tracking-wider text-sm text-center">
+              Talk to Our QA Team <PhoneCall className="w-5 h-5 ml-2" />
+            </Link>
           </div>
         </div>
       </section>

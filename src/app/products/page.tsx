@@ -1,130 +1,183 @@
 "use client";
 
-
-
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Box , ChevronRight} from "lucide-react";
+import { Box, Wrench, Hammer, Factory, CircleDashed, Cpu, PenTool, Layers, ChevronRight, Zap, Car, Settings } from "lucide-react";
 
-const productImages = [
-  "Image1.png",
-  "Image2.png",
-  "Image3.png",
-  "Image4.png",
-  "Image5.png",
-  "Image7.png",
-  "Image8.png",
-  "Image10.png",
-  "Image12.png",
-  "Image13.png",
-  "Image19.png",
-  "Image22.png",
+const products = [
+  {
+    title: "Plastic Moulds",
+    desc: "Custom thermoplastic tooling",
+    icon: <Box className="w-8 h-8 text-brand-accent" />,
+    image: "/images/products-cropped/Image1.png",
+    alt: "Plastic injection mould manufactured by Shriniwas Tools & Equipments"
+  },
+  {
+    title: "Press Tools",
+    desc: "Blanking, piercing & forming",
+    icon: <Hammer className="w-8 h-8 text-brand-accent" />,
+    image: "/images/products-cropped/Image2.png",
+    alt: "Press Tools manufactured by Shriniwas Tools & Equipments"
+  },
+  {
+    title: "Jigs & Fixtures",
+    desc: "Assembly and machining aids",
+    icon: <Wrench className="w-8 h-8 text-brand-accent" />,
+    image: "/images/products-cropped/Image3.png",
+    alt: "Jigs & Fixtures manufactured by Shriniwas Tools & Equipments"
+  },
+  {
+    title: "VMC Job Work",
+    desc: "Precision machining",
+    icon: <Cpu className="w-8 h-8 text-brand-accent" />,
+    image: "/images/products-cropped/Image4.png",
+    alt: "VMC Job Work manufactured by Shriniwas Tools & Equipments"
+  },
+  {
+    title: "Vacuum Dies",
+    desc: "Vacuum forming dies",
+    icon: <Settings className="w-8 h-8 text-brand-accent" />,
+    image: "/images/products-cropped/Image5.png",
+    alt: "Vacuum Dies manufactured by Shriniwas Tools & Equipments"
+  },
+  {
+    title: "Patterns",
+    desc: "Casting patterns",
+    icon: <Layers className="w-8 h-8 text-brand-accent" />,
+    image: "/images/products-cropped/Image7.png",
+    alt: "Patterns manufactured by Shriniwas Tools & Equipments"
+  },
+  {
+    title: "Rubber Moulds",
+    desc: "Compression rubber tooling",
+    icon: <CircleDashed className="w-8 h-8 text-brand-accent" />,
+    image: "/images/products-cropped/Image8.png",
+    alt: "Rubber Moulds manufactured by Shriniwas Tools & Equipments"
+  },
+  {
+    title: "PDC/GDC Dies",
+    desc: "Die casting tooling",
+    icon: <Zap className="w-8 h-8 text-brand-accent" />,
+    image: "/images/products-cropped/Image10.png",
+    alt: "PDC/GDC Dies manufactured by Shriniwas Tools & Equipments"
+  }
 ];
-
-const products = productImages.map((filename) => ({
-  title: "Component",
-  desc: "High-precision moulded component manufactured with stringent quality controls.",
-  icon: <Box className="w-8 h-8 text-brand-accent" />,
-  image: `/images/products-cropped/${filename}`,
-  slug: "plastic-molding-dies"
-}));
 
 export default function Products() {
   return (
     <>
       {/* Unique Products Hero Section */}
-      <section className="relative min-h-[80vh] lg:min-h-[95vh] flex items-center overflow-hidden pt-[120px] pb-12 md:pt-[140px] md:pb-16 bg-brand-dark">
-        {/* Abstract Background Elements */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-accent/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3" />
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-primary/20 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4" />
-        </div>
+      <section className="relative min-h-[60vh] lg:min-h-[80vh] flex flex-col lg:flex-row items-center overflow-hidden pt-[100px] md:pt-[120px] bg-[#0a0a0a]">
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-[#0f0f13] to-[#1a1714]" />
         
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-            
-            {/* Left Content */}
-            <motion.div 
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
+        <div className="container mx-auto px-4 md:px-8 relative z-10 w-full flex flex-col lg:flex-row items-center justify-between">
+          {/* Left Side Content */}
+          <div className="w-full lg:w-1/2 py-16 lg:py-24 relative z-20">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="max-w-2xl text-left"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-brand-accent mb-6">
-                <Box className="w-4 h-4" />
-                <span className="text-sm font-semibold tracking-wide uppercase">Precision Manufacturing</span>
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-800 bg-white/5 mb-8 backdrop-blur-md">
+                <Box className="w-4 h-4 text-brand-accent" />
+                <span className="text-xs font-bold text-brand-accent uppercase tracking-widest">Precision Manufacturing</span>
               </div>
               
-            {/* Breadcrumb */}
-            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
-              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
-              <ChevronRight className="w-4 h-4" />
-              <span className="text-white font-medium">Products</span>
-            </div>
-            <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">
-                Engineered <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">Products</span>
+              {/* Breadcrumb */}
+              <div className="flex items-center justify-start gap-2 text-[11px] text-gray-400 mb-6 uppercase tracking-widest font-bold">
+                <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                <ChevronRight className="w-3 h-3" />
+                <span className="text-white">Products</span>
+              </div>
+              
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-heading font-black text-white mb-6 leading-[1.1] tracking-tight">
+                Manufactured <br /><span className="text-brand-accent">Products</span>
               </h1>
-              <p className="text-lg md:text-xl lg:text-xl text-gray-300 mb-8 font-light leading-relaxed">
-                A showcase of our high-quality injection moulded components, complex press parts, and heavy-duty thermoset insulators.
+              
+              <p className="text-lg text-gray-400 font-light leading-relaxed max-w-xl">
+                From heavy-duty DMC electrical switchgear to high-volume thermoplastic enclosures, here is a cross-section of the components we manufacture.
               </p>
             </motion.div>
-            
-            {/* Right Image Collage */}
-            <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] animate-in fade-in slide-in-from-right-8 duration-700 delay-300 fill-mode-both">
-              {/* Center Main Product */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] sm:w-[280px] md:w-[350px] aspect-square bg-white rounded-2xl shadow-2xl z-20 hover:scale-105 transition-transform duration-500">
-                <Image src="/images/products-cropped/Image3.png" alt="Featured Product" fill className="object-contain p-4 drop-shadow-2xl mix-blend-multiply" priority />
+          </div>
+
+          {/* Right Side Composition */}
+          <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-[600px] flex items-center justify-center mt-10 lg:mt-0">
+            <motion.div 
+              className="relative w-full max-w-md h-[400px] lg:h-[500px]"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
+              {/* Center large card */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-[320px] md:h-[320px] bg-white rounded-2xl shadow-2xl z-20 p-6 flex items-center justify-center">
+                <div className="relative w-full h-full">
+                  <Image src="/images/products-cropped/Image8.png" alt="Product Component" fill className="object-contain drop-shadow-xl" />
+                </div>
               </div>
               
-              {/* Top Right Product */}
-              <div className="absolute top-[5%] right-[0%] w-[140px] sm:w-[180px] md:w-[220px] aspect-square bg-white rounded-2xl shadow-xl z-10 animate-[bounce_6s_ease-in-out_infinite] hover:scale-105 transition-transform duration-500">
-                <Image src="/images/products-cropped/Image1.png" alt="Product" fill className="object-contain p-4 mix-blend-multiply" />
-              </div>
-              
-              {/* Bottom Left Product */}
-              <div className="absolute bottom-[5%] left-[0%] w-[160px] sm:w-[200px] md:w-[240px] aspect-square bg-white rounded-2xl shadow-xl z-30 animate-[bounce_8s_ease-in-out_infinite_reverse] hover:scale-105 transition-transform duration-500">
-                <Image src="/images/products-cropped/Image8.png" alt="Product" fill className="object-contain p-4 mix-blend-multiply" />
-              </div>
-            </div>
-            
+              {/* Top right floating card */}
+              <motion.div 
+                className="absolute top-0 md:top-4 right-0 md:-right-8 w-40 h-40 md:w-56 md:h-56 bg-white rounded-2xl shadow-xl z-10 p-4 flex items-center justify-center"
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <div className="relative w-full h-full">
+                  <Image src="/images/products-cropped/Image24.png" alt="Press Part" fill className="object-contain drop-shadow-lg" />
+                </div>
+              </motion.div>
+
+              {/* Bottom left floating card */}
+              <motion.div 
+                className="absolute bottom-4 md:bottom-10 left-0 md:-left-12 w-40 h-40 md:w-48 md:h-48 bg-white rounded-2xl shadow-2xl z-30 p-4 flex items-center justify-center"
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              >
+                <div className="relative w-full h-full">
+                  <Image src="/images/products-cropped/Image13.png" alt="Thermoset Insulator" fill className="object-contain drop-shadow-lg" />
+                </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Product Grid */}
-      <section className="py-16 md:py-20 lg:py-24 bg-white relative">
+      <section className="py-16 md:py-20 lg:py-24 bg-white relative border-t border-gray-100">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product, i) => (
               <div
                 key={product.image}
-                className="group rounded-[14px] bg-gray-50 overflow-hidden border border-gray-100 hover:shadow-2xl hover:shadow-brand-dark/5 hover:-translate-y-2 transition-all duration-300 animate-in fade-in slide-in-from-bottom-8"
+                className="group rounded-[14px] bg-gray-50 overflow-hidden border border-gray-100 hover:shadow-2xl hover:shadow-brand-dark/5 hover:-translate-y-2 transition-all duration-300 flex flex-col animate-in fade-in slide-in-from-bottom-8"
                 style={{ animationDelay: `${i * 150}ms`, animationFillMode: "both" }}
               >
-                <div className="aspect-[16/9] relative overflow-hidden bg-white">
+                <div className="aspect-square relative overflow-hidden bg-white border-b border-gray-100">
                   <Image
                     src={product.image}
-                    alt={product.title}
+                    alt={product.alt || product.title}
                     fill
-                    className="object-contain p-4 rounded-[10px] mix-blend-multiply group-hover:scale-105 transition-transform duration-700"
+                    className="object-contain p-6 mix-blend-multiply group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
-                  
-                  <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end">
-                    <div className="bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/20 text-white group-hover:text-brand-accent transition-colors">
-                      {product.icon}
-                    </div>
-                  </div>
                 </div>
                 
-                <div className="p-8">
-                  <h3 className="text-2xl font-heading font-bold text-brand-dark mb-3 group-hover:text-brand-primary transition-colors">{product.title}</h3>
-                  <p className="text-gray-600 mb-6 line-clamp-2">{product.desc}</p>
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-brand-light p-2 rounded-lg shrink-0">
+                      {product.icon}
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-heading font-bold text-brand-dark leading-snug group-hover:text-brand-primary transition-colors">{product.title}</h3>
+                      <p className="text-gray-500 text-sm italic mt-1">({product.desc})</p>
+                    </div>
+                  </div>
                   
-                  <Link href={`/services/${product.slug}`} className="inline-flex items-center gap-2 font-bold text-brand-primary hover:text-brand-accent transition-colors">
-                    Explore Details <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <Link 
+                    href="/contact" 
+                    className="mt-auto inline-flex justify-center items-center gap-2 font-bold text-brand-primary bg-brand-light border border-brand-primary/20 px-5 py-3 rounded-lg hover:bg-brand-primary hover:text-white transition-all duration-300 w-full text-sm uppercase tracking-wider"
+                  >
+                    Request Spec <ChevronRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>
@@ -132,8 +185,6 @@ export default function Products() {
           </div>
         </div>
       </section>
-
-
     </>
   );
 }

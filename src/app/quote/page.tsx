@@ -9,33 +9,43 @@ import { UploadCloud, CheckCircle2 , ChevronRight} from "lucide-react";
 export default function Quote() {
   return (
     <>
-      {/* Unified Hero Section */}
-      <section className="relative min-h-[80vh] lg:min-h-[95vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12">
-        <div
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/company_machines/bannerimage2.png)' }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/20 z-10" />
+            {/* Unified Hero Section */}
+      <section className="relative min-h-[60vh] lg:min-h-[80vh] flex flex-col lg:flex-row items-stretch overflow-hidden pt-[100px] md:pt-[120px] bg-brand-dark">
+        {/* Left Side Content */}
+        <div className="w-full lg:w-1/2 flex items-center relative z-10 order-2 lg:order-1 bg-brand-dark lg:bg-transparent">
+          <div className="w-full max-w-3xl ml-auto px-4 md:px-8 py-16 lg:py-24 xl:pr-16">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              {/* Breadcrumb */}
+              <div className="flex items-center justify-start gap-2 text-sm text-brand-accent mb-6 uppercase tracking-wider font-bold">
+                <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                <ChevronRight className="w-4 h-4" />
+                <span className="text-white">Request a Quote</span>
+              </div>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-black text-white mb-6 leading-[1.1] tracking-tight">
+                Request a Tooling Quote
+              </h1>
+              <p className="text-lg md:text-xl text-gray-300 font-light leading-relaxed max-w-2xl">
+                Upload your 2D drawings or 3D CAD models. Our senior tooling engineers in Pune will analyze your requirements and provide a detailed technical and commercial proposal within 48 hours.
+              </p>
+            </motion.div>
+          </div>
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+        {/* Right Side Image */}
+        <div className="w-full lg:w-1/2 relative min-h-[35vh] lg:min-h-full order-1 lg:order-2">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+            style={{ backgroundImage: 'url(/company_machines/wire_cut_machine_2_imp.png)' }}
           >
-            
-            {/* Breadcrumb */}
-            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
-              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
-              <ChevronRight className="w-4 h-4" />
-              <span className="text-white font-medium">Request a Quote</span>
-            </div>
-            <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Request a Tooling Quote</h1>
-            <p className="text-lg md:text-xl lg:text-xl text-gray-200 max-w-3xl font-light leading-relaxed">
-              Upload your 2D drawings or 3D CAD models. Our senior tooling engineers in Pune will analyze your requirements and provide a detailed technical and commercial proposal within 48 hours.
-            </p>
-          </motion.div>
+            {/* Soft gradient fade into the image from the left on desktop */}
+            <div className="hidden lg:block absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-brand-dark to-transparent z-10" />
+            {/* Soft gradient fade into the image from the bottom on mobile */}
+            <div className="lg:hidden absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-brand-dark to-transparent z-10" />
+          </div>
         </div>
       </section>
 

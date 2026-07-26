@@ -11,7 +11,7 @@ const data: ServiceData = {
   hero: {
     title: "DMC Moulds",
     subtitle: "Robust, heavy-duty thermoset tooling engineered in Pune to withstand immense compression and high-temperature curing cycles.",
-    bgImage: "/company_machines/wire_cut_floor.png",
+    bgImage: "/images/products-cropped/Image1.png",
   },
   overview: {
     title: "Heavy-Duty Compression Tooling",
@@ -25,7 +25,7 @@ const data: ServiceData = {
         </p>
       </>
     ),
-    image: "/company_machines/horizontal_injection_moulding_machine.png",
+    image: "/images/products-cropped/Image1.png",
   },
   keyFeatures: [
     { title: "Thermal Optimization", description: "Uniform heating arrays for perfect curing.", icon: "Zap" },

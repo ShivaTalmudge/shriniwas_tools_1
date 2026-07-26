@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Factory, Cpu, Zap, Component, Wrench, Hammer , ChevronRight} from "lucide-react";
+import { ArrowRight, Factory, Cpu, Zap, Component, Wrench, Hammer, ChevronRight } from "lucide-react";
 
 export default function ServicesPage() {
   const services = [
@@ -47,33 +47,41 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] lg:min-h-[95vh] flex flex-col justify-center bg-brand-dark overflow-hidden pt-[140px] pb-16">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/20 z-10" />
-          <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "40px 40px" }}></div>
-        </div>
-        
-        <div className="container relative z-10 mx-auto px-4 md:px-8">
-          <div className="max-w-3xl">
+      <section className="relative min-h-[60vh] lg:min-h-[80vh] flex flex-col lg:flex-row items-stretch overflow-hidden pt-[100px] md:pt-[120px] bg-brand-dark">
+        {/* Left Side Content */}
+        <div className="w-full lg:w-1/2 flex items-center relative z-10 order-2 lg:order-1 bg-brand-dark lg:bg-transparent">
+          <div className="w-full max-w-3xl ml-auto px-4 md:px-8 py-16 lg:py-24 xl:pr-16">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              
-            {/* Breadcrumb */}
-            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
-              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
-              <ChevronRight className="w-4 h-4" />
-              <span className="text-white font-medium">Services</span>
-            </div>
-            <h1 className="text-4xl md:text-4xl lg:text-7xl font-heading font-extrabold text-white mb-6">
-                Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">Services</span>
+              {/* Breadcrumb */}
+              <div className="flex items-center justify-start gap-2 text-sm text-brand-accent mb-6 uppercase tracking-wider font-bold">
+                <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                <ChevronRight className="w-4 h-4" />
+                <span className="text-white">Services</span>
+              </div>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-black text-white mb-6 leading-[1.1] tracking-tight">
+                Our Services
               </h1>
-              <p className="text-lg md:text-xl text-gray-300 font-light leading-relaxed">
-                Comprehensive manufacturing capabilities ranging from precision tool making to mass production of critical industrial components.
+              <p className="text-lg md:text-xl text-gray-300 font-light leading-relaxed max-w-2xl">
+                Six core capabilities, all handled in-house at our Bhosari, Pune facility — from first design to finished, inspected tooling.
               </p>
             </motion.div>
+          </div>
+        </div>
+
+        {/* Right Side Image */}
+        <div className="w-full lg:w-1/2 relative min-h-[35vh] lg:min-h-full order-1 lg:order-2">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+            style={{ backgroundImage: 'url(/company_machines/VMC_2.png)' }}
+          >
+            {/* Soft gradient fade into the image from the left on desktop */}
+            <div className="hidden lg:block absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-brand-dark to-transparent z-10" />
+            {/* Soft gradient fade into the image from the bottom on mobile */}
+            <div className="lg:hidden absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-brand-dark to-transparent z-10" />
           </div>
         </div>
       </section>

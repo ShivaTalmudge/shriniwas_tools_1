@@ -2,49 +2,49 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Press Tool Manufacturer in Pune | Shriniwas Tools",
-  description: "Leading press tool manufacturer in Pune. High-speed progressive, compound, and deep draw dies engineered for millions of flawless stamping cycles.",
+  title: "Press Tools & Sheet Metal Dies Manufacturer Pune | Shriniwas Tools",
+  description: "Manufacturer of high-speed progressive, compound, and forming dies for sheet metal stamping. Burr-free blanks and accurate forming in Bhosari, Pune.",
 };
 
 const data: ServiceData = {
   serviceName: "Press Tools",
   hero: {
     title: "Press Tools",
-    subtitle: "High-speed progressive and compound dies engineered for millions of flawless sheet metal stamping cycles.",
-    bgImage: "/company_machines/bannerimage2.png",
+    subtitle: "Automotive brackets, electrical contacts, and complex sheet metal forming.",
+    bgImage: "/images/products-cropped/Image2.png",
   },
   overview: {
-    title: "Sheet Metal Stamping Excellence",
+    title: "High-Speed Sheet Metal Stamping Dies",
     description: (
       <>
-        <p className="mb-4">
-          Sheet metal stamping demands tooling that can endure extreme impact forces millions of times without losing its cutting edge. As a premier press tool manufacturer, Shriniwas Tools engineers and builds high-performance stamping dies designed to maximize your press uptime.
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          We design and manufacture progressive, compound, and forming dies tailored for high-speed sheet metal stamping. 
         </p>
-        <p>
-          Utilizing top-grade D2, powder metallurgy steels, and Tungsten Carbide inserts, coupled with our ultra-precise in-house Wire EDM capabilities, we create punch and matrix assemblies with exact clearances down to the micron level for high-speed progressive and compound dies.
+        <p className="text-gray-700 text-lg leading-relaxed">
+          Our tooling is built from premium grades of steel and heavily tested on our own floor to ensure burr-free blanks and accurate forming before we ever ship the die to you.
         </p>
       </>
     ),
-    image: "/company_machines/VMC1.png",
+    image: "/images/products-cropped/Image2.png",
   },
   keyFeatures: [
-    { title: "Progressive Dies", description: "Multi-station tools for high-speed automated stamping.", icon: "TrendingUp" },
-    { title: "Compound Dies", description: "Single-stroke piercing and blanking for perfect concentricity.", icon: "CheckCircle2" },
-    { title: "Deep Drawing", description: "Specialized tools for cylindrical/box sheet metal forming.", icon: "Box" },
-    { title: "Carbide Tooling", description: "Tungsten carbide inserts for extreme longevity.", icon: "ShieldCheck" },
+    { title: "Progressive Dies", description: "Multi-station tooling for high-volume production.", icon: "Settings" },
+    { title: "Burr-Free Blanks", description: "Precision clearances ensure clean, accurate cuts.", icon: "CheckCircle2" },
+    { title: "Compound Dies", description: "Blanking and piercing in a single stroke.", icon: "Zap" },
+    { title: "Premium Steel", description: "High-grade tool steel for extended die life.", icon: "ShieldCheck" },
   ],
   industries: [
-    { name: "Automotive Body", icon: "Car" },
-    { name: "White Goods", icon: "Home" },
-    { name: "Electrical Connectors", icon: "Zap" },
-    { name: "Aerospace Brackets", icon: "Plane" },
+    { name: "Automotive", icon: "Car" },
+    { name: "Electrical", icon: "Zap" },
+    { name: "Home Appliances", icon: "Home" },
+    { name: "Consumer Goods", icon: "Package" },
   ],
   process: [
-    "Strip Layout",
+    "Strip Layout Design",
     "Die Design",
-    "Wire EDM",
-    "Assembly",
-    "Tryout"
+    "Wire Cut & VMC",
+    "Assembly & Fitting",
+    "Press Trial & QA"
   ]
 };
 

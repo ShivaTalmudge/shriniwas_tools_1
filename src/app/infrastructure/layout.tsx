@@ -1,9 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Manufacturing Infrastructure & Shop Floor | Shriniwas Tools Pune",
-  description: "Take a virtual tour of our state-of-the-art engineering tool room in Pune. We feature dedicated CNC machining, EDM, and injection moulding facilities.",
-  keywords: ["Engineering Facility Pune", "Tool Room Infrastructure", "Injection Moulding Plant", "CNC Machining Shop Floor"],
+  title: "Infrastructure & Machinery | Shriniwas Tools & Equipments",
+  description: "9 CNC Wire Cut machines, 3 VMCs, EDM, surface grinders and moulding presses up to 300 tons — full manufacturing capability at Shriniwas Tools & Equipments, Bhosari, Pune.",
 };
 
 export default function InfrastructureLayout({

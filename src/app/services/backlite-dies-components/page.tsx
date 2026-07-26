@@ -2,49 +2,49 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "DMC & Bakelite Components Manufacturer in Pune | Shriniwas Tools",
-  description: "Leading DMC & Bakelite components manufacturer in Pune. We provide end-to-end thermoset tooling and manufacturing for highly heat-resistant electrical parts.",
+  title: "DMC & Bakelite Moulds Manufacturer Pune | Shriniwas Tools",
+  description: "Design and manufacturing of high-quality DMC and Bakelite moulds for electrical components and switchgear. Built for high temperature and pressure.",
 };
 
 const data: ServiceData = {
   serviceName: "DMC & Bakelite Moulds",
   hero: {
     title: "DMC & Bakelite Moulds",
-    subtitle: "High-precision thermoset tooling and turnkey manufacturing for superior electrical insulation and heat-resistant industrial applications.",
-    bgImage: "/company_machines/hero_bakelite_mould.png",
+    subtitle: "Switchgear components, electrical insulators, and heat-resistant parts.",
+    bgImage: "/images/products-cropped/Image1.png",
   },
   overview: {
-    title: "End-to-End DMC & Bakelite Manufacturing",
+    title: "Thermoset Plastic Tooling",
     description: (
       <>
-        <p className="mb-4">
-          DMC and Bakelite remain some of the most reliable thermosetting plastics for demanding high heat and electrical non-conductivity applications. As a prominent DMC and Bakelite components manufacturer in Pune, Shriniwas Tools offers complete end-to-end solutions.
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          Thermosetting plastics require robust tooling that can withstand high temperatures and pressure without warping. 
         </p>
-        <p>
-          We design and build highly polished, abrasion-resistant compression moulds, and operate a dedicated press shop to manufacture flash-free, dimensionally stable components for our OEM clients.
+        <p className="text-gray-700 text-lg leading-relaxed">
+          We have over a decade of experience designing and manufacturing DMC and Bakelite moulds that deliver flash-free electrical components and heavy-duty switchgear parts.
         </p>
       </>
     ),
-    image: "/company_machines/horizontal_injection_moulding_machine.png",
+    image: "/images/products-cropped/Image1.png",
   },
   keyFeatures: [
-    { title: "High Polish Finish", description: "SPI A2/A3 finishes for glossy components.", icon: "Award" },
-    { title: "Flash-Free Moulding", description: "Precision land-area matching in cavities.", icon: "CheckCircle2" },
-    { title: "Turnkey Production", description: "From mould design to final component delivery.", icon: "Settings" },
-    { title: "Durability", description: "Hard chrome treated for abrasive phenolic flow.", icon: "ShieldCheck" },
+    { title: "Heat Resistant", description: "Tooling designed for extreme thermoset temperatures.", icon: "Zap" },
+    { title: "Flash-Free Parts", description: "Precision machining ensures tight shut-offs.", icon: "CheckCircle2" },
+    { title: "High Pressure", description: "Robust designs to withstand moulding pressures.", icon: "ShieldCheck" },
+    { title: "Decade of Experience", description: "Proven track record in thermoset tooling.", icon: "Award" },
   ],
   industries: [
-    { name: "Electrical Switches", icon: "Zap" },
-    { name: "Kitchenware", icon: "Home" },
-    { name: "Automotive Relays", icon: "Car" },
-    { name: "Industrial Machinery", icon: "Settings" },
+    { name: "Electrical", icon: "Zap" },
+    { name: "Switchgear", icon: "Settings" },
+    { name: "Automotive", icon: "Car" },
+    { name: "Heavy Engineering", icon: "Factory" },
   ],
   process: [
-    "Engineering",
-    "Tool Machining",
-    "Plating",
-    "Compression",
-    "Deflashing"
+    "Tool Design",
+    "Material Selection",
+    "CNC Machining",
+    "Heat Treatment",
+    "Assembly & Trials"
   ]
 };
 

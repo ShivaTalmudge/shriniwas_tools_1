@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Montserrat } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
@@ -8,14 +8,13 @@ import FloatingActions from "@/components/FloatingActions";
 import QuoteModal from "@/components/QuoteModal";
 import Script from "next/script";
 
-const roboto = Roboto({
-  variable: "--font-roboto",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
 });
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+const space_grotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
 });
 
@@ -68,7 +67,7 @@ export const metadata: Metadata = {
       "ISO certified manufacturer of plastic injection moulds, DMC moulds, press tools, jigs & fixtures. 18+ years serving automotive, electrical & industrial sectors from Pune, India.",
     images: [
       {
-        url: "/company_machines/bannerimage1.png",
+        url: "/company_machines/horizonatl_injection_moulding_machine_1.png",
         width: 1200,
         height: 630,
         alt: "Shriniwas Tools & Equipments Manufacturing Facility in Pune India",
@@ -80,7 +79,7 @@ export const metadata: Metadata = {
     title: "Shriniwas Tools & Equipments | Mould & Tool Manufacturer, Pune",
     description:
       "ISO certified precision mould manufacturer in Pune, India. Plastic injection moulds, DMC moulds, press tools & more.",
-    images: ["/company_machines/bannerimage1.png"],
+    images: ["/company_machines/horizonatl_injection_moulding_machine_1.png"],
   },
   alternates: {
     canonical: "https://shriniwastools.com",
@@ -157,7 +156,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${roboto.variable} ${montserrat.variable} h-full antialiased scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} ${space_grotesk.variable} h-full antialiased scroll-smooth`}>
       <head>
         <Script
           id="organization-schema"

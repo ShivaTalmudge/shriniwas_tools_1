@@ -11,7 +11,7 @@ const data: ServiceData = {
   hero: {
     title: "DMC Moulding",
     subtitle: "High-strength, thermoset Dough Moulding Compound solutions for superior electrical insulation and heat resistance.",
-    bgImage: "/company_machines/bannerimage1.png",
+    bgImage: "/company_machines/horizontal_injection_moulding_machine.png",
   },
   overview: {
     title: "Thermoset Moulding Excellence",
@@ -25,7 +25,7 @@ const data: ServiceData = {
         </p>
       </>
     ),
-    image: "/company_machines/horizontal_injection_moulding_machine.png",
+    image: "/company_machines/horizonatl_injection_moulding_machine_1.png",
   },
   keyFeatures: [
     { title: "High Heat Resistance", description: "Maintains stability in extreme temperatures.", icon: "Zap" },

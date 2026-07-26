@@ -2,49 +2,49 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Jigs and Fixtures Manufacturer in Pune | Shriniwas Tools",
-  description: "Leading jigs and fixtures manufacturer in Pune. We engineer custom workholding solutions, inspection gauges, and automated assembly fixtures.",
+  title: "Custom Jigs, Fixtures & Gauges Manufacturer Pune | Shriniwas Tools",
+  description: "Design and manufacturing of custom machining fixtures, welding jigs, and inspection gauges. Built for repeatability and precision in Bhosari, Pune.",
 };
 
 const data: ServiceData = {
   serviceName: "Jigs & Fixtures",
   hero: {
     title: "Jigs & Fixtures",
-    subtitle: "Custom-engineered workholding and assembly solutions to maximize your production efficiency and accuracy.",
-    bgImage: "/company_machines/bannerimage2.png",
+    subtitle: "Welding jigs, CNC fixtures, checking gauges, and assembly aids.",
+    bgImage: "/images/products-cropped/Image3.png",
   },
   overview: {
-    title: "Optimizing the Assembly Line",
+    title: "Precision Jigs & Custom Fixtures",
     description: (
       <>
-        <p className="mb-4">
-          Precision manufacturing and high-speed assembly rely entirely on robust, accurate, and ergonomic workholding. As a specialized jigs and fixtures manufacturer, Shriniwas Tools engineers custom solutions that ensure perfect repeatability while reducing operator fatigue.
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          A great component means nothing if you can&apos;t measure it or hold it properly during production. 
         </p>
-        <p>
-          From heavy-duty CNC machining fixtures to delicate Go/No-Go inspection gauges and poka-yoke assembly jigs, our tooling team builds solutions that physically prevent human error during mass production.
+        <p className="text-gray-700 text-lg leading-relaxed">
+          We design and build custom machining fixtures, welding jigs, and inspection gauges that guarantee repeatability on your assembly line, regardless of operator skill level.
         </p>
       </>
     ),
-    image: "/company_machines/milling_machine.png",
+    image: "/images/products-cropped/Image3.png",
   },
   keyFeatures: [
-    { title: "Poka-Yoke Design", description: "Fool-proof designs that prevent incorrect part loading.", icon: "ShieldCheck" },
-    { title: "Automated Clamping", description: "Pneumatic/hydraulic integration for fast loading.", icon: "Zap" },
-    { title: "High Wear Resistance", description: "Hardened resting pads and locating pins.", icon: "CheckCircle2" },
-    { title: "Ergonomics", description: "Lightweight aluminum frames to reduce operator fatigue.", icon: "Award" },
+    { title: "High Repeatability", description: "Guarantee consistent quality across mass production.", icon: "CheckCircle2" },
+    { title: "Operator Friendly", description: "Poka-yoke designs to prevent assembly errors.", icon: "ThumbsUp" },
+    { title: "Custom Solutions", description: "Tailor-made for your specific CNC or welding setup.", icon: "Settings" },
+    { title: "Durable Build", description: "Hardened contact points for long-term use.", icon: "ShieldCheck" },
   ],
   industries: [
-    { name: "Automotive Assembly", icon: "Car" },
-    { name: "Aerospace Machining", icon: "Plane" },
-    { name: "Electronics Testing", icon: "Zap" },
-    { name: "Heavy Welding", icon: "Box" },
+    { name: "Automotive", icon: "Car" },
+    { name: "Aerospace", icon: "Plane" },
+    { name: "Heavy Machinery", icon: "Factory" },
+    { name: "Electronics", icon: "Zap" },
   ],
   process: [
-    "Process Study",
-    "3D Design",
-    "Machining",
-    "Assembly",
-    "Calibration"
+    "Requirement Analysis",
+    "3D Concept Design",
+    "Precision Machining",
+    "Assembly & Calibration",
+    "Tryout & Handover"
   ]
 };
 

@@ -2,30 +2,30 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Plastic Injection Moulding Manufacturer in Pune, India | Shriniwas Tools",
-  description: "Leading plastic injection moulding manufacturer in Pune. High-volume precision plastic components and injection moulds for automotive & electrical sectors.",
+  title: "Plastic Injection Moulding Services | Shriniwas Tools & Equipments",
+  description: "Custom plastic injection moulding — mould design, tool building, and production — for thermoplastic components. In-house at our ISO 9001:2015 certified facility, Bhosari, Pune.",
 };
 
 const data: ServiceData = {
   serviceName: "Plastic Injection Moulding",
   hero: {
     title: "Plastic Injection Moulding",
-    subtitle: "High-volume precision plastic components and injection moulds for automotive, electrical, and engineering sectors across India.",
-    bgImage: "/company_machines/hero_injection_machine.png",
+    subtitle: "Thermoplastic components for engineering, electrical, and industrial use.",
+    bgImage: "/company_machines/horizonatl_injection_moulding_machine_1.png",
   },
   overview: {
     title: "End-to-End Plastic Injection Moulding",
     description: (
       <>
-        <p className="mb-4">
-          Shriniwas Tools is a premier plastic injection moulding manufacturer. Since 2006, we have specialized in delivering high-volume, defect-free plastic components that meet the stringent requirements of industrial buyers.
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          We design and build injection moulds in-house, then run production on them ourselves — using our Haitian (90/300 Ton) and Yuzumi (120 Ton) moulding machines. 
         </p>
-        <p>
-          We provide a complete turnkey solution—from in-house tool room mould design to final part production. Whether you are an automotive OEM or an electronics manufacturer, our ISO 9001:2015 certified processes guarantee consistency across millions of cycles.
+        <p className="text-gray-700 text-lg leading-relaxed">
+          That means we understand a part&apos;s full journey from CAD file to finished component, and we work to the tolerance your assembly actually needs.
         </p>
       </>
     ),
-    image: "/company_machines/horizonatl_injection_moulding_machine_1.png",
+    image: "/company_machines/horizontal_injection_moulding_machine.png",
   },
   keyFeatures: [
     { title: "High Precision", description: "Micron-level accuracy for critical components.", icon: "CheckCircle2" },

@@ -1,9 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog & Technical Resources | Shriniwas Tools Pune",
-  description: "Read technical articles and industry insights on plastic injection moulding, CNC machining, tool steel selection, and press tools by Shriniwas Tools.",
-  keywords: ["Moulding Blog", "Tool Room Resources", "CNC Machining Articles", "Injection Moulding Tips"],
+  title: "Manufacturing Blog | Shriniwas Tools & Equipments Pune",
+  description: "Insights, guides, and technical articles on plastic injection moulding, CNC machining, and press tools from industry experts.",
 };
 
 export default function BlogLayout({

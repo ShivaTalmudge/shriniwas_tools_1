@@ -1,9 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Quality Assurance & ISO 9001:2015 | Shriniwas Tools Pune",
-  description: "Shriniwas Tools ensures zero-defect manufacturing through rigorous quality control, CMM inspection, and ISO 9001:2015 certified processes in Pune.",
-  keywords: ["Quality Assurance", "ISO 9001:2015 Tool Room", "CMM Inspection Pune", "Precision Engineering Quality"],
+  title: "Quality Assurance & ISO 9001:2015 Certification | Shriniwas Tools & Equipments",
+  description: "Shriniwas Tools & Equipments is ISO 9001:2015 certified for manufacture of dies, moulds and moulded products, backed by a dedicated inspection process at every stage.",
 };
 
 export default function QualityLayout({

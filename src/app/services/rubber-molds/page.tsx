@@ -11,7 +11,7 @@ const data: ServiceData = {
   hero: {
     title: "Rubber Mould Manufacturing",
     subtitle: "Expertly engineered compression and transfer moulds for tear-free, flashless elastomeric components across industrial sectors.",
-    bgImage: "/company_machines/bannerimage1.png",
+    bgImage: "/images/products-cropped/Image8.png",
   },
   overview: {
     title: "Elastomeric Tooling Specialists",
@@ -25,7 +25,7 @@ const data: ServiceData = {
         </p>
       </>
     ),
-    image: "/company_machines/horizonatl_injection_moulding_machine_1.png",
+    image: "/images/products-cropped/Image8.png",
   },
   keyFeatures: [
     { title: "Flashless Design", description: "Precision tear-trim designs for zero post-processing.", icon: "CheckCircle2" },

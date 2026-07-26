@@ -2,50 +2,49 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "CNC Machining Services in Pune | VMC Machining | Shriniwas Tools",
-  description: "High-precision CNC and VMC machining services in Pune. We deliver complex metal and plastic components with micron-level accuracy for industrial applications.",
+  title: "CNC & VMC Machining Services Pune | Shriniwas Tools & Equipments",
+  description: "Precision CNC and VMC machining services in Bhosari, Pune. We machine complex 3D profiles and hardened tool steel with micron-level accuracy.",
 };
 
 const data: ServiceData = {
   serviceName: "CNC & VMC Machining",
   hero: {
     title: "CNC & VMC Machining",
-    subtitle: "Delivering aerospace-grade precision for complex components using advanced multi-axis VMC machining centers in Pune.",
-    bgImage: "/company_machines/wire_cut_machine_2_imp.png",
+    subtitle: "High-tolerance industrial components, mould bases, and aerospace-grade parts.",
+    bgImage: "/company_machines/VMC_2.png",
   },
   overview: {
-    title: "Precision VMC Machining Services",
+    title: "Precision VMC Machining",
     description: (
       <>
-        <p className="mb-4">
-          Computer Numerical Control (CNC) and Vertical Machining Center (VMC) operations form the backbone of modern precision engineering. Shriniwas Tools operates a cutting-edge machine shop dedicated to tight-tolerance subtractive manufacturing.
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          We run three dedicated Vertical Machining Centers (VMCs) capable of handling bed sizes up to 1300x600x600 mm. 
         </p>
-        <p>
-          Our advanced multi-axis VMCs and CNC turning centers allow us to machine complex geometries out of hardened tool steels, aluminum, titanium, and engineering plastics with absolute repeatability and exceptional surface finishes.
+        <p className="text-gray-700 text-lg leading-relaxed">
+          Combined with our M1TR and milling machines, we produce highly complex 3D profiles and core/cavity inserts from hardened tool steel with micron-level repeatability.
         </p>
       </>
     ),
-    image: "/company_machines/VMC_2.png",
+    image: "/company_machines/VMC1.png",
   },
   keyFeatures: [
-    { title: "Tight Tolerances", description: "Consistently holding tolerances down to ±0.005mm.", icon: "CheckCircle2" },
-    { title: "Complex Geometries", description: "Multi-axis capability for intricate 3D profiling.", icon: "Settings" },
-    { title: "High-Speed Machining", description: "12,000 RPM spindles for rapid material removal.", icon: "Zap" },
-    { title: "Hard Milling", description: "Machining hardened steels up to 60 HRC.", icon: "ShieldCheck" },
+    { title: "High Tolerance", description: "Achieving dimensional accuracy down to 5 microns.", icon: "CheckCircle2" },
+    { title: "Large Bed Size", description: "Machining capacity up to 1300x600x600 mm.", icon: "Maximize" },
+    { title: "Hardened Steel", description: "Specialized in machining pre-hardened and tough materials.", icon: "Shield" },
+    { title: "Complex 3D", description: "Advanced CAM programming for intricate 3D profiling.", icon: "Box" },
   ],
   industries: [
     { name: "Aerospace", icon: "Plane" },
     { name: "Automotive", icon: "Car" },
-    { name: "Medical Implants", icon: "Heart" },
-    { name: "Mould Making", icon: "Box" },
-    { name: "Oil & Gas", icon: "Zap" },
+    { name: "Heavy Engineering", icon: "Settings" },
+    { name: "Tool & Die", icon: "Wrench" },
   ],
   process: [
-    "CAM Programming",
-    "Setup",
+    "CAD/CAM",
+    "Setup & Fixturing",
     "Roughing",
     "Finishing",
-    "Inspection"
+    "CMM Inspection"
   ]
 };
 

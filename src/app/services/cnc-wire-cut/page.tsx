@@ -2,49 +2,49 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Wire Cut EDM Services in Pune | Shriniwas Tools",
-  description: "Specialized Wire Cut EDM services in Pune. We achieve micron-level precision in conductive metals and hard alloys for complex tooling.",
+  title: "CNC Wire Cut EDM Services Pune | Shriniwas Tools & Equipments",
+  description: "9 Electronica CNC wire cut machines for high-precision sparking and wire cutting. We produce complex die profiles and extrusion dies in Bhosari, Pune.",
 };
 
 const data: ServiceData = {
   serviceName: "CNC Wire Cut EDM",
   hero: {
     title: "CNC Wire Cut EDM",
-    subtitle: "Achieving impossible geometries and micron-level accuracy in the hardest conductive materials using advanced Electrical Discharge Machining.",
-    bgImage: "/company_machines/wire_cut_floor.png",
+    subtitle: "Extrusion dies, complex punches, and ultra-hard metal profiling.",
+    bgImage: "/company_machines/wire_cut_machine_imp1.png",
   },
   overview: {
-    title: "Precision Wire Cut EDM Services",
+    title: "High-Precision Wire Cut EDM",
     description: (
       <>
-        <p className="mb-4">
-          When traditional subtractive machining cannot achieve the required internal corners or when the material is too hard to mill, Wire Cut EDM offers the ultimate solution. 
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          With 9 Electronica CNC wire cut machines on the floor, we specialize in high-precision sparking and wire cutting for hard conductive metals. 
         </p>
-        <p>
-          At Shriniwas Tools, our wire EDM department utilizes electrically charged brass wire to slice through conductive metals via microscopic electrical sparks. This contactless cutting ensures zero mechanical stress on the workpiece, ensuring absolute flatness and structural integrity.
+        <p className="text-gray-700 text-lg leading-relaxed">
+          This setup allows us to rapidly produce complex die profiles, punches, and extrusion dies that conventional milling simply cannot reach.
         </p>
       </>
     ),
-    image: "/company_machines/wirecut_image2.png",
+    image: "/company_machines/wire_cut_machine_2_imp.png",
   },
   keyFeatures: [
-    { title: "Zero Cutting Force", description: "No mechanical stress on fragile or thin-walled parts.", icon: "Zap" },
-    { title: "Extreme Accuracy", description: "Achieving tolerances as tight as ±0.002 mm.", icon: "CheckCircle2" },
-    { title: "Hardness Independent", description: "Cuts Tungsten Carbide as easily as Aluminum.", icon: "ShieldCheck" },
-    { title: "Complex Tapers", description: "Multi-axis capability for complex conical shapes.", icon: "Settings" },
+    { title: "Fleet of 9 Machines", description: "High volume capacity with rapid turnaround times.", icon: "Factory" },
+    { title: "Ultra-Hard Metals", description: "Effortless cutting of hardened steel and alloys.", icon: "ShieldCheck" },
+    { title: "Complex Profiles", description: "Machining intricate internal corners and shapes.", icon: "Settings" },
+    { title: "High Precision", description: "Micron-level accuracy and superior surface finish.", icon: "CheckCircle2" },
   ],
   industries: [
-    { name: "Tool & Die Making", icon: "Settings" },
-    { name: "Medical Devices", icon: "Heart" },
-    { name: "Extrusion Profiles", icon: "Zap" },
+    { name: "Tool & Die", icon: "Wrench" },
+    { name: "Automotive", icon: "Car" },
     { name: "Aerospace", icon: "Plane" },
+    { name: "Medical Devices", icon: "Heart" },
   ],
   process: [
-    "CAD Import",
-    "Start Hole",
-    "Threading",
-    "Spark Erosion",
-    "Skim Passes"
+    "Programming",
+    "Material Prep",
+    "Wire Cutting",
+    "Surface Finish",
+    "Inspection"
   ]
 };
 

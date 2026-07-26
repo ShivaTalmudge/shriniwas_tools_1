@@ -1,224 +1,287 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import Image from "next/image";
-import { Building2, Settings, Zap, Cpu, Maximize , ChevronRight} from "lucide-react";
+import { motion } from "framer-motion";
+import { ChevronRight, Factory } from "lucide-react";
 
 export default function Infrastructure() {
-  const demoImage = "https://placehold.co/600x400/f3f4f6/1a1a1a/png?text=Image+Uploading+Soon";
-
-  const machines = [
-    {
-      name: "High-Speed VMC (BATLIBOI / AMS)",
-      type: "Vertical Machining Center",
-      capacity: "1300x600x600, 1000x500x500, 500x400x400 mm",
-      qty: "03",
-      application: "3-axis precision milling of hardened tool steel blocks for mould bases and cavities, delivering volumetric accuracy down to 5 microns.",
-      image: "/company_machines/VMC1.png"
-    },
-    {
-      name: "Electronica Wire Cut",
-      type: "CNC Wire Cut EDM",
-      capacity: "400x300x200 mm",
-      qty: "09",
-      application: "Micron-level slicing of intricate profiles and extrusion dies using 0.25mm brass wire, completely eliminating mechanical stress on workpieces.",
-      image: "/company_machines/wire_cut_machine_imp1.png"
-    },
-    {
-      name: "Plunge EDM (Sparking)",
-      type: "Electrical Discharge Machining",
-      capacity: "500X300X200 mm",
-      qty: "01",
-      application: "Precision erosion of complex blind cavities and sharp internal corners where traditional rotating cutting tools cannot reach.",
-      image: demoImage
-    },
-    {
-      name: "Jones & Shipman Grinder",
-      type: "Precision Surface Grinder",
-      capacity: "600x300X300 mm",
-      qty: "02",
-      application: "High-precision surface finishing of die plates and inserts to achieve perfect flatness and mirror-like surface textures.",
-      image: demoImage
-    },
-    {
-      name: "Bridgeport Milling",
-      type: "M1TR Turret Milling",
-      capacity: "350x700, 1270X254 mm",
-      qty: "02",
-      application: "Versatile manual milling for custom jigs, fixtures, and rapid squaring of raw material blocks prior to CNC operations.",
-      image: "/company_machines/milling_machine.png"
-    },
-    {
-      name: "EDM Hole Popper (Taiwan)",
-      type: "High-Speed EDM Drill",
-      capacity: "200X300 mm",
-      qty: "01",
-      application: "Rapid electrical drilling of start holes in hardened tool steel blocks to facilitate subsequent wire cut operations.",
-      image: demoImage
-    },
-    {
-      name: "Haitian Injection Moulding",
-      type: "Servo-Hydraulic IMM",
-      capacity: "90 to 300 Tons",
-      qty: "02",
-      application: "High-volume mass production and rigorous in-house mould proving for automotive and consumer plastic components.",
-      image: "/company_machines/horizonatl_injection_moulding_machine_1.png"
-    },
-    {
-      name: "Yizumi Injection Moulding",
-      type: "Precision IMM",
-      capacity: "120 Tons",
-      qty: "01",
-      application: "High-speed injection moulding specifically calibrated for small, intricate engineering plastic and electrical components.",
-      image: "/company_machines/horizontal_injection_moulding_machine.png"
-    }
-  ];
-
   return (
     <>
       {/* Infrastructure Hero */}
-      <section className="relative min-h-[80vh] lg:min-h-[95vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12">
-        <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/company_machines/wire_cut_floor.png)' }}>
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/20 z-10" />
+      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12 bg-brand-dark">
+        <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40" style={{ backgroundImage: 'url(/company_machines/wire_cut_floor.png)' }}>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/50 z-10" />
         </div>
-        <div className="container relative z-20 px-4 md:px-8 text-left text-white mt-20">
+        <div className="container relative z-20 px-4 md:px-8 text-left text-white mt-10">
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            
             {/* Breadcrumb */}
-            <div className="flex items-center justify-start gap-2 text-sm text-gray-300 mb-6 uppercase tracking-wider">
-              <Link href="/" className="hover:text-brand-accent transition-colors">Home</Link>
+            <div className="flex items-center justify-start gap-2 text-sm text-brand-accent mb-6 uppercase tracking-wider font-bold">
+              <Link href="/" className="hover:text-white transition-colors">Home</Link>
               <ChevronRight className="w-4 h-4" />
-              <span className="text-white font-medium">Infrastructure</span>
+              <span className="text-white">Infrastructure</span>
             </div>
-            <h1 className="text-3xl sm:text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">
-              Our Infrastructure
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-6 leading-tight tracking-tight">
+              Our Infrastructure & Machinery
             </h1>
             <div className="w-24 h-1 bg-brand-accent mb-6" />
-            <p className="text-lg md:text-xl lg:text-xl text-blue-100 max-w-3xl font-light leading-relaxed">
-              Explore our advanced 50,000 sq.ft manufacturing facility in Pune, powered by world-class CNC technology, temperature-controlled inspection labs, and a robust press shop.
+            <p className="text-lg md:text-xl text-gray-300 max-w-3xl font-light leading-relaxed">
+              Our shop floor is built to keep a job moving from wire cut to VMC to mould assembly without losing accuracy at any handoff. Here&apos;s exactly what we run.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Facilities Overview */}
-      <section className="py-24 bg-white">
+      {/* Manufacturing Capability Table */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 md:-mt-32 relative z-30">
-            {[
-              { title: "Precision Tool Room", icon: <Settings className="w-8 h-8 text-white" />, desc: "High-speed 3-Axis & 4-Axis CNCs and Wire Cut EDMs for micrometer accuracy in mould and die making." },
-              { title: "Moulding & Press Shop", icon: <Building2 className="w-8 h-8 text-white" />, desc: "Fully automated injection and compression moulding presses ranging from 50T to 300T for mass production." },
-              { title: "Metrology & QA Lab", icon: <Zap className="w-8 h-8 text-white" />, desc: "Advanced CMM, VMM and surface testing equipment housed in a strictly temperature-controlled environment." }
-            ].map((facility, i) => (
-              <div
-                key={i}
-                className="bg-brand-dark p-8 rounded-2xl shadow-2xl text-white group hover:bg-brand-primary transition-colors animate-in fade-in slide-in-from-bottom-8 duration-700"
-                style={{ animationDelay: `${400 + i * 100}ms`, animationFillMode: "both" }}
-              >
-                <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-accent transition-colors">
-                  {facility.icon}
-                </div>
-                <h3 className="text-2xl font-bold mb-4">{facility.title}</h3>
-                <p className="text-gray-400 group-hover:text-blue-100 transition-colors leading-relaxed">{facility.desc}</p>
-              </div>
-            ))}
+          <div className="mb-10">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-brand-dark mb-2">Manufacturing Capability</h2>
+            <div className="w-16 h-1 bg-brand-accent"></div>
+          </div>
+          
+          <div className="overflow-x-auto bg-white rounded-xl shadow-lg border border-gray-100">
+            <table className="w-full text-left border-collapse min-w-[800px]">
+              <thead>
+                <tr className="bg-brand-dark text-white">
+                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Photo</th>
+                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Machine</th>
+                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Make</th>
+                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Capacity</th>
+                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm text-center">Qty</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="py-4 px-6">
+                    <div className="relative w-24 h-16 rounded overflow-hidden">
+                      <Image src="/company_machines/VMC1.png" alt="VMC machine, Batili Boi, 1300x600x600 at Shriniwas Tools Bhosari facility" fill className="object-cover" />
+                    </div>
+                  </td>
+                  <td className="py-4 px-6 font-medium text-brand-dark">VMC Machine</td>
+                  <td className="py-4 px-6 text-gray-600">Batili Boi / Batili Boi / AMS</td>
+                  <td className="py-4 px-6 text-gray-600">1300x600x600, 1000x500x500, 500x400x400</td>
+                  <td className="py-4 px-6 font-bold text-brand-primary text-center">3</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                  <td className="py-4 px-6">
+                    <div className="relative w-24 h-16 rounded overflow-hidden">
+                      <Image src="/company_machines/wire_cut.png" alt="CNC Wire Cut machine at Shriniwas Tools facility" fill className="object-cover" />
+                    </div>
+                  </td>
+                  <td className="py-4 px-6 font-medium text-brand-dark">CNC Wire Cut</td>
+                  <td className="py-4 px-6 text-gray-600">Electronica</td>
+                  <td className="py-4 px-6 text-gray-600">400x300x200</td>
+                  <td className="py-4 px-6 font-bold text-brand-primary text-center">9</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="py-4 px-6">
+                    <div className="bg-gray-200 w-24 h-16 rounded flex items-center justify-center text-[10px] text-gray-500 text-center leading-tight p-1">[PLACEHOLDER: Add EDM/Sparking photo here]</div>
+                  </td>
+                  <td className="py-4 px-6 font-medium text-brand-dark">Sparking (EDM)</td>
+                  <td className="py-4 px-6 text-gray-600">Electronica</td>
+                  <td className="py-4 px-6 text-gray-600">500x300x200</td>
+                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                  <td className="py-4 px-6">
+                    <div className="bg-gray-200 w-24 h-16 rounded flex items-center justify-center text-[10px] text-gray-500 text-center leading-tight p-1">[PLACEHOLDER: Add Surface Grinder photo here]</div>
+                  </td>
+                  <td className="py-4 px-6 font-medium text-brand-dark">Surface Grinder</td>
+                  <td className="py-4 px-6 text-gray-600">Jones-Shipman</td>
+                  <td className="py-4 px-6 text-gray-600">600x300x300</td>
+                  <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="py-4 px-6">
+                    <div className="bg-gray-200 w-24 h-16 rounded flex items-center justify-center text-[10px] text-gray-500 text-center leading-tight p-1">[PLACEHOLDER: Add M1TR photo here]</div>
+                  </td>
+                  <td className="py-4 px-6 font-medium text-brand-dark">M1TR</td>
+                  <td className="py-4 px-6 text-gray-600">Bridgeport / Jasjit Machine</td>
+                  <td className="py-4 px-6 text-gray-600">350x700, 1270x254mm</td>
+                  <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                  <td className="py-4 px-6">
+                    <div className="relative w-24 h-16 rounded overflow-hidden">
+                      <Image src="/company_machines/milling_machine.png" alt="Milling Machine at Shriniwas Tools facility" fill className="object-cover" />
+                    </div>
+                  </td>
+                  <td className="py-4 px-6 font-medium text-brand-dark">Milling Machine</td>
+                  <td className="py-4 px-6 text-gray-600">Varnier</td>
+                  <td className="py-4 px-6 text-gray-600">1000x400x800</td>
+                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="py-4 px-6">
+                    <div className="bg-gray-200 w-24 h-16 rounded flex items-center justify-center text-[10px] text-gray-500 text-center leading-tight p-1">[PLACEHOLDER: Add EDM Drill photo here]</div>
+                  </td>
+                  <td className="py-4 px-6 font-medium text-brand-dark">EDM Drill</td>
+                  <td className="py-4 px-6 text-gray-600">Taiwan</td>
+                  <td className="py-4 px-6 text-gray-600">200x300</td>
+                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                  <td className="py-4 px-6">
+                    <div className="relative w-24 h-16 rounded overflow-hidden">
+                      <Image src="/company_machines/horizontal_injection_moulding_machine.png" alt="Moulding Machine at Shriniwas Tools facility" fill className="object-cover" />
+                    </div>
+                  </td>
+                  <td className="py-4 px-6 font-medium text-brand-dark">Moulding M/C</td>
+                  <td className="py-4 px-6 text-gray-600">Preet</td>
+                  <td className="py-4 px-6 text-gray-600">300 Ton</td>
+                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="py-4 px-6">
+                    <div className="relative w-24 h-16 rounded overflow-hidden">
+                      <Image src="/company_machines/horizonatl_injection_moulding_machine_1.png" alt="Moulding Machine at Shriniwas Tools facility" fill className="object-cover" />
+                    </div>
+                  </td>
+                  <td className="py-4 px-6 font-medium text-brand-dark">Moulding M/C</td>
+                  <td className="py-4 px-6 text-gray-600">Preet</td>
+                  <td className="py-4 px-6 text-gray-600">150 Ton</td>
+                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                  <td className="py-4 px-6">
+                    <div className="bg-gray-200 w-24 h-16 rounded flex items-center justify-center text-[10px] text-gray-500 text-center leading-tight p-1">[PLACEHOLDER: Add Yuzumi 120T Moulding M/C photo here]</div>
+                  </td>
+                  <td className="py-4 px-6 font-medium text-brand-dark">Moulding M/C</td>
+                  <td className="py-4 px-6 text-gray-600">Yuzumi</td>
+                  <td className="py-4 px-6 text-gray-600">120 Ton</td>
+                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-brand-light relative overflow-hidden">
+      {/* Inspection Capability & Workforce Tables */}
+      <section className="py-20 bg-brand-light border-y border-gray-200">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="flex flex-col lg:flex-row items-center gap-16">
-            <div className="lg:w-1/2">
-              <h2 className="text-sm font-bold text-brand-accent tracking-widest uppercase mb-2">Shop Floor Excellence</h2>
-              <h3 className="text-3xl md:text-3xl font-heading font-bold text-brand-dark mb-6">Optimized Layout</h3>
-              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Our Pune manufacturing facility is designed entirely around lean manufacturing principles. Material flows seamlessly from raw tool steel storage, through the high-speed CNC machining centers, and directly into the QA inspection lab without bottlenecks.
-              </p>
-              <ul className="space-y-4">
-                {[
-                  "Optimized Material Flow (Lean Layout)",
-                  "Climate Controlled CMM Room",
-                  "Dedicated Assembly & Trials Area",
-                  "Overhead EOT Cranes (Up to 15 Tons)"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-brand-accent rounded-full" />
-                    <span className="font-medium text-brand-dark">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             
-            <div className="lg:w-1/2 w-full">
-              {/* Abstract Blueprint / Floor Plan Graphic */}
-              <div className="aspect-[4/3] bg-brand-primary rounded-3xl p-8 relative shadow-2xl overflow-hidden border-4 border-white transition-transform hover:scale-[1.02] duration-500">
-                <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
-                <div className="relative z-10 w-full h-full border-2 border-dashed border-white/50 rounded-xl flex items-center justify-center flex-col">
-                   <Building2 className="w-16 h-16 text-white/50 mb-4" />
-                   <p className="text-white/70 font-mono text-center max-w-xs">Virtual Factory Tour Integration Coming Soon</p>
-                </div>
+            {/* Inspection */}
+            <div>
+              <div className="mb-8">
+                <h2 className="text-2xl font-heading font-bold text-brand-dark mb-2">Inspection Capability</h2>
+                <div className="w-16 h-1 bg-brand-accent"></div>
               </div>
+              <div className="overflow-x-auto bg-white rounded-xl shadow-md border border-gray-100">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="bg-brand-dark text-white">
+                      <th className="py-4 px-6 font-bold uppercase tracking-wider text-sm">Instrument</th>
+                      <th className="py-4 px-6 font-bold uppercase tracking-wider text-sm">Range</th>
+                      <th className="py-4 px-6 font-bold uppercase tracking-wider text-sm">Least Count</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100">
+                    <tr className="hover:bg-brand-light/50 transition-colors">
+                      <td className="py-4 px-6 font-medium text-brand-dark">Digital Vernier Caliper</td>
+                      <td className="py-4 px-6 text-gray-600">0-250</td>
+                      <td className="py-4 px-6 text-gray-600">0.01</td>
+                    </tr>
+                    <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                      <td className="py-4 px-6 font-medium text-brand-dark">Outside Micrometer</td>
+                      <td className="py-4 px-6 text-gray-600">50-150</td>
+                      <td className="py-4 px-6 text-gray-600">0.01</td>
+                    </tr>
+                    <tr className="hover:bg-brand-light/50 transition-colors">
+                      <td className="py-4 px-6 font-medium text-brand-dark">Bore Gauge</td>
+                      <td className="py-4 px-6 text-gray-600">50 x 150</td>
+                      <td className="py-4 px-6 text-gray-600">0.01</td>
+                    </tr>
+                    <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                      <td className="py-4 px-6 font-medium text-brand-dark">Height Gauge</td>
+                      <td className="py-4 px-6 text-gray-600">0-600</td>
+                      <td className="py-4 px-6 text-gray-600">0.01</td>
+                    </tr>
+                    <tr className="hover:bg-brand-light/50 transition-colors">
+                      <td className="py-4 px-6 font-medium text-brand-dark">Surface Plate</td>
+                      <td className="py-4 px-6 text-gray-600">600 x 400</td>
+                      <td className="py-4 px-6 text-gray-600">—</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Workforce */}
+            <div>
+              <div className="mb-8">
+                <h2 className="text-2xl font-heading font-bold text-brand-dark mb-2">Workforce</h2>
+                <div className="w-16 h-1 bg-brand-accent"></div>
+              </div>
+              <div className="overflow-x-auto bg-white rounded-xl shadow-md border border-gray-100">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="bg-brand-dark text-white">
+                      <th className="py-4 px-6 font-bold uppercase tracking-wider text-sm">Category</th>
+                      <th className="py-4 px-6 font-bold uppercase tracking-wider text-sm text-center">Strength</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100">
+                    <tr className="hover:bg-brand-light/50 transition-colors">
+                      <td className="py-4 px-6 font-medium text-brand-dark">Production Supervisor</td>
+                      <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
+                    </tr>
+                    <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                      <td className="py-4 px-6 font-medium text-brand-dark">Quality Inspector</td>
+                      <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
+                    </tr>
+                    <tr className="hover:bg-brand-light/50 transition-colors">
+                      <td className="py-4 px-6 font-medium text-brand-dark">Skilled Operator</td>
+                      <td className="py-4 px-6 font-bold text-brand-primary text-center">4</td>
+                    </tr>
+                    <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                      <td className="py-4 px-6 font-medium text-brand-dark">Semi-Skilled</td>
+                      <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
+                    </tr>
+                    <tr className="hover:bg-brand-light/50 transition-colors">
+                      <td className="py-4 px-6 font-medium text-brand-dark">Helpers</td>
+                      <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Plant Layout Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-4xl mx-auto p-10 bg-brand-dark text-white rounded-2xl shadow-xl relative overflow-hidden border-b-4 border-brand-accent">
+            <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+               <Factory className="w-32 h-32 text-white" />
+            </div>
+            <div className="relative z-10">
+              <h2 className="text-2xl font-heading font-bold text-brand-accent mb-4">Plant Layout</h2>
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light">
+                Our facility is laid out with wire cut and EDM stations on one side, VMC and milling on the other, and a dedicated mould assembly and inspection area in between — minimizing part movement between processes.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Merged Machinery Section */}
-      <section className="py-20 bg-white" id="machinery">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Equipment List</h2>
-            <h3 className="text-3xl md:text-3xl font-heading font-bold text-brand-dark mb-6">Our Machinery</h3>
-            <p className="text-gray-600 text-lg">A formidable battery of advanced VMCs, Wire Cut EDMs, and high-tonnage moulding presses to handle the most demanding manufacturing challenges.</p>
-          </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {machines.map((machine, i) => (
-              <div
-                key={i}
-                className="group border border-gray-100 rounded-3xl overflow-hidden hover:border-brand-accent transition-colors bg-white shadow-xl shadow-gray-200/50 animate-in fade-in slide-in-from-bottom-8 duration-700"
-                style={{ animationDelay: `${i * 100}ms`, animationFillMode: "both" }}
-              >
-                <div className="aspect-[4/3] relative overflow-hidden bg-gray-100">
-                  <Image
-                    src={machine.image}
-                    alt={machine.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0"
-                  />
-                  <div className="absolute top-4 right-4 bg-brand-dark text-white px-3 py-1 rounded-full text-xs font-bold tracking-wider">
-                    Qty: {machine.qty}
-                  </div>
-                </div>
-                
-                <div className="p-8">
-                  <h3 className="text-2xl font-heading font-bold text-brand-dark mb-1">{machine.name}</h3>
-                  <p className="text-brand-accent font-medium mb-6">{machine.type}</p>
-                  
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <Maximize className="w-5 h-5 text-gray-400" />
-                      <div>
-                        <div className="text-xs text-gray-500 font-bold uppercase">Capacity</div>
-                        <div className="text-brand-dark font-medium">{machine.capacity}</div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Cpu className="w-5 h-5 text-gray-400" />
-                      <div>
-                        <div className="text-xs text-gray-500 font-bold uppercase">Application</div>
-                        <div className="text-brand-dark font-medium">{machine.application}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+      {/* CTA Section */}
+      <section className="py-20 md:py-28 bg-brand-light border-t border-gray-100 text-center">
+        <div className="container mx-auto px-4 md:px-8 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Have a spec that needs this kind of capacity?</h2>
+          <div className="mt-10">
+            <Link href="/contact" className="inline-flex items-center justify-center px-10 py-5 bg-brand-accent hover:bg-orange-600 text-white font-bold rounded-md transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-xl uppercase tracking-wider text-sm text-center">
+              Get a Quote <ChevronRight className="w-5 h-5 ml-2" />
+            </Link>
           </div>
         </div>
       </section>
