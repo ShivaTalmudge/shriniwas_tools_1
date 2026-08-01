@@ -44,7 +44,7 @@ export default function Contact() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12 bg-brand-dark">
+      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden pt-[160px] pb-8 md:pt-[180px] md:pb-12 bg-brand-dark">
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40" 
           style={{ backgroundImage: 'url(/company_machines/VMC1.png)' }}

@@ -9,7 +9,7 @@ export default function Infrastructure() {
   return (
     <>
       {/* Infrastructure Hero */}
-      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden pt-[120px] pb-8 md:pt-[140px] md:pb-12 bg-brand-dark">
+      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden pt-[160px] pb-8 md:pt-[180px] md:pb-12 bg-brand-dark">
         <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40" style={{ backgroundImage: 'url(/company_machines/wire_cut_floor.png)' }}>
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/50 z-10" />
         </div>
@@ -51,110 +51,140 @@ export default function Infrastructure() {
                   <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Photo</th>
                   <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Machine</th>
                   <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Make</th>
-                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Capacity</th>
+                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm text-center">Capacity</th>
                   <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm text-center">Qty</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
-                <tr className="hover:bg-brand-light/50 transition-colors">
+                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-white">
                   <td className="py-4 px-6">
-                    <div className="relative w-24 h-16 rounded overflow-hidden">
-                      <Image src="/company_machines/VMC1.png" alt="VMC machine, Batili Boi, 1300x600x600 at Shriniwas Tools Bhosari facility" fill className="object-cover" />
+                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
+                      <Image src="/company_machines/VMC1.png" alt="VMC machine, Batili Boi, 1300x600x600 at Shriniwas Tools Bhosari facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                     </div>
                   </td>
-                  <td className="py-4 px-6 font-medium text-brand-dark">VMC Machine</td>
-                  <td className="py-4 px-6 text-gray-600">Batili Boi / Batili Boi / AMS</td>
-                  <td className="py-4 px-6 text-gray-600">1300x600x600, 1000x500x500, 500x400x400</td>
-                  <td className="py-4 px-6 font-bold text-brand-primary text-center">3</td>
+                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">VMC Machine</td>
+                  <td className="py-4 px-6 text-gray-600 font-medium">Batili Boi / AMS</td>
+                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
+                    <span className="bg-gray-100 px-2 py-1 rounded">1300x600, 1000x500</span>
+                  </td>
+                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">3</td>
                 </tr>
-                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
                   <td className="py-4 px-6">
-                    <div className="relative w-24 h-16 rounded overflow-hidden">
-                      <Image src="/company_machines/wire_cut.png" alt="CNC Wire Cut machine at Shriniwas Tools facility" fill className="object-cover" />
+                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
+                      <Image src="/company_machines/wire_cut.png" alt="CNC Wire Cut machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                     </div>
                   </td>
-                  <td className="py-4 px-6 font-medium text-brand-dark">CNC Wire Cut</td>
-                  <td className="py-4 px-6 text-gray-600">Electronica</td>
-                  <td className="py-4 px-6 text-gray-600">400x300x200</td>
-                  <td className="py-4 px-6 font-bold text-brand-primary text-center">9</td>
-                </tr>
-                <tr className="hover:bg-brand-light/50 transition-colors">
-                  <td className="py-4 px-6">
-                    <div className="bg-gray-200 w-24 h-16 rounded flex items-center justify-center text-[10px] text-gray-500 text-center leading-tight p-1">[PLACEHOLDER: Add EDM/Sparking photo here]</div>
+                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">CNC Wire Cut</td>
+                  <td className="py-4 px-6 text-gray-600 font-medium">Electronica</td>
+                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
+                    <span className="bg-gray-100 px-2 py-1 rounded">400x300x200</span>
                   </td>
-                  <td className="py-4 px-6 font-medium text-brand-dark">Sparking (EDM)</td>
-                  <td className="py-4 px-6 text-gray-600">Electronica</td>
-                  <td className="py-4 px-6 text-gray-600">500x300x200</td>
-                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
+                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">9</td>
                 </tr>
-                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-white">
                   <td className="py-4 px-6">
-                    <div className="bg-gray-200 w-24 h-16 rounded flex items-center justify-center text-[10px] text-gray-500 text-center leading-tight p-1">[PLACEHOLDER: Add Surface Grinder photo here]</div>
-                  </td>
-                  <td className="py-4 px-6 font-medium text-brand-dark">Surface Grinder</td>
-                  <td className="py-4 px-6 text-gray-600">Jones-Shipman</td>
-                  <td className="py-4 px-6 text-gray-600">600x300x300</td>
-                  <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
-                </tr>
-                <tr className="hover:bg-brand-light/50 transition-colors">
-                  <td className="py-4 px-6">
-                    <div className="bg-gray-200 w-24 h-16 rounded flex items-center justify-center text-[10px] text-gray-500 text-center leading-tight p-1">[PLACEHOLDER: Add M1TR photo here]</div>
-                  </td>
-                  <td className="py-4 px-6 font-medium text-brand-dark">M1TR</td>
-                  <td className="py-4 px-6 text-gray-600">Bridgeport / Jasjit Machine</td>
-                  <td className="py-4 px-6 text-gray-600">350x700, 1270x254mm</td>
-                  <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
-                </tr>
-                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
-                  <td className="py-4 px-6">
-                    <div className="relative w-24 h-16 rounded overflow-hidden">
-                      <Image src="/company_machines/milling_machine.png" alt="Milling Machine at Shriniwas Tools facility" fill className="object-cover" />
+                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
+                      <Image src="/company_machines/edm_sparking.png" alt="Sparking EDM machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                     </div>
                   </td>
-                  <td className="py-4 px-6 font-medium text-brand-dark">Milling Machine</td>
-                  <td className="py-4 px-6 text-gray-600">Varnier</td>
-                  <td className="py-4 px-6 text-gray-600">1000x400x800</td>
-                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
-                </tr>
-                <tr className="hover:bg-brand-light/50 transition-colors">
-                  <td className="py-4 px-6">
-                    <div className="bg-gray-200 w-24 h-16 rounded flex items-center justify-center text-[10px] text-gray-500 text-center leading-tight p-1">[PLACEHOLDER: Add EDM Drill photo here]</div>
+                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Sparking (EDM)</td>
+                  <td className="py-4 px-6 text-gray-600 font-medium">Electronica</td>
+                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
+                    <span className="bg-gray-100 px-2 py-1 rounded">500x300x200</span>
                   </td>
-                  <td className="py-4 px-6 font-medium text-brand-dark">EDM Drill</td>
-                  <td className="py-4 px-6 text-gray-600">Taiwan</td>
-                  <td className="py-4 px-6 text-gray-600">200x300</td>
-                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
+                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
                 </tr>
-                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
+                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
                   <td className="py-4 px-6">
-                    <div className="relative w-24 h-16 rounded overflow-hidden">
-                      <Image src="/company_machines/horizontal_injection_moulding_machine.png" alt="Moulding Machine at Shriniwas Tools facility" fill className="object-cover" />
+                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
+                      <Image src="/company_machines/surface_grinder.png" alt="Surface Grinder at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                     </div>
                   </td>
-                  <td className="py-4 px-6 font-medium text-brand-dark">Moulding M/C</td>
-                  <td className="py-4 px-6 text-gray-600">Preet</td>
-                  <td className="py-4 px-6 text-gray-600">300 Ton</td>
-                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
+                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Surface Grinder</td>
+                  <td className="py-4 px-6 text-gray-600 font-medium">Jones-Shipman</td>
+                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
+                    <span className="bg-gray-100 px-2 py-1 rounded">600x300x300</span>
+                  </td>
+                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">2</td>
                 </tr>
-                <tr className="hover:bg-brand-light/50 transition-colors">
+                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-white">
                   <td className="py-4 px-6">
-                    <div className="relative w-24 h-16 rounded overflow-hidden">
-                      <Image src="/company_machines/horizonatl_injection_moulding_machine_1.png" alt="Moulding Machine at Shriniwas Tools facility" fill className="object-cover" />
+                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
+                      <Image src="/company_machines/m1tr_milling.png" alt="M1TR Milling machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                     </div>
                   </td>
-                  <td className="py-4 px-6 font-medium text-brand-dark">Moulding M/C</td>
-                  <td className="py-4 px-6 text-gray-600">Preet</td>
-                  <td className="py-4 px-6 text-gray-600">150 Ton</td>
-                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
-                </tr>
-                <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
-                  <td className="py-4 px-6">
-                    <div className="bg-gray-200 w-24 h-16 rounded flex items-center justify-center text-[10px] text-gray-500 text-center leading-tight p-1">[PLACEHOLDER: Add Yuzumi 120T Moulding M/C photo here]</div>
+                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">M1TR</td>
+                  <td className="py-4 px-6 text-gray-600 font-medium">Bridgeport / Jasjit</td>
+                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
+                    <span className="bg-gray-100 px-2 py-1 rounded">350x700, 1270x254</span>
                   </td>
-                  <td className="py-4 px-6 font-medium text-brand-dark">Moulding M/C</td>
-                  <td className="py-4 px-6 text-gray-600">Yuzumi</td>
-                  <td className="py-4 px-6 text-gray-600">120 Ton</td>
-                  <td className="py-4 px-6 font-bold text-brand-primary text-center">1</td>
+                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">2</td>
+                </tr>
+                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
+                  <td className="py-4 px-6">
+                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
+                      <Image src="/company_machines/milling_machine.png" alt="Milling Machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                  </td>
+                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Milling Machine</td>
+                  <td className="py-4 px-6 text-gray-600 font-medium">Varnier</td>
+                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
+                    <span className="bg-gray-100 px-2 py-1 rounded">1000x400x800</span>
+                  </td>
+                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
+                </tr>
+                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-white">
+                  <td className="py-4 px-6">
+                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
+                      <Image src="/company_machines/edm_drill.png" alt="EDM Drill at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                  </td>
+                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">EDM Drill</td>
+                  <td className="py-4 px-6 text-gray-600 font-medium">Taiwan</td>
+                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
+                    <span className="bg-gray-100 px-2 py-1 rounded">200x300</span>
+                  </td>
+                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
+                </tr>
+                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
+                  <td className="py-4 px-6">
+                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
+                      <Image src="/company_machines/horizontal_injection_moulding_machine.png" alt="Moulding Machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                  </td>
+                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Moulding M/C</td>
+                  <td className="py-4 px-6 text-gray-600 font-medium">Preet</td>
+                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
+                    <span className="bg-gray-100 px-2 py-1 rounded">300 Ton</span>
+                  </td>
+                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
+                </tr>
+                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-white">
+                  <td className="py-4 px-6">
+                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
+                      <Image src="/company_machines/horizonatl_injection_moulding_machine_1.png" alt="Moulding Machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                  </td>
+                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Moulding M/C</td>
+                  <td className="py-4 px-6 text-gray-600 font-medium">Preet</td>
+                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
+                    <span className="bg-gray-100 px-2 py-1 rounded">150 Ton</span>
+                  </td>
+                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
+                </tr>
+                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
+                  <td className="py-4 px-6">
+                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
+                      <Image src="/company_machines/yuzumi_moulding.png" alt="Yuzumi 120T Moulding M/C at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                  </td>
+                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Moulding M/C</td>
+                  <td className="py-4 px-6 text-gray-600 font-medium">Yuzumi</td>
+                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
+                    <span className="bg-gray-100 px-2 py-1 rounded">120 Ton</span>
+                  </td>
+                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
                 </tr>
               </tbody>
             </table>
@@ -183,28 +213,28 @@ export default function Infrastructure() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-100">
-                    <tr className="hover:bg-brand-light/50 transition-colors">
-                      <td className="py-4 px-6 font-medium text-brand-dark">Digital Vernier Caliper</td>
+                    <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md cursor-default bg-white">
+                      <td className="py-4 px-6 font-bold text-brand-dark">Digital Vernier Caliper</td>
                       <td className="py-4 px-6 text-gray-600">0-250</td>
                       <td className="py-4 px-6 text-gray-600">0.01</td>
                     </tr>
-                    <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
-                      <td className="py-4 px-6 font-medium text-brand-dark">Outside Micrometer</td>
+                    <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
+                      <td className="py-4 px-6 font-bold text-brand-dark">Outside Micrometer</td>
                       <td className="py-4 px-6 text-gray-600">50-150</td>
                       <td className="py-4 px-6 text-gray-600">0.01</td>
                     </tr>
-                    <tr className="hover:bg-brand-light/50 transition-colors">
-                      <td className="py-4 px-6 font-medium text-brand-dark">Bore Gauge</td>
+                    <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md cursor-default bg-white">
+                      <td className="py-4 px-6 font-bold text-brand-dark">Bore Gauge</td>
                       <td className="py-4 px-6 text-gray-600">50 x 150</td>
                       <td className="py-4 px-6 text-gray-600">0.01</td>
                     </tr>
-                    <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
-                      <td className="py-4 px-6 font-medium text-brand-dark">Height Gauge</td>
+                    <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
+                      <td className="py-4 px-6 font-bold text-brand-dark">Height Gauge</td>
                       <td className="py-4 px-6 text-gray-600">0-600</td>
                       <td className="py-4 px-6 text-gray-600">0.01</td>
                     </tr>
-                    <tr className="hover:bg-brand-light/50 transition-colors">
-                      <td className="py-4 px-6 font-medium text-brand-dark">Surface Plate</td>
+                    <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md cursor-default bg-white">
+                      <td className="py-4 px-6 font-bold text-brand-dark">Surface Plate</td>
                       <td className="py-4 px-6 text-gray-600">600 x 400</td>
                       <td className="py-4 px-6 text-gray-600">—</td>
                     </tr>
@@ -228,24 +258,24 @@ export default function Infrastructure() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-100">
-                    <tr className="hover:bg-brand-light/50 transition-colors">
-                      <td className="py-4 px-6 font-medium text-brand-dark">Production Supervisor</td>
+                    <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md cursor-default bg-white">
+                      <td className="py-4 px-6 font-bold text-brand-dark">Production Supervisor</td>
                       <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
                     </tr>
-                    <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
-                      <td className="py-4 px-6 font-medium text-brand-dark">Quality Inspector</td>
+                    <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
+                      <td className="py-4 px-6 font-bold text-brand-dark">Quality Inspector</td>
                       <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
                     </tr>
-                    <tr className="hover:bg-brand-light/50 transition-colors">
-                      <td className="py-4 px-6 font-medium text-brand-dark">Skilled Operator</td>
+                    <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md cursor-default bg-white">
+                      <td className="py-4 px-6 font-bold text-brand-dark">Skilled Operator</td>
                       <td className="py-4 px-6 font-bold text-brand-primary text-center">4</td>
                     </tr>
-                    <tr className="hover:bg-brand-light/50 transition-colors bg-gray-50/50">
-                      <td className="py-4 px-6 font-medium text-brand-dark">Semi-Skilled</td>
+                    <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
+                      <td className="py-4 px-6 font-bold text-brand-dark">Semi-Skilled</td>
                       <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
                     </tr>
-                    <tr className="hover:bg-brand-light/50 transition-colors">
-                      <td className="py-4 px-6 font-medium text-brand-dark">Helpers</td>
+                    <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md cursor-default bg-white">
+                      <td className="py-4 px-6 font-bold text-brand-dark">Helpers</td>
                       <td className="py-4 px-6 font-bold text-brand-primary text-center">2</td>
                     </tr>
                   </tbody>

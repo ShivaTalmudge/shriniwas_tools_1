@@ -9,10 +9,10 @@ export default function About() {
   return (
     <>
       {/* Unified Hero Section */}
-      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex flex-col lg:flex-row items-stretch overflow-hidden pt-[100px] md:pt-[120px] bg-brand-dark">
+      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex flex-col lg:flex-row items-stretch overflow-hidden bg-brand-dark">
         {/* Left Side Content */}
         <div className="w-full lg:w-1/2 flex items-center relative z-10 order-2 lg:order-1 bg-brand-dark lg:bg-transparent">
-          <div className="w-full max-w-3xl ml-auto px-4 md:px-8 py-16 lg:py-24 xl:pr-16">
+          <div className="w-full max-w-3xl ml-auto px-4 md:px-8 py-12 lg:pt-[180px] lg:pb-24 xl:pr-16">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -41,9 +41,9 @@ export default function About() {
             style={{ backgroundImage: 'url(/company_machines/milling_machine.png)' }}
           >
             {/* Soft gradient fade into the image from the left on desktop */}
-            <div className="hidden lg:block absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-brand-dark to-transparent z-10" />
+            <div className="hidden lg:block absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-brand-dark via-brand-dark/50 to-transparent z-10" />
             {/* Soft gradient fade into the image from the bottom on mobile */}
-            <div className="lg:hidden absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-brand-dark to-transparent z-10" />
+            <div className="lg:hidden absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent z-10" />
           </div>
         </div>
       </section>
@@ -61,13 +61,13 @@ export default function About() {
             >
               <div className="aspect-square rounded-full overflow-hidden relative border-[12px] border-brand-light shadow-2xl">
                 <Image
-                  src="/images/hero/hero_about.png"
+                  src="/company_machines/programmer_office.png"
                   alt="Factory Hero Photo"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="absolute bottom-0 right-0 sm:bottom-4 sm:right-4 md:bottom-10 md:right-10 bg-brand-accent p-4 md:p-6 rounded-2xl shadow-xl text-white w-48 sm:w-auto sm:max-w-xs z-10">
+              <div className="absolute bottom-0 right-0 sm:bottom-4 sm:right-4 md:bottom-10 md:right-10 bg-gradient-to-br from-brand-accent to-orange-500 p-4 md:p-6 rounded-2xl shadow-2xl shadow-brand-accent/30 text-white w-48 sm:w-auto sm:max-w-xs z-10 border border-white/20">
                 <div className="font-heading font-bold text-xl sm:text-2xl md:text-3xl mb-1">Since 2006</div>
                 <div className="text-xs sm:text-sm font-medium">Of Manufacturing Excellence</div>
               </div>
@@ -87,8 +87,14 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="p-8 bg-brand-light rounded-2xl border border-gray-200">
-                <h3 className="font-bold text-xl mb-3 tracking-tight text-brand-dark">Our Mission</h3>
+              <div className="p-8 bg-brand-light rounded-2xl border border-gray-200 shadow-inner relative overflow-hidden group">
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-brand-accent to-orange-500" />
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:scale-110 transition-transform">
+                    <LayoutDashboard className="w-5 h-5" />
+                  </div>
+                  <h3 className="font-bold text-xl tracking-tight text-brand-dark">Our Mission</h3>
+                </div>
                 <p className="text-gray-700 leading-relaxed text-lg italic">
                   &quot;To provide reliable and cost-effective manufacturing solutions for the global market.&quot;
                 </p>
@@ -99,11 +105,15 @@ export default function About() {
       </section>
 
       {/* By the Numbers Section */}
-      <section className="py-16 bg-brand-dark relative border-t-4 border-brand-accent">
-        <div className="container mx-auto px-4 md:px-8">
+      <section className="py-24 bg-brand-dark relative border-t-4 border-brand-accent overflow-hidden">
+        <div className="absolute inset-0 opacity-20 mix-blend-overlay bg-[url('/noise.png')]" />
+        <div className="absolute top-0 left-0 w-96 h-96 bg-brand-primary/20 rounded-full blur-[100px] pointer-events-none -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-accent/10 rounded-full blur-[100px] pointer-events-none translate-x-1/2 translate-y-1/2" />
+        
+        <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-colors group">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-accent/5 group backdrop-blur-sm relative overflow-hidden">
               <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Calendar className="w-8 h-8 text-brand-accent" />
               </div>
@@ -111,7 +121,7 @@ export default function About() {
               <p className="text-gray-400 font-medium">Manufacturing Excellence</p>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-colors group">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-accent/5 group backdrop-blur-sm relative overflow-hidden">
               <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Settings className="w-8 h-8 text-brand-accent" />
               </div>
@@ -119,7 +129,7 @@ export default function About() {
               <p className="text-gray-400 font-medium">CNC Wire Cut Setup</p>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-colors group">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-accent/5 group backdrop-blur-sm relative overflow-hidden">
               <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Factory className="w-8 h-8 text-brand-accent" />
               </div>
@@ -127,7 +137,7 @@ export default function About() {
               <p className="text-gray-400 font-medium">High-Speed Machining</p>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-colors group">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-accent/5 group backdrop-blur-sm relative overflow-hidden">
               <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <ShieldCheck className="w-8 h-8 text-brand-accent" />
               </div>
@@ -149,8 +159,11 @@ export default function About() {
               It&apos;s a flat structure by design — a design query or a tolerance question goes straight to the person who can answer it.
             </p>
             {/* Team Photo Placeholder */}
-            <div className="max-w-4xl mx-auto bg-gray-200 border-2 border-dashed border-gray-400 rounded-xl h-64 flex items-center justify-center mb-12">
-              <span className="text-gray-500 font-bold uppercase tracking-widest text-lg">[PLACEHOLDER: Add real team photo here]</span>
+            <div className="max-w-4xl mx-auto bg-white border-2 border-dashed border-gray-300 rounded-2xl h-80 flex flex-col items-center justify-center mb-12 hover:border-brand-primary transition-colors hover:bg-gray-50 cursor-pointer group shadow-sm">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Image src="/company_machines/programmer_office.png" alt="Upload Icon" width={32} height={32} className="opacity-40 object-cover rounded-full" />
+              </div>
+              <span className="text-gray-400 font-bold uppercase tracking-widest text-sm">[PLACEHOLDER: Upload Team Photo]</span>
             </div>
           </div>
 
@@ -160,10 +173,13 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-white border-2 border-brand-primary rounded-2xl shadow-xl p-6 text-center w-72 relative z-10"
+              className="bg-white border-2 border-brand-primary rounded-3xl shadow-2xl shadow-brand-primary/20 p-8 text-center w-80 relative z-10 hover:-translate-y-2 transition-transform duration-500 group"
             >
-              <div className="bg-brand-primary text-white py-2 px-6 rounded-lg font-bold text-lg mb-4 -mt-11 mx-auto w-max shadow-md uppercase tracking-wider">
+              <div className="bg-brand-primary text-white py-2 px-8 rounded-full font-bold text-sm mb-6 -mt-12 mx-auto w-max shadow-xl uppercase tracking-wider border-2 border-white group-hover:bg-brand-accent transition-colors duration-500">
                 Director
+              </div>
+              <div className="w-20 h-20 bg-gray-100 rounded-full mb-4 mx-auto border-4 border-white shadow-md flex items-center justify-center overflow-hidden">
+                 <span className="text-gray-400 font-bold text-3xl">N</span>
               </div>
               <h3 className="font-heading font-black text-2xl text-brand-dark">Nagendra Sheregar</h3>
             </motion.div>
@@ -197,11 +213,14 @@ export default function About() {
                   {/* Mobile Connecting Line */}
                   <div className="w-[2px] h-8 bg-brand-primary/30 block md:hidden -mt-8 mb-0"></div>
                   
-                  <div className="bg-white border border-gray-200 rounded-2xl shadow-lg p-5 pb-6 text-center w-full max-w-[240px] hover:border-brand-accent hover:shadow-xl transition-all duration-300 relative group flex flex-col items-center">
-                    <div className="bg-brand-dark group-hover:bg-brand-accent transition-colors text-white py-1.5 px-4 rounded-lg font-bold text-sm mb-4 -mt-9 mx-auto w-max shadow-md uppercase tracking-wider text-center">
+                  <div className="bg-white border border-gray-200 rounded-3xl shadow-lg p-6 pb-8 text-center w-full max-w-[240px] hover:border-brand-accent/50 hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-accent/10 transition-all duration-500 relative group flex flex-col items-center">
+                    <div className="bg-gradient-to-r from-brand-dark to-brand-primary group-hover:from-brand-accent group-hover:to-orange-500 transition-all duration-500 text-white py-2 px-5 rounded-full font-bold text-xs mb-5 -mt-10 mx-auto w-max shadow-xl uppercase tracking-wider text-center">
                       {member.role}
                     </div>
-                    <h3 className="font-heading font-bold text-xl text-brand-dark">{member.name}</h3>
+                    <div className="w-16 h-16 bg-gray-100 rounded-full mb-4 border-2 border-white shadow-inner flex items-center justify-center overflow-hidden">
+                       <span className="text-gray-400 font-bold text-xl">{member.name.charAt(0)}</span>
+                    </div>
+                    <h3 className="font-heading font-bold text-lg text-brand-dark group-hover:text-brand-primary transition-colors">{member.name}</h3>
                   </div>
                 </motion.div>
               ))}
@@ -218,11 +237,11 @@ export default function About() {
             From precision machining to final inspection, explore our fully-equipped tool room or request a quote for your project.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-            <Link href="/infrastructure" className="w-full sm:w-auto px-8 py-4 bg-brand-accent hover:bg-orange-600 text-white font-bold rounded-md transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 uppercase tracking-wider text-sm text-center">
-              View Our Infrastructure <ChevronRight className="w-5 h-5" />
+            <Link href="/infrastructure" className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-brand-accent to-orange-500 hover:brightness-110 text-white font-bold rounded-full transition-all duration-500 hover:-translate-y-1 shadow-lg hover:shadow-2xl shadow-brand-accent/40 flex items-center justify-center gap-2 uppercase tracking-wider text-sm text-center group">
+              View Our Infrastructure <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link href="/contact" className="w-full sm:w-auto px-8 py-4 bg-brand-primary hover:bg-brand-secondary border border-brand-primary text-white font-bold rounded-md transition-all duration-300 hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2 uppercase tracking-wider text-sm text-center">
-              Get a Quote <Factory className="w-5 h-5" />
+            <Link href="/contact" className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-gray-50 border-2 border-brand-primary/20 text-brand-primary font-bold rounded-full transition-all duration-500 hover:-translate-y-1 shadow-md hover:shadow-xl hover:border-brand-primary/50 flex items-center justify-center gap-2 uppercase tracking-wider text-sm text-center group">
+              Get a Quote <Factory className="w-5 h-5 group-hover:scale-110 transition-transform" />
             </Link>
           </div>
         </div>

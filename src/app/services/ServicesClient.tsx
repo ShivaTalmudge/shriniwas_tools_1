@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Factory, Cpu, Zap, Component, Wrench, Hammer, ChevronRight } from "lucide-react";
 
-export default function ServicesPage() {
+export default function ServicesClient() {
   const services = [
     {
       title: "Plastic Injection Moulding",
@@ -76,7 +76,7 @@ export default function ServicesPage() {
         <div className="w-full lg:w-1/2 relative min-h-[35vh] lg:min-h-full order-1 lg:order-2">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-            style={{ backgroundImage: 'url(/company_machines/VMC_2.png)' }}
+            style={{ backgroundImage: 'url(/company_machines/VMC_2.webp)' }}
           >
             {/* Soft gradient fade into the image from the left on desktop */}
             <div className="hidden lg:block absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-brand-dark via-brand-dark/50 to-transparent z-10" />

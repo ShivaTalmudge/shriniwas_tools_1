@@ -39,10 +39,10 @@ export default function Blog() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex flex-col lg:flex-row items-stretch overflow-hidden pt-[100px] md:pt-[120px] bg-brand-dark">
+      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex flex-col lg:flex-row items-stretch overflow-hidden bg-brand-dark">
         {/* Left Side Content */}
         <div className="w-full lg:w-1/2 flex items-center relative z-10 order-2 lg:order-1 bg-brand-dark lg:bg-transparent">
-          <div className="w-full max-w-3xl ml-auto px-4 md:px-8 py-16 lg:py-24 xl:pr-16">
+          <div className="w-full max-w-3xl ml-auto px-4 md:px-8 py-12 lg:pt-[180px] lg:pb-24 xl:pr-16">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -71,9 +71,9 @@ export default function Blog() {
             style={{ backgroundImage: 'url(/company_machines/wire_cut_machine_imp1.png)' }}
           >
             {/* Soft gradient fade into the image from the left on desktop */}
-            <div className="hidden lg:block absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-brand-dark to-transparent z-10" />
+            <div className="hidden lg:block absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-brand-dark via-brand-dark/50 to-transparent z-10" />
             {/* Soft gradient fade into the image from the bottom on mobile */}
-            <div className="lg:hidden absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-brand-dark to-transparent z-10" />
+            <div className="lg:hidden absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent z-10" />
           </div>
         </div>
       </section>

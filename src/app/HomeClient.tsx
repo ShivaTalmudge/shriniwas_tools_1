@@ -136,11 +136,11 @@ export default function HomeClient() {
       />
 
       {/* 1. Hero */}
-      <section ref={heroRef} className="relative min-h-[100dvh] md:h-screen flex items-center justify-start overflow-hidden pt-[120px] pb-10 md:pt-[140px] md:pb-12">
+      <section ref={heroRef} className="relative min-h-[100dvh] md:h-screen flex items-center justify-start overflow-hidden pt-[160px] pb-10 md:pt-[180px] md:pb-12">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/20 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/70 to-transparent z-10" />
           <Image
-            src="/images/hero/hero_home.png"
+            src="/company_machines/bannerimage2.png"
             alt="Precision Tooling & Mould Manufacturing Facility in Bhosari, Pune"
             fill
             className="object-cover"
@@ -148,7 +148,7 @@ export default function HomeClient() {
           />
         </motion.div>
 
-        <div className="container mx-auto relative z-10 px-4 md:px-8 text-left text-white mt-16">
+        <div className="container mx-auto relative z-10 px-4 md:px-8 text-left text-white">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -178,13 +178,13 @@ export default function HomeClient() {
           >
             <button
               onClick={openQuoteModal}
-              className="px-8 py-4 bg-brand-accent hover:bg-orange-600 text-white font-bold uppercase tracking-wider rounded-full hover:-translate-y-1 hover:shadow-xl shadow-brand-accent/20 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-3"
+              className="px-8 py-4 bg-gradient-to-r from-brand-accent to-orange-500 hover:brightness-110 text-white font-bold uppercase tracking-wider rounded-full hover:-translate-y-1 hover:shadow-2xl shadow-lg shadow-brand-accent/40 transition-all duration-500 w-full sm:w-auto flex items-center justify-center gap-3 group"
             >
-              Get a Quote <ArrowRight className="w-5 h-5" />
+              Get a Quote <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <Link
               href="/services"
-              className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold uppercase tracking-wider rounded-full border border-white/30 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 w-full sm:w-auto flex items-center justify-center"
+              className="px-8 py-4 bg-white/5 hover:bg-white/10 backdrop-blur-md text-white font-bold uppercase tracking-wider rounded-full border border-white/20 hover:-translate-y-1 hover:shadow-xl shadow-white/5 transition-all duration-500 w-full sm:w-auto flex items-center justify-center"
             >
               Explore Our Services
             </Link>
@@ -223,10 +223,10 @@ export default function HomeClient() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1, duration: 0.5 }}
-                  className="bg-white p-8 rounded-sm shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-b-4 border-brand-accent/20 hover:border-brand-accent group h-full flex flex-col"
+                  className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-brand-accent/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group h-full flex flex-col relative overflow-hidden"
                 >
-                  <div className="w-14 h-14 bg-brand-light rounded-sm flex items-center justify-center mb-6 group-hover:bg-brand-primary transition-colors">
-                    <item.icon className="w-7 h-7 text-brand-primary group-hover:text-brand-accent transition-colors" />
+                  <div className="w-14 h-14 rounded-xl bg-brand-light flex items-center justify-center mb-6 group-hover:bg-gradient-to-br group-hover:from-brand-primary group-hover:to-brand-secondary transition-all duration-500 shadow-inner">
+                    <item.icon className="w-7 h-7 text-brand-primary group-hover:text-white transition-colors duration-500 group-hover:scale-110" />
                   </div>
                   <h4 className="text-xl font-heading font-bold mb-3 text-brand-dark group-hover:text-brand-primary transition-colors">{item.title}</h4>
                   <p className="text-gray-600 mb-6 text-base leading-relaxed flex-1">{item.desc}</p>
@@ -346,7 +346,11 @@ export default function HomeClient() {
       </section>
 
       {/* 6. Growing With Our Clients */}
-      <section className="py-20 md:py-24 bg-brand-dark relative overflow-hidden">
+      <section className="py-24 md:py-32 bg-brand-dark relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20 mix-blend-overlay bg-[url('/noise.png')]" />
+        <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 bg-brand-accent/20 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-96 h-96 bg-brand-primary/20 rounded-full blur-[100px] pointer-events-none" />
+        
         <div className="container mx-auto px-4 md:px-8 relative z-10 text-center max-w-3xl">
           <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Our Growth</h2>
           <h3 className="text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Growing With Our Clients</h3>
@@ -358,7 +362,7 @@ export default function HomeClient() {
             {["3 VMCs", "9 Wire Cut Machines", "ISO 9001:2015 Certified"].map((label, i) => (
               <span
                 key={i}
-                className="py-2 px-5 rounded-full bg-white/5 border border-white/10 text-white font-bold text-xs sm:text-sm tracking-wider uppercase"
+                className="py-2.5 px-6 rounded-full bg-white/5 border border-white/10 text-white font-bold text-xs sm:text-sm tracking-wider uppercase shadow-lg backdrop-blur-sm hover:bg-white/10 transition-colors cursor-default"
               >
                 {label}
               </span>
@@ -368,19 +372,26 @@ export default function HomeClient() {
       </section>
 
       {/* 7. Final CTA Banner */}
-      <section className="relative py-24 bg-brand-primary overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-20" style={{ backgroundImage: "url(/company_machines/wire_cut_floor.png)", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-primary/90 to-brand-primary/80 z-0"></div>
+      <section className="relative py-24 bg-brand-dark overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-20">
+          <Image
+            src="/company_machines/wire_cut_floor.png"
+            alt="Shop Floor"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary/95 to-brand-dark/90 z-0"></div>
 
         <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Have a component or tool to manufacture?</h2>
-          <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto font-light">Tell us your spec — we&apos;ll get back to you with a quote.</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight tracking-tight">Have a component or tool to manufacture?</h2>
+          <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto font-light leading-relaxed">Tell us your spec — we&apos;ll get back to you with a quote.</p>
 
           <button
             onClick={openQuoteModal}
-            className="px-10 py-5 bg-brand-accent hover:bg-orange-600 text-white font-bold text-lg uppercase tracking-wider rounded-sm hover:-translate-y-1 hover:shadow-2xl shadow-brand-accent/40 transition-all duration-300"
+            className="px-10 py-5 bg-white text-brand-primary font-bold text-lg uppercase tracking-wider rounded-full hover:bg-gray-50 hover:-translate-y-1 hover:shadow-2xl shadow-xl transition-all duration-500 group flex items-center justify-center gap-3 mx-auto"
           >
-            Get a Quote
+            Get a Quote <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
       </section>

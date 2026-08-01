@@ -68,12 +68,12 @@ export default function Products() {
   return (
     <>
       {/* Unique Products Hero Section */}
-      <section className="relative min-h-[60vh] lg:min-h-[80vh] flex flex-col lg:flex-row items-center overflow-hidden pt-[100px] md:pt-[120px] bg-[#0a0a0a]">
+      <section className="relative min-h-[60vh] lg:min-h-[80vh] flex flex-col lg:flex-row items-center overflow-hidden bg-[#0a0a0a]">
         <div className="absolute inset-0 bg-gradient-to-r from-black via-[#0f0f13] to-[#1a1714]" />
         
         <div className="container mx-auto px-4 md:px-8 relative z-10 w-full flex flex-col lg:flex-row items-center justify-between">
           {/* Left Side Content */}
-          <div className="w-full lg:w-1/2 py-16 lg:py-24 relative z-20">
+          <div className="w-full lg:w-1/2 py-12 lg:pt-[180px] lg:pb-24 relative z-20">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
