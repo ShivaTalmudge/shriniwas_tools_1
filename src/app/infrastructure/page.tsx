@@ -45,18 +45,12 @@ export default function Infrastructure() {
             <p className="text-gray-600 text-lg leading-relaxed">Our shop floor is equipped with high-end, precision machinery to handle everything from initial milling to micro-level sparking.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12">
+          {/* Primary Machines (Cards) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-16">
             {[
               { name: "VMC Machine", make: "Batili Boi / AMS", capacity: "1300x600, 1000x500", qty: "3", img: "/company_machines/VMC1.png" },
-              { name: "CNC Wire Cut", make: "Electronica", capacity: "400x300x200", qty: "9", img: "/company_machines/wire_cut.png" },
-              { name: "Sparking (EDM)", make: "Electronica", capacity: "500x300x200", qty: "1", img: "/company_machines/edm_sparking.png" },
-              { name: "Surface Grinder", make: "Jones-Shipman", capacity: "600x300x300", qty: "2", img: "/company_machines/surface_grinder.png" },
-              { name: "M1TR Milling", make: "Bridgeport / Jasjit", capacity: "350x700", qty: "2", img: "/company_machines/m1tr_milling.png" },
-              { name: "Milling Machine", make: "Varnier", capacity: "1000x400x800", qty: "1", img: "/company_machines/milling_machine.png" },
-              { name: "EDM Drill", make: "Taiwan", capacity: "200x300", qty: "1", img: "/company_machines/edm_drill.png" },
+              { name: "CNC Wire Cut", make: "Electronica", capacity: "400x300x200", qty: "9", img: "/company_machines/wirecut_machine.png" },
               { name: "Moulding M/C", make: "Preet", capacity: "300 Ton", qty: "1", img: "/company_machines/horizontal_injection_moulding_machine.png" },
-              { name: "Moulding M/C", make: "Preet", capacity: "150 Ton", qty: "1", img: "/company_machines/horizonatl_injection_moulding_machine_1.png" },
-              { name: "Moulding M/C", make: "Yuzumi", capacity: "120 Ton", qty: "1", img: "/company_machines/yuzumi_moulding.png" },
             ].map((machine, index) => (
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col">
                 <div className="relative w-full aspect-[4/3] bg-gray-100 overflow-hidden">
@@ -82,6 +76,41 @@ export default function Infrastructure() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Secondary Machines (List/Table) */}
+          <div className="max-w-5xl mx-auto">
+            <h3 className="text-2xl font-heading font-bold text-brand-dark mb-6">Additional Machinery</h3>
+            <div className="overflow-x-auto bg-white rounded-xl shadow-md border border-gray-100">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="bg-brand-dark text-white">
+                    <th className="py-4 px-6 font-bold uppercase tracking-wider text-sm">Machine Name</th>
+                    <th className="py-4 px-6 font-bold uppercase tracking-wider text-sm">Make</th>
+                    <th className="py-4 px-6 font-bold uppercase tracking-wider text-sm">Capacity / Details</th>
+                    <th className="py-4 px-6 font-bold uppercase tracking-wider text-sm">Quantity</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  {[
+                    { name: "Sparking (EDM)", make: "Electronica", capacity: "500x300x200", qty: "1" },
+                    { name: "Surface Grinder", make: "Jones-Shipman", capacity: "600x300x300", qty: "2" },
+                    { name: "M1TR Milling", make: "Bridgeport / Jasjit", capacity: "350x700", qty: "2" },
+                    { name: "Milling Machine", make: "Varnier", capacity: "1000x400x800", qty: "1" },
+                    { name: "EDM Drill", make: "Taiwan", capacity: "200x300", qty: "1" },
+                    { name: "Moulding M/C", make: "Preet", capacity: "150 Ton", qty: "1" },
+                    { name: "Moulding M/C", make: "Yuzumi", capacity: "120 Ton", qty: "1" },
+                  ].map((machine, i) => (
+                    <tr key={i} className={`hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md cursor-default ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}>
+                      <td className="py-4 px-6 font-bold text-brand-dark">{machine.name}</td>
+                      <td className="py-4 px-6 text-gray-600">{machine.make}</td>
+                      <td className="py-4 px-6 text-gray-600 font-mono text-sm">{machine.capacity}</td>
+                      <td className="py-4 px-6 text-brand-accent font-bold">{machine.qty}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
