@@ -44,13 +44,9 @@ export default function Contact() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden pt-[160px] pb-8 md:pt-[180px] md:pb-12 bg-brand-dark">
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40" 
-          style={{ backgroundImage: 'url(/company_machines/VMC1.png)' }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/50 z-10" />
-        </div>
+      <section className="relative min-h-[60vh] lg:min-h-[80vh] flex flex-col justify-center overflow-hidden pt-[160px] pb-16 md:pt-[180px] bg-brand-dark border-b border-gray-800">
+        <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-80" style={{ backgroundImage: 'url(/company_machines/VMC1.png)' }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/70 to-brand-dark/20 z-10" />
         
         <div className="container mx-auto px-4 md:px-8 relative z-10 text-left mt-10">
           <motion.div

@@ -2,49 +2,55 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Plastic Injection Moulding Services | Shriniwas Tools & Equipments",
-  description: "Custom plastic injection moulding — mould design, tool building, and production — for thermoplastic components. In-house at our ISO 9001:2015 certified facility, Bhosari, Pune.",
+  title: "Plastic Injection Molding Dies Pune | Shriniwas Tools & Equipments",
+  description: "Expert design and manufacturing of multi-cavity plastic injection molding dies in Pune. High-durability molds for flawless, high-volume thermoplastic components.",
+  keywords: "Plastic molding dies, injection molds Pune, multi-cavity molds, thermoplastic tooling, mold design Bhosari",
 };
 
 const data: ServiceData = {
-  serviceName: "Plastic Injection Moulding",
+  serviceName: "Plastic Injection Molding Dies",
   hero: {
-    title: "Plastic Injection Moulding",
-    subtitle: "Thermoplastic components for engineering, electrical, and industrial use.",
-    bgImage: "/company_machines/horizonatl_injection_moulding_machine_1.png",
+    title: "Plastic Injection Molding Dies",
+    subtitle: "High-durability multi-cavity moulds designed for flawless, high-volume thermoplastic production.",
+    bgImage: "/company_machines/hero_injection_machine.png",
   },
   overview: {
-    title: "End-to-End Plastic Injection Moulding",
+    title: "Engineered for Millions of Flawless Cycles",
     description: (
       <>
         <p className="mb-4 text-gray-700 text-lg leading-relaxed">
-          We design and build injection moulds in-house, then run production on them ourselves — using our Haitian (90/300 Ton) and Yuzumi (120 Ton) moulding machines. 
+          The foundation of Shriniwas Tools & Equipments was built on plastic injection mould manufacturing. Since 2006, we have perfected the art of designing and building complex, multi-cavity moulds that yield defect-free thermoplastic components at high production volumes.
+        </p>
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          A successful injection mould requires a perfect harmony of cooling channels, balanced runner systems, and optimal venting. Our in-house design team meticulously simulates these variables to ensure rapid cycle times, minimal warp, and consistent dimensional accuracy across every cavity.
         </p>
         <p className="text-gray-700 text-lg leading-relaxed">
-          That means we understand a part&apos;s full journey from CAD file to finished component, and we work to the tolerance your assembly actually needs.
+          We utilize high-grade, pre-hardened steel blocks to ensure maximum mold longevity. From the initial DFM (Design for Manufacturability) analysis to final mold trials on our shop floor, we guarantee a tool that runs efficiently and reliably, minimizing downtime for your production line.
         </p>
       </>
     ),
-    image: "/company_machines/horizontal_injection_moulding_machine.png",
+    image: "/company_machines/horizonatl_injection_moulding_machine_1.png",
   },
   keyFeatures: [
-    { title: "High Precision", description: "Micron-level accuracy for critical components.", icon: "CheckCircle2" },
-    { title: "Rapid Cycle Times", description: "Optimized cooling channels for faster production.", icon: "Zap" },
-    { title: "Cost Effective", description: "Reduced material waste and automated processing.", icon: "TrendingUp" },
-    { title: "Superior Finish", description: "Flawless aesthetics with custom textures.", icon: "Award" },
+    { title: "Multi-Cavity Expertise", description: "Designing perfectly balanced systems for high-volume, simultaneous part production.", icon: "Layers" },
+    { title: "Optimized Cooling", description: "Advanced conformal cooling layouts to significantly reduce cycle times.", icon: "Wind" },
+    { title: "High-Grade Steel", description: "Utilizing premium alloys for exceptional wear resistance and mold longevity.", icon: "Shield" },
+    { title: "Complete Turnkey", description: "From initial CAD design to final physical mold trials on our shop floor.", icon: "CheckCircle2" },
+    { title: "Hot Runner Systems", description: "Expert integration of hot runners to eliminate waste and improve part quality.", icon: "Flame" },
+    { title: "Precision Ejection", description: "Engineered pin and stripper plate designs to prevent part deformation during ejection.", icon: "Settings" },
   ],
   industries: [
-    { name: "Automotive", icon: "Car" },
-    { name: "Medical Devices", icon: "Heart" },
-    { name: "Consumer Electronics", icon: "Smartphone" },
-    { name: "Packaging", icon: "Package" },
+    { name: "Automotive", icon: "Car", description: "Interior trim components, dashboard parts, and under-hood plastics." },
+    { name: "Consumer Electronics", icon: "Smartphone", description: "High-precision housings and enclosures for smart devices." },
+    { name: "Medical Devices", icon: "Heart", description: "Clean-room ready moulds for syringes and diagnostic equipment." },
+    { name: "Packaging", icon: "Box", description: "Multi-cavity moulds for caps, closures, and containers." },
   ],
   process: [
-    "DFM Analysis",
-    "Mould Design",
-    "Tooling",
-    "Production",
-    "QA & Delivery"
+    { title: "DFM & Mold Flow Analysis", description: "Simulating plastic injection to optimize gates and cooling." },
+    { title: "Core & Cavity Machining", description: "CNC milling the primary mold shapes from hardened steel." },
+    { title: "EDM Sparking", description: "Creating sharp internal corners and fine text details." },
+    { title: "Benching & Polishing", description: "Hand-polishing cavities for perfect part ejection." },
+    { title: "Mold Trials & Validation", description: "Testing the mold on our injection machines for flawless parts." }
   ]
 };
 

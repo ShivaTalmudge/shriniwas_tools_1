@@ -2,49 +2,55 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Custom Jigs, Fixtures & Gauges Manufacturer Pune | Shriniwas Tools",
-  description: "Design and manufacturing of custom machining fixtures, welding jigs, and inspection gauges. Built for repeatability and precision in Bhosari, Pune.",
+  title: "Precision Jigs & Fixtures Manufacturing Pune | Shriniwas Tools",
+  description: "Custom design and fabrication of welding fixtures, machining jigs, and inspection gauges in Pune. Enhancing production repeatability and accuracy.",
+  keywords: "Jigs and fixtures Pune, welding fixtures Bhosari, inspection gauges, machining jigs, custom assembly fixtures",
 };
 
 const data: ServiceData = {
-  serviceName: "Jigs & Fixtures",
+  serviceName: "Jigs, Fixtures & Gauges",
   hero: {
-    title: "Jigs & Fixtures",
-    subtitle: "Welding jigs, CNC fixtures, checking gauges, and assembly aids.",
-    bgImage: "/images/products-cropped/Image3.png",
+    title: "Jigs, Fixtures & Gauges",
+    subtitle: "Custom-engineered tooling to guarantee repeatability, accuracy, and efficiency on your production line.",
+    bgImage: "/company_machines/surface_plate.jpg",
   },
   overview: {
-    title: "Precision Jigs & Custom Fixtures",
+    title: "Streamlining Your Assembly and Machining",
     description: (
       <>
         <p className="mb-4 text-gray-700 text-lg leading-relaxed">
-          A great component means nothing if you can&apos;t measure it or hold it properly during production. 
+          In high-volume manufacturing, minimizing setup time and human error is paramount. We design and build highly rigid jigs, fixtures, and inspection gauges that lock your components into perfect alignment, allowing your operators to machine, weld, or assemble parts with zero guesswork.
+        </p>
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          Whether you need a heavy-duty robotic welding fixture for automotive frames or a delicate CMM inspection gauge for aerospace brackets, we tailor the ergonomics and clamping mechanisms to suit your specific workflow. We frequently incorporate quick-release pneumatics and hardened resting pads to ensure long-term durability.
         </p>
         <p className="text-gray-700 text-lg leading-relaxed">
-          We design and build custom machining fixtures, welding jigs, and inspection gauges that guarantee repeatability on your assembly line, regardless of operator skill level.
+          Every fixture leaving our Bhosari facility is rigorously calibrated against the original 3D CAD model using precise metrology equipment. This guarantees that your first part and your ten-thousandth part will be absolutely identical.
         </p>
       </>
     ),
-    image: "/images/products-cropped/Image3.png",
+    image: "/company_machines/digital_caliper.jpg",
   },
   keyFeatures: [
-    { title: "High Repeatability", description: "Guarantee consistent quality across mass production.", icon: "CheckCircle2" },
-    { title: "Operator Friendly", description: "Poka-yoke designs to prevent assembly errors.", icon: "ThumbsUp" },
-    { title: "Custom Solutions", description: "Tailor-made for your specific CNC or welding setup.", icon: "Settings" },
-    { title: "Durable Build", description: "Hardened contact points for long-term use.", icon: "ShieldCheck" },
+    { title: "Custom Ergonomics", description: "Designed for operator comfort and rapid part loading/unloading.", icon: "CheckCircle2" },
+    { title: "Absolute Repeatability", description: "Ensuring zero deviation in machining and welding operations.", icon: "Settings" },
+    { title: "Hardened Locators", description: "Wear-resistant resting pads and pins for extended fixture life.", icon: "ShieldCheck" },
+    { title: "Turnkey Calibration", description: "Fully inspected and calibrated before deployment on your floor.", icon: "Wrench" },
+    { title: "Fool-Proof Design", description: "Poka-yoke implementations to completely prevent incorrect part loading by operators.", icon: "ShieldCheck" },
+    { title: "Rapid Clamping", description: "Integration of toggle and pneumatic clamps to significantly reduce cycle times.", icon: "Zap" },
   ],
   industries: [
-    { name: "Automotive", icon: "Car" },
-    { name: "Aerospace", icon: "Plane" },
-    { name: "Heavy Machinery", icon: "Factory" },
-    { name: "Electronics", icon: "Zap" },
+    { name: "Automotive Assembly", icon: "Car", description: "Heavy-duty welding and assembly fixtures for vehicle frames." },
+    { name: "Heavy Machining", icon: "Factory", description: "Rigid holding jigs for milling large industrial castings." },
+    { name: "Aerospace", icon: "Plane", description: "High-precision inspection gauges for critical flight components." },
+    { name: "Quality Control", icon: "Box", description: "Custom Go/No-Go gauges for rapid floor inspection." },
   ],
   process: [
-    "Requirement Analysis",
-    "3D Concept Design",
-    "Precision Machining",
-    "Assembly & Calibration",
-    "Tryout & Handover"
+    { title: "Workflow Analysis", description: "Studying your assembly process to identify alignment bottlenecks." },
+    { title: "3D Fixture Design", description: "Engineering the CAD model with precise clamping and resting points." },
+    { title: "CNC Machining & Grinding", description: "Manufacturing the fixture base and hardened locators to exact specs." },
+    { title: "Assembly & Pneumatics", description: "Integrating quick-release clamps, pneumatics, and sensor mounts." },
+    { title: "CMM Calibration & Tryout", description: "Validating the fixture dimensions and running a real-world assembly test." }
   ]
 };
 

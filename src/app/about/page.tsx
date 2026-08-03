@@ -3,53 +3,42 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ChevronRight, PhoneCall, Factory, ShieldCheck, Calendar, Zap, LayoutDashboard, Settings } from "lucide-react";
+import { ChevronRight, Factory, ShieldCheck, Calendar, LayoutDashboard, Settings } from "lucide-react";
 
 export default function About() {
   return (
     <>
-      {/* Unified Hero Section */}
-      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex flex-col lg:flex-row items-stretch overflow-hidden bg-brand-dark">
-        {/* Left Side Content */}
-        <div className="w-full lg:w-1/2 flex items-center relative z-10 order-2 lg:order-1 bg-brand-dark lg:bg-transparent">
-          <div className="w-full max-w-3xl ml-auto px-4 md:px-8 py-12 lg:pt-[180px] lg:pb-24 xl:pr-16">
+      {/* 1. Dedicated Hero Section */}
+      <section className="relative min-h-[50vh] lg:min-h-[60vh] flex flex-col justify-center overflow-hidden pt-[160px] pb-16 md:pt-[180px] bg-brand-dark border-b border-gray-800">
+        <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-80" style={{ backgroundImage: 'url(/company_machines/bannerimage1.png)' }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/70 to-brand-dark/20 z-10" />
+        
+        <div className="container mx-auto px-4 md:px-8 relative z-20">
+          <div className="w-full max-w-3xl">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               {/* Breadcrumb */}
-              <div className="flex items-center justify-start gap-2 text-sm text-brand-accent mb-6 uppercase tracking-wider font-bold">
+              <div className="flex items-center justify-start gap-2 text-sm text-brand-accent mb-6 uppercase tracking-wider font-bold drop-shadow-md">
                 <Link href="/" className="hover:text-white transition-colors">Home</Link>
                 <ChevronRight className="w-4 h-4" />
-                <span className="text-white">About Us</span>
+                <span className="text-white">About</span>
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-black text-white mb-6 leading-[1.1] tracking-tight">
-                Our Company Profile
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-black text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
+                About Us
               </h1>
-              <p className="text-lg md:text-xl text-gray-300 font-light leading-relaxed max-w-2xl">
+              <p className="text-lg md:text-xl text-gray-200 font-light leading-relaxed max-w-2xl mb-10 drop-shadow-lg">
                 Reliable and cost-effective manufacturing solutions for the global market, backed by ISO 9001:2015 certification.
               </p>
             </motion.div>
           </div>
         </div>
-
-        {/* Right Side Image */}
-        <div className="w-full lg:w-1/2 relative min-h-[35vh] lg:min-h-full order-1 lg:order-2">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-            style={{ backgroundImage: 'url(/company_machines/milling_machine.png)' }}
-          >
-            {/* Soft gradient fade into the image from the left on desktop */}
-            <div className="hidden lg:block absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-brand-dark via-brand-dark/50 to-transparent z-10" />
-            {/* Soft gradient fade into the image from the bottom on mobile */}
-            <div className="lg:hidden absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent z-10" />
-          </div>
-        </div>
       </section>
 
-      {/* Story & Mission Section */}
-      <section className="py-16 md:py-24 bg-white relative">
+      {/* 2. Story & Mission Section */}
+      <section className="py-20 md:py-28 bg-white relative">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <motion.div 
@@ -104,7 +93,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* By the Numbers Section */}
+      {/* 3. By the Numbers Section */}
       <section className="py-24 bg-brand-dark relative border-t-4 border-brand-accent overflow-hidden">
         <div className="absolute inset-0 opacity-20 mix-blend-overlay bg-[url('/noise.png')]" />
         <div className="absolute top-0 left-0 w-96 h-96 bg-brand-primary/20 rounded-full blur-[100px] pointer-events-none -translate-x-1/2 -translate-y-1/2" />
@@ -149,7 +138,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Leadership Structure */}
+      {/* 4. Leadership Structure */}
       <section className="py-20 md:py-28 bg-brand-light">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center mb-8">
@@ -229,7 +218,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* 5. CTA Section */}
       <section className="py-20 md:py-28 bg-white border-t border-gray-100 text-center">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Want to see how we work?</h2>

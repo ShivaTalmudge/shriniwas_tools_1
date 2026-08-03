@@ -9,10 +9,10 @@ export default function Infrastructure() {
   return (
     <>
       {/* Infrastructure Hero */}
-      <section className="relative min-h-[50vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden pt-[160px] pb-8 md:pt-[180px] md:pb-12 bg-brand-dark">
-        <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40" style={{ backgroundImage: 'url(/company_machines/wire_cut_floor.png)' }}>
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-brand-dark/50 z-10" />
-        </div>
+      <section className="relative min-h-[60vh] lg:min-h-[80vh] flex flex-col justify-center overflow-hidden pt-[160px] pb-16 md:pt-[180px] bg-brand-dark border-b border-gray-800">
+        <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-80" style={{ backgroundImage: 'url(/company_machines/wire_cut_floor.png)' }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/70 to-brand-dark/20 z-10" />
+        
         <div className="container relative z-20 px-4 md:px-8 text-left text-white mt-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -36,158 +36,52 @@ export default function Infrastructure() {
         </div>
       </section>
 
-      {/* Manufacturing Capability Table */}
-      <section className="py-20 bg-white">
+      {/* Machinery Grid Redesign */}
+      <section className="py-20 md:py-32 bg-gray-50 border-y border-gray-200">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="mb-10">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-brand-dark mb-2">Manufacturing Capability</h2>
-            <div className="w-16 h-1 bg-brand-accent"></div>
+          <div className="mb-16 text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-heading font-black text-brand-dark mb-6">Manufacturing Capability</h2>
+            <div className="w-16 h-1 bg-brand-accent mx-auto mb-6"></div>
+            <p className="text-gray-600 text-lg leading-relaxed">Our shop floor is equipped with high-end, precision machinery to handle everything from initial milling to micro-level sparking.</p>
           </div>
-          
-          <div className="overflow-x-auto bg-white rounded-xl shadow-lg border border-gray-100">
-            <table className="w-full text-left border-collapse min-w-[800px]">
-              <thead>
-                <tr className="bg-brand-dark text-white">
-                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Photo</th>
-                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Machine</th>
-                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm">Make</th>
-                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm text-center">Capacity</th>
-                  <th className="py-5 px-6 font-bold uppercase tracking-wider text-sm text-center">Qty</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-white">
-                  <td className="py-4 px-6">
-                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
-                      <Image src="/company_machines/VMC1.png" alt="VMC machine, Batili Boi, 1300x600x600 at Shriniwas Tools Bhosari facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12">
+            {[
+              { name: "VMC Machine", make: "Batili Boi / AMS", capacity: "1300x600, 1000x500", qty: "3", img: "/company_machines/VMC1.png" },
+              { name: "CNC Wire Cut", make: "Electronica", capacity: "400x300x200", qty: "9", img: "/company_machines/wire_cut.png" },
+              { name: "Sparking (EDM)", make: "Electronica", capacity: "500x300x200", qty: "1", img: "/company_machines/edm_sparking.png" },
+              { name: "Surface Grinder", make: "Jones-Shipman", capacity: "600x300x300", qty: "2", img: "/company_machines/surface_grinder.png" },
+              { name: "M1TR Milling", make: "Bridgeport / Jasjit", capacity: "350x700", qty: "2", img: "/company_machines/m1tr_milling.png" },
+              { name: "Milling Machine", make: "Varnier", capacity: "1000x400x800", qty: "1", img: "/company_machines/milling_machine.png" },
+              { name: "EDM Drill", make: "Taiwan", capacity: "200x300", qty: "1", img: "/company_machines/edm_drill.png" },
+              { name: "Moulding M/C", make: "Preet", capacity: "300 Ton", qty: "1", img: "/company_machines/horizontal_injection_moulding_machine.png" },
+              { name: "Moulding M/C", make: "Preet", capacity: "150 Ton", qty: "1", img: "/company_machines/horizonatl_injection_moulding_machine_1.png" },
+              { name: "Moulding M/C", make: "Yuzumi", capacity: "120 Ton", qty: "1", img: "/company_machines/yuzumi_moulding.png" },
+            ].map((machine, index) => (
+              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col">
+                <div className="relative w-full aspect-[4/3] bg-gray-100 overflow-hidden">
+                  <Image src={machine.img} alt={machine.name} fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute top-4 right-4 bg-brand-accent text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                    QTY: {machine.qty}
+                  </div>
+                </div>
+                <div className="p-6 md:p-8 flex-1 flex flex-col">
+                  <h3 className="text-2xl font-bold text-brand-dark mb-4 group-hover:text-brand-accent transition-colors">{machine.name}</h3>
+                  
+                  <div className="grid grid-cols-2 gap-4 mt-auto">
+                    <div className="bg-brand-light/50 p-4 rounded-xl border border-gray-50">
+                      <p className="text-xs text-gray-500 uppercase tracking-widest font-bold mb-1">Make</p>
+                      <p className="text-sm font-medium text-brand-dark line-clamp-1">{machine.make}</p>
                     </div>
-                  </td>
-                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">VMC Machine</td>
-                  <td className="py-4 px-6 text-gray-600 font-medium">Batili Boi / AMS</td>
-                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
-                    <span className="bg-gray-100 px-2 py-1 rounded">1300x600, 1000x500</span>
-                  </td>
-                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">3</td>
-                </tr>
-                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
-                  <td className="py-4 px-6">
-                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
-                      <Image src="/company_machines/wire_cut.png" alt="CNC Wire Cut machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <div className="bg-brand-light/50 p-4 rounded-xl border border-gray-50">
+                      <p className="text-xs text-gray-500 uppercase tracking-widest font-bold mb-1">Capacity</p>
+                      <p className="text-sm font-mono font-medium text-brand-dark line-clamp-1">{machine.capacity}</p>
                     </div>
-                  </td>
-                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">CNC Wire Cut</td>
-                  <td className="py-4 px-6 text-gray-600 font-medium">Electronica</td>
-                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
-                    <span className="bg-gray-100 px-2 py-1 rounded">400x300x200</span>
-                  </td>
-                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">9</td>
-                </tr>
-                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-white">
-                  <td className="py-4 px-6">
-                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
-                      <Image src="/company_machines/edm_sparking.png" alt="Sparking EDM machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
-                    </div>
-                  </td>
-                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Sparking (EDM)</td>
-                  <td className="py-4 px-6 text-gray-600 font-medium">Electronica</td>
-                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
-                    <span className="bg-gray-100 px-2 py-1 rounded">500x300x200</span>
-                  </td>
-                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
-                </tr>
-                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
-                  <td className="py-4 px-6">
-                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
-                      <Image src="/company_machines/surface_grinder.png" alt="Surface Grinder at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
-                    </div>
-                  </td>
-                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Surface Grinder</td>
-                  <td className="py-4 px-6 text-gray-600 font-medium">Jones-Shipman</td>
-                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
-                    <span className="bg-gray-100 px-2 py-1 rounded">600x300x300</span>
-                  </td>
-                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">2</td>
-                </tr>
-                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-white">
-                  <td className="py-4 px-6">
-                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
-                      <Image src="/company_machines/m1tr_milling.png" alt="M1TR Milling machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
-                    </div>
-                  </td>
-                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">M1TR</td>
-                  <td className="py-4 px-6 text-gray-600 font-medium">Bridgeport / Jasjit</td>
-                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
-                    <span className="bg-gray-100 px-2 py-1 rounded">350x700, 1270x254</span>
-                  </td>
-                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">2</td>
-                </tr>
-                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
-                  <td className="py-4 px-6">
-                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
-                      <Image src="/company_machines/milling_machine.png" alt="Milling Machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
-                    </div>
-                  </td>
-                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Milling Machine</td>
-                  <td className="py-4 px-6 text-gray-600 font-medium">Varnier</td>
-                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
-                    <span className="bg-gray-100 px-2 py-1 rounded">1000x400x800</span>
-                  </td>
-                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
-                </tr>
-                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-white">
-                  <td className="py-4 px-6">
-                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
-                      <Image src="/company_machines/edm_drill.png" alt="EDM Drill at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
-                    </div>
-                  </td>
-                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">EDM Drill</td>
-                  <td className="py-4 px-6 text-gray-600 font-medium">Taiwan</td>
-                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
-                    <span className="bg-gray-100 px-2 py-1 rounded">200x300</span>
-                  </td>
-                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
-                </tr>
-                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
-                  <td className="py-4 px-6">
-                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
-                      <Image src="/company_machines/horizontal_injection_moulding_machine.png" alt="Moulding Machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
-                    </div>
-                  </td>
-                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Moulding M/C</td>
-                  <td className="py-4 px-6 text-gray-600 font-medium">Preet</td>
-                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
-                    <span className="bg-gray-100 px-2 py-1 rounded">300 Ton</span>
-                  </td>
-                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
-                </tr>
-                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-white">
-                  <td className="py-4 px-6">
-                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
-                      <Image src="/company_machines/horizonatl_injection_moulding_machine_1.png" alt="Moulding Machine at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
-                    </div>
-                  </td>
-                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Moulding M/C</td>
-                  <td className="py-4 px-6 text-gray-600 font-medium">Preet</td>
-                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
-                    <span className="bg-gray-100 px-2 py-1 rounded">150 Ton</span>
-                  </td>
-                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
-                </tr>
-                <tr className="hover:bg-brand-light/80 hover:-translate-y-0.5 transition-all duration-300 group shadow-sm hover:shadow-md cursor-default bg-gray-50/50">
-                  <td className="py-4 px-6">
-                    <div className="relative w-28 h-20 rounded-lg overflow-hidden border border-gray-200 group-hover:border-brand-accent/50 transition-colors shadow-inner">
-                      <Image src="/company_machines/yuzumi_moulding.png" alt="Yuzumi 120T Moulding M/C at Shriniwas Tools facility" fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
-                    </div>
-                  </td>
-                  <td className="py-4 px-6 font-bold text-brand-dark group-hover:text-brand-primary transition-colors">Moulding M/C</td>
-                  <td className="py-4 px-6 text-gray-600 font-medium">Yuzumi</td>
-                  <td className="py-4 px-6 text-gray-600 text-center font-mono text-sm">
-                    <span className="bg-gray-100 px-2 py-1 rounded">120 Ton</span>
-                  </td>
-                  <td className="py-4 px-6 font-black text-brand-primary text-center text-lg">1</td>
-                </tr>
-              </tbody>
-            </table>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -2,49 +2,55 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "DMC Moulding Manufacturer in Pune | Shriniwas Tools",
-  description: "Leading DMC moulding manufacturer in Pune, India. Specializing in high-strength thermoset Dough Moulding Compound parts for electrical & automotive sectors.",
+  title: "DMC & Thermoset Molding Services Pune | Shriniwas Tools",
+  description: "Complete Dough Moulding Compound (DMC) production runs and thermoset molding services in Bhosari. Delivering heat-resistant, high-strength electrical components.",
+  keywords: "DMC molding Pune, thermoset molding production, compression molding services Bhosari, electrical component manufacturing",
 };
 
 const data: ServiceData = {
-  serviceName: "DMC Moulding",
+  serviceName: "DMC Molding Production",
   hero: {
-    title: "DMC Moulding",
-    subtitle: "High-strength, thermoset Dough Moulding Compound solutions for superior electrical insulation and heat resistance.",
-    bgImage: "/company_machines/horizontal_injection_moulding_machine.png",
+    title: "DMC Molding Production",
+    subtitle: "High-volume compression molding runs for heat-resistant and arc-resistant thermoset components.",
+    bgImage: "/company_machines/yuzumi_moulding.png",
   },
   overview: {
-    title: "Thermoset Moulding Excellence",
+    title: "End-to-End Thermoset Component Manufacturing",
     description: (
       <>
-        <p className="mb-4">
-          Dough Moulding Compound (DMC) is a vital thermosetting polymer used where exceptional electrical insulation, mechanical strength, and dimensional stability at high temperatures are required. 
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          Beyond designing and building DMC dies, Shriniwas Tools & Equipments offers full-scale production runs using our dedicated hydraulic compression molding presses. We provide a complete turnkey solution, from raw compound handling to final deflashing and inspection.
         </p>
-        <p>
-          As a prominent DMC moulding manufacturer based in Pune, Shriniwas Tools produces high-performance thermoset components using advanced hydraulic compression moulding presses, ensuring every part is fully cured, dimensionally accurate, and porosity-free.
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          Dough Moulding Compound (DMC) yields components with outstanding electrical insulation, high mechanical strength, and superb dimensional stability at elevated temperatures. Our experienced press operators closely monitor temperature zones, cure times, and pressure curves to guarantee that every batch meets stringent ISO 9001 quality metrics.
+        </p>
+        <p className="text-gray-700 text-lg leading-relaxed">
+          Whether you need low-volume prototype runs or high-volume production of electrical insulators, switchgear housings, or automotive structural parts, we have the capacity and the technical know-how to deliver defect-free components on schedule.
         </p>
       </>
     ),
-    image: "/company_machines/horizonatl_injection_moulding_machine_1.png",
+    image: "/company_machines/hero_bakelite_mould.png",
   },
   keyFeatures: [
-    { title: "High Heat Resistance", description: "Maintains stability in extreme temperatures.", icon: "Zap" },
-    { title: "Electrical Insulation", description: "High dielectric strength for switchgears.", icon: "ShieldCheck" },
-    { title: "Structural Rigidity", description: "Incredible compressive strength.", icon: "Box" },
-    { title: "Flame Retardant", description: "Meets stringent UL flammability ratings.", icon: "Award" },
+    { title: "Turnkey Production", description: "Seamless transition from in-house die manufacturing to mass production.", icon: "Factory" },
+    { title: "Process Control", description: "Strict monitoring of curing temperatures, pressures, and cycle times.", icon: "Settings" },
+    { title: "Post-Processing", description: "Efficient deflashing, drilling, and finishing of cured components.", icon: "Wrench" },
+    { title: "Quality Assurance", description: "Rigorous ISO 9001 compliant testing for strength and dimensional stability.", icon: "CheckCircle2" },
+    { title: "High-Volume Capacity", description: "Multiple compression presses operating round-the-clock to meet massive order demands.", icon: "Factory" },
+    { title: "Material Expertise", description: "Deep knowledge of DMC compounds to ensure optimal curing and mechanical properties.", icon: "Shield" },
   ],
   industries: [
-    { name: "Heavy Electricals", icon: "Zap" },
-    { name: "Switchgear", icon: "Shield" },
-    { name: "Automotive", icon: "Car" },
-    { name: "Railways", icon: "Train" },
+    { name: "Electrical Insulators", icon: "Zap", description: "Mass production of high-voltage insulators and MCB bases." },
+    { name: "Automotive Parts", icon: "Car", description: "High-strength, thermally stable parts for combustion engines." },
+    { name: "Industrial Equipment", icon: "Settings", description: "Wear-resistant housings for heavy machinery." },
+    { name: "Consumer Appliances", icon: "Box", description: "Heat-resistant handles and structural bases." },
   ],
   process: [
-    "Tool Heating",
-    "Charge Prep",
-    "Compression",
-    "Curing",
-    "Deflashing"
+    { title: "Compound Preparation", description: "Weighing and pre-heating the raw thermoset dough material." },
+    { title: "Mold Heating & Loading", description: "Bringing the die to the exact curing temperature before loading." },
+    { title: "Compression & Curing", description: "Applying high tonnage to force the material into the cavity." },
+    { title: "Ejection & Deflashing", description: "Removing the cured part and mechanically trimming any flash." },
+    { title: "Final QA Inspection", description: "Testing the component for structural and electrical integrity." }
   ]
 };
 

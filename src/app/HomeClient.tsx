@@ -15,6 +15,7 @@ import {
   Hammer,
   MapPin,
   TrendingUp,
+  Box,
 } from "lucide-react";
 import { openQuoteModal } from "@/components/QuoteModal";
 
@@ -128,6 +129,30 @@ export default function HomeClient() {
     },
   ];
 
+  const sampleProducts = [
+    {
+      title: "Plastic Moulds",
+      desc: "Custom thermoplastic tooling",
+      icon: Box,
+      image: "/images/products-cropped/Image1.png",
+      alt: "Plastic injection mould",
+    },
+    {
+      title: "Press Tools",
+      desc: "Blanking, piercing & forming",
+      icon: Hammer,
+      image: "/images/products-cropped/Image2.png",
+      alt: "Press Tools",
+    },
+    {
+      title: "PDC/GDC Dies",
+      desc: "Die casting tooling",
+      icon: Zap,
+      image: "/images/products-cropped/Image10.png",
+      alt: "PDC/GDC Dies",
+    },
+  ];
+
   return (
     <>
       <script
@@ -136,14 +161,14 @@ export default function HomeClient() {
       />
 
       {/* 1. Hero */}
-      <section ref={heroRef} className="relative min-h-[100dvh] md:h-screen flex items-center justify-start overflow-hidden pt-[160px] pb-10 md:pt-[180px] md:pb-12">
+      <section ref={heroRef} className="relative min-h-[100dvh] md:h-screen flex items-center justify-start overflow-hidden pt-[160px] pb-10 md:pt-[180px] md:pb-12 bg-brand-dark">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/70 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/70 to-brand-dark/20 z-10" />
           <Image
-            src="/company_machines/bannerimage2.png"
+            src="/company_machines/eurocut_machines.png"
             alt="Precision Tooling & Mould Manufacturing Facility in Bhosari, Pune"
             fill
-            className="object-cover"
+            className="object-cover object-center opacity-80"
             priority
           />
         </motion.div>
@@ -153,10 +178,10 @@ export default function HomeClient() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl sm:text-5xl md:text-6xl font-heading font-black tracking-tight mb-6 leading-tight max-w-4xl"
+            className="text-4xl sm:text-5xl md:text-6xl font-heading font-black tracking-tight mb-6 leading-tight max-w-4xl drop-shadow-xl"
           >
             Precision Tooling &amp; Mould Manufacturing,{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400 drop-shadow-md">
               Built in Bhosari Since 2006
             </span>
           </motion.h1>
@@ -165,7 +190,7 @@ export default function HomeClient() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-lg md:text-xl lg:text-xl text-gray-300 max-w-3xl mb-10 font-light leading-relaxed"
+            className="text-lg md:text-xl lg:text-xl text-gray-200 max-w-3xl mb-10 font-light leading-relaxed drop-shadow-lg"
           >
             We design and manufacture plastic injection moulds, press tools, jigs, fixtures, and precision machined components — in-house, from our ISO 9001:2015 certified facility in MIDC Bhosari, Pune.
           </motion.h2>
@@ -294,79 +319,194 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* 5. Inside Our Shop Floor (Infrastructure Teaser) */}
-      <section className="py-20 md:py-28 bg-gray-50 border-y border-gray-200 overflow-hidden">
+      {/* 4.5 Featured Products */}
+      <section className="py-20 md:py-28 bg-gray-50 border-t border-gray-200 relative">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="lg:w-1/2"
-            >
-              <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Our Facility</h2>
-              <h3 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6 leading-tight">Inside Our Shop Floor</h3>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                From 3 VMCs to 9 CNC wire cut machines, moulding presses up to 300 tons, and a dedicated inspection line — our facility is built to keep a job moving from design to dispatch without losing accuracy at any stage.
-              </p>
-              <Link href="/infrastructure" className="inline-flex items-center justify-center px-8 py-3 border border-brand-primary/30 bg-brand-primary/5 text-brand-primary font-bold uppercase tracking-wider text-sm rounded hover:bg-brand-primary hover:text-white transition-all duration-300">
-                See Full Infrastructure &amp; Machine List <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
-            </motion.div>
+          <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+            <div className="max-w-2xl">
+              <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Components & Dies</h2>
+              <h3 className="text-3xl md:text-4xl font-heading font-black text-brand-dark leading-tight">Featured Manufactured Products</h3>
+            </div>
+            <Link href="/products" className="inline-flex items-center justify-center px-6 py-3 bg-brand-primary text-white font-bold uppercase tracking-wider text-sm rounded hover:bg-brand-primary/90 transition-all duration-300 shadow-lg">
+              View All Products <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+          </div>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="lg:w-1/2 relative w-full h-[350px] md:h-[450px]"
-            >
-              <div className="grid grid-cols-2 gap-4 h-full">
-                <div className="relative w-full h-full rounded-sm overflow-hidden shadow-xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {sampleProducts.map((product, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
+                className="group rounded-[14px] bg-white overflow-hidden border border-gray-200 hover:shadow-2xl hover:shadow-brand-dark/5 hover:-translate-y-2 transition-all duration-300 flex flex-col"
+              >
+                <div className="aspect-square relative overflow-hidden bg-white border-b border-gray-100">
                   <Image
-                    src="/company_machines/VMC1.png"
-                    alt="VMC machine at Shriniwas Tools"
+                    src={product.image}
+                    alt={product.alt}
                     fill
-                    className="object-cover"
+                    className="object-contain p-6 mix-blend-multiply group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="relative w-full h-full rounded-sm overflow-hidden shadow-xl mt-8">
-                  <Image
-                    src="/company_machines/wire_cut.png"
-                    alt="CNC wire cut machine at Shriniwas Tools"
-                    fill
-                    className="object-cover"
-                  />
+                
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-brand-light p-2 rounded-lg shrink-0">
+                      <product.icon className="w-6 h-6 text-brand-accent" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-heading font-bold text-brand-dark leading-snug group-hover:text-brand-primary transition-colors">{product.title}</h4>
+                      <p className="text-gray-500 text-sm italic mt-1">{product.desc}</p>
+                    </div>
+                  </div>
                 </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Inside Our Facility (Infrastructure Teaser) */}
+      <section className="py-24 bg-white relative overflow-hidden border-t border-gray-200">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            
+            {/* Left Content */}
+            <div className="lg:w-1/2 relative z-10">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-brand-light text-brand-primary text-xs font-bold uppercase tracking-widest mb-6">
+                <Factory className="w-4 h-4" /> State-of-the-art Infrastructure
               </div>
-            </motion.div>
+              <h3 className="text-4xl md:text-5xl font-heading font-black text-brand-dark mb-6 leading-[1.1]">
+                Precision Built on <span className="text-brand-accent">Heavy Iron</span>
+              </h3>
+              <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-xl">
+                We don&apos;t outsource critical machining. Our MIDC Bhosari facility houses a comprehensive, multi-layered tool room equipped with top-tier CNC machinery, allowing us to maintain rigorous quality control over every mould and die we produce.
+              </p>
+              
+              <ul className="space-y-6 mb-10">
+                <li className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center shrink-0">
+                    <Cpu className="w-5 h-5 text-brand-primary" />
+                  </div>
+                  <div>
+                    <strong className="block text-brand-dark font-bold text-lg mb-1">In-House VMC & Wire Cut</strong>
+                    <span className="text-gray-500 leading-relaxed">Dedicated high-speed machining centers for complex 3D profiles and hardened steel components.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center shrink-0">
+                    <Component className="w-5 h-5 text-brand-primary" />
+                  </div>
+                  <div>
+                    <strong className="block text-brand-dark font-bold text-lg mb-1">Moulding & Press Capacity</strong>
+                    <span className="text-gray-500 leading-relaxed">Thermoplastic injection moulding up to 300T and heavy-duty power presses for seamless tool trials.</span>
+                  </div>
+                </li>
+              </ul>
+
+              <Link href="/infrastructure" className="group inline-flex items-center justify-center px-8 py-4 bg-brand-dark text-white font-bold uppercase tracking-wider text-sm rounded shadow-xl hover:bg-brand-primary transition-all duration-300">
+                Tour Our Facility <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-2 transition-transform" />
+              </Link>
+            </div>
+
+            {/* Right Images */}
+            <div className="lg:w-1/2 w-full relative h-[500px] md:h-[600px] mt-10 lg:mt-0">
+              <motion.div 
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="absolute top-0 right-0 w-3/4 h-[80%] rounded-2xl overflow-hidden shadow-2xl z-10 border-4 border-white"
+              >
+                <Image
+                  src="/company_machines/VMC1.png"
+                  alt="VMC Machining Center"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-1000"
+                />
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="absolute bottom-0 left-0 w-2/3 h-[60%] rounded-2xl overflow-hidden shadow-2xl z-20 border-4 border-white bg-white"
+              >
+                <Image
+                  src="/company_machines/bannerimage2.png"
+                  alt="Precision Engineering"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-1000"
+                />
+              </motion.div>
+            </div>
+
           </div>
         </div>
       </section>
 
       {/* 6. Growing With Our Clients */}
-      <section className="py-24 md:py-32 bg-brand-dark relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 mix-blend-overlay bg-[url('/noise.png')]" />
-        <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 bg-brand-accent/20 rounded-full blur-[100px] pointer-events-none" />
-        <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-96 h-96 bg-brand-primary/20 rounded-full blur-[100px] pointer-events-none" />
+      <section className="py-24 md:py-32 bg-brand-dark relative overflow-hidden border-t border-gray-800">
+        <div className="absolute inset-0 opacity-10 bg-[url('/company_machines/wire_cut_floor.png')] bg-cover bg-center bg-no-repeat mix-blend-overlay" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-dark/95 to-brand-dark z-0" />
         
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-center max-w-3xl">
-          <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Our Growth</h2>
-          <h3 className="text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Growing With Our Clients</h3>
-          <p className="text-gray-300 text-lg leading-relaxed mb-10">
-            Since adding our first VMCs in 2018, we&apos;ve scaled to a full tool room — 3 VMCs, 9 wire cut machines, and ISO 9001:2015 certification — growth built on clients who keep coming back for their next tool.
-          </p>
+        <div className="container mx-auto px-4 md:px-8 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Our Growth</h2>
+            <h3 className="text-3xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">Growing With Our Clients</h3>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Since adding our first VMCs in 2018, we've scaled to a full-capacity tool room. This growth wasn't overnight—it was built steadily on clients who trusted us and kept coming back for their next tool.
+            </p>
+          </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {["3 VMCs", "9 Wire Cut Machines", "ISO 9001:2015 Certified"].map((label, i) => (
-              <span
-                key={i}
-                className="py-2.5 px-6 rounded-full bg-white/5 border border-white/10 text-white font-bold text-xs sm:text-sm tracking-wider uppercase shadow-lg backdrop-blur-sm hover:bg-white/10 transition-colors cursor-default"
-              >
-                {label}
-              </span>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 max-w-5xl mx-auto">
+            {/* Stat Card 1 */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md text-center hover:bg-white/10 transition-colors shadow-2xl group"
+            >
+              <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Cpu className="w-8 h-8 text-brand-accent" />
+              </div>
+              <div className="text-4xl md:text-5xl font-black text-white mb-3">3 VMCs</div>
+              <p className="text-gray-400 font-medium">In-house High-Speed Machining</p>
+            </motion.div>
+
+            {/* Stat Card 2 */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md text-center hover:bg-white/10 transition-colors shadow-2xl group"
+            >
+              <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Zap className="w-8 h-8 text-brand-accent" />
+              </div>
+              <div className="text-4xl md:text-5xl font-black text-white mb-3">9 Wire Cuts</div>
+              <p className="text-gray-400 font-medium">Massive Sparking Capacity</p>
+            </motion.div>
+
+            {/* Stat Card 3 */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md text-center hover:bg-white/10 transition-colors shadow-2xl group"
+            >
+              <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <ShieldCheck className="w-8 h-8 text-brand-accent" />
+              </div>
+              <div className="text-4xl md:text-5xl font-black text-white mb-3">ISO 9001</div>
+              <p className="text-gray-400 font-medium">Certified Quality Standards</p>
+            </motion.div>
           </div>
         </div>
       </section>

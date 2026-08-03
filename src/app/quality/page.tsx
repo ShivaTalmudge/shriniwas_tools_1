@@ -10,9 +10,9 @@ export default function QualityAssurance() {
     <div className="bg-white min-h-screen text-brand-dark">
       {/* Quality Hero (Dark Mode Enterprise) */}
       <section className="relative min-h-[60vh] lg:min-h-[80vh] flex flex-col justify-center overflow-hidden pt-[160px] pb-16 md:pt-[180px] bg-brand-dark border-b border-gray-800">
-        <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-20 mix-blend-luminosity" style={{ backgroundImage: 'url(/company_machines/surface_plate.jpg)' }}>
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand-dark/90 to-brand-dark z-10" />
-        </div>
+        <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-80" style={{ backgroundImage: 'url(/metrology_cmm.png)' }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/70 to-brand-dark/20 z-10" />
+        
         <div className="container relative z-20 px-4 md:px-8 text-left mt-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -69,7 +69,7 @@ export default function QualityAssurance() {
                 <ShieldCheck className="w-12 h-12 text-brand-accent mb-8" />
                 
                 <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light italic mb-8">
-                  "Shriniwas Tools & Equipments is committed to achieving total customer satisfaction by delivering precision-engineered dies, moulds, and components of the highest quality, exactly on time. We achieve this through rigorous adherence to ISO 9001:2015 standards, continuous technological upgrades, and the fostering of a zero-defect culture among all employees."
+                  &quot;Shriniwas Tools &amp; Equipments is committed to achieving total customer satisfaction by delivering precision-engineered dies, moulds, and components of the highest quality, exactly on time. We achieve this through rigorous adherence to ISO 9001:2015 standards, continuous technological upgrades, and the fostering of a zero-defect culture among all employees.&quot;
                 </p>
                 
                 <div className="border-t border-gray-200 pt-8 flex items-center justify-between">

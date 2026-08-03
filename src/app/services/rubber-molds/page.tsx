@@ -2,49 +2,55 @@ import { Metadata } from "next";
 import ServicePageTemplate, { ServiceData } from "@/components/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Rubber Mould Manufacturer in Pune | Shriniwas Tools",
-  description: "Expert rubber mould manufacturer in Pune. We engineer high-precision compression, transfer, and injection moulds for elastomeric components.",
+  title: "Rubber Molds & Compression Dies Pune | Shriniwas Tools",
+  description: "High-precision rubber compression and transfer molds in Pune. Specializing in flash-free O-rings, gaskets, and complex automotive rubber seals.",
+  keywords: "Rubber molds Pune, compression dies Bhosari, transfer molding, O-ring molds, automotive rubber tooling",
 };
 
 const data: ServiceData = {
-  serviceName: "Rubber Mould Manufacturing",
+  serviceName: "Rubber Molds",
   hero: {
-    title: "Rubber Mould Manufacturing",
-    subtitle: "Expertly engineered compression and transfer moulds for tear-free, flashless elastomeric components across industrial sectors.",
-    bgImage: "/images/products-cropped/Image8.png",
+    title: "Rubber Molds",
+    subtitle: "Precision compression and transfer molds for flash-free rubber gaskets, O-rings, and complex automotive seals.",
+    bgImage: "/company_machines/bannerimage2.png",
   },
   overview: {
-    title: "Elastomeric Tooling Specialists",
+    title: "Precision Tooling for Elastomers",
     description: (
       <>
-        <p className="mb-4">
-          Moulding rubber requires a deep understanding of elastomer flow, vulcanization temperatures, and significant post-cure shrinkage. As a leading rubber mould manufacturer, Shriniwas Tools engineers tooling that accounts for these complex variables, ensuring accurate, flash-free final components.
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          Molding rubber components requires an entirely different approach to tooling compared to plastics. Because rubber exhibits extreme flow characteristics under heat and pressure, the parting lines of a rubber mold must be machined to absolute zero-tolerance to prevent excessive flashing and material waste.
         </p>
-        <p>
-          We manufacture compression, transfer, and injection moulds for a wide variety of elastomers including Silicone, EPDM, NBR, and Viton. Our advanced machining capabilities allow us to create highly intricate cavities for O-rings, complex gaskets, and industrial bellows.
+        <p className="mb-4 text-gray-700 text-lg leading-relaxed">
+          At Shriniwas Tools & Equipments, we excel in designing and manufacturing multi-cavity compression and transfer molds for a wide variety of elastomers, including silicone, EPDM, and NBR. By utilizing our high-speed VMCs and Wire Cut EDM machines, we achieve seamless mating surfaces.
+        </p>
+        <p className="text-gray-700 text-lg leading-relaxed">
+          We understand the specific shrinkage rates of different rubber compounds. Our design team meticulously calculates cavity dimensions to ensure your final cured components—whether they are tiny automotive O-rings or massive industrial vibration dampeners—meet exact dimensional specifications.
         </p>
       </>
     ),
-    image: "/images/products-cropped/Image8.png",
+    image: "/company_machines/wirecut_image2.png",
   },
   keyFeatures: [
-    { title: "Flashless Design", description: "Precision tear-trim designs for zero post-processing.", icon: "CheckCircle2" },
-    { title: "Shrinkage Accuracy", description: "Calculated cavity scaling for perfect final dimensions.", icon: "Settings" },
-    { title: "High Cavitation", description: "Multi-cavity moulds for high-volume O-rings.", icon: "TrendingUp" },
-    { title: "Rubber-to-Metal", description: "Specialized mould designs for bonded components.", icon: "Box" },
+    { title: "Zero-Tolerance Parting", description: "Flawlessly machined mating surfaces to drastically minimize rubber flashing.", icon: "CheckCircle2" },
+    { title: "Transfer & Compression", description: "Expertise in both molding techniques depending on part complexity.", icon: "Layers" },
+    { title: "Shrinkage Calculation", description: "Precise cavity scaling tailored to specific elastomer compounds.", icon: "Settings" },
+    { title: "Multi-Cavity Layouts", description: "Optimized runner and venting designs for high-volume production.", icon: "Factory" },
+    { title: "Tear-Resistant Demolding", description: "Engineered cavity drafts to ensure complex rubber parts can be safely extracted.", icon: "Shield" },
+    { title: "Thermal Optimization", description: "Balanced heating plates to prevent under-curing and maintain elastomer elasticity.", icon: "Flame" },
   ],
   industries: [
-    { name: "Automotive Sealing", icon: "Car" },
-    { name: "Medical Devices", icon: "Heart" },
-    { name: "Hydraulics", icon: "Settings" },
-    { name: "Food & Beverage", icon: "Box" },
+    { name: "Automotive Seals", icon: "Car", description: "High-durability O-rings, gaskets, and custom weather seals." },
+    { name: "Hydraulics & Pneumatics", icon: "Wrench", description: "Zero-flash seals to handle extreme fluid pressures." },
+    { name: "Medical Tubing", icon: "Heart", description: "Clean, burr-free molding for sensitive medical elastomers." },
+    { name: "Industrial Dampeners", icon: "Box", description: "Heavy-duty rubber mounts to absorb mechanical vibrations." },
   ],
   process: [
-    "Flow Analysis",
-    "Tool Design",
-    "Machining",
-    "Polishing",
-    "Validation"
+    { title: "Compound Shrinkage Analysis", description: "Calculating exact cavity scaling based on the specific elastomer." },
+    { title: "Mold Base & Cavity Machining", description: "CNC milling the core shapes from high-grade steel blanks." },
+    { title: "High-Precision Grinding", description: "Achieving zero-tolerance parting lines to prevent flash." },
+    { title: "Tear-Trim Design", description: "Incorporating features for rapid, clean removal of excess rubber." },
+    { title: "Sample Curing & Verification", description: "Molding a prototype batch to verify dimensions and vulcanization." }
   ]
 };
 
