@@ -64,7 +64,7 @@ export default function Navbar() {
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-3.5 h-3.5 text-brand-accent" />
-              <span>shriniwastools2020@gmail.com</span>
+              <span>shriniwastools2020@gmail.com | Enquiry@shriniwastools.com</span>
             </div>
           </div>
           <div className="flex items-center gap-2 w-full justify-center md:w-auto md:justify-end">

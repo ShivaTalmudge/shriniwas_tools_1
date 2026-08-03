@@ -158,8 +158,11 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg mb-1">Email</h4>
-                      <Link href="mailto:shriniwastools@gmail.com" className="text-gray-300 hover:text-white transition-colors block">
-                        shriniwastools@gmail.com
+                      <Link href="mailto:shriniwastools2020@gmail.com" className="text-gray-300 hover:text-white transition-colors block">
+                        shriniwastools2020@gmail.com
+                      </Link>
+                      <Link href="mailto:Enquiry@shriniwastools.com" className="text-gray-300 hover:text-white transition-colors block mt-1">
+                        Enquiry@shriniwastools.com
                       </Link>
                     </div>
                   </div>
