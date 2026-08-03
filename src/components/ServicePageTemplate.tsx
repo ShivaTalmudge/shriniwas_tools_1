@@ -380,7 +380,7 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
 
       <section className="py-8 bg-gray-50 border-t border-gray-100 mt-16">
         <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-6">
-          <p className="text-lg font-heading font-bold text-brand-dark">Ready to start your {service.title} project?</p>
+          <p className="text-lg font-heading font-bold text-brand-dark">Ready to start your {data.serviceName} project?</p>
           <button onClick={openQuoteModal} className="px-6 py-2.5 bg-brand-primary text-white text-sm font-bold rounded-full hover:bg-brand-dark transition-colors shadow-md">
             Request a Quote
           </button>
