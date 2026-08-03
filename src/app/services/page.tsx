@@ -40,48 +40,7 @@ export default function ServicesPage() {
       title: "Press Tools",
       desc: "High-speed progressive, compound, and forming dies for consistent sheet metal stamping.",
       href: "/services/press-tools",
-"use client";
 
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { ArrowRight, Factory, Cpu, Zap, Component, Wrench, Hammer, ChevronRight } from "lucide-react";
-
-export default function ServicesPage() {
-  const services = [
-    {
-      title: "Plastic Injection Moulding",
-      desc: "High-volume precision manufacturing of plastic components for automotive and electrical sectors.",
-      href: "/services/plastic-molding-dies",
-      icon: Factory
-    },
-    {
-      title: "CNC & VMC Machining",
-      desc: "High-tolerance precision machining for complex industrial components and aerospace-grade parts.",
-      href: "/services/cnc-vmc-machining",
-      icon: Cpu
-    },
-    {
-      title: "CNC Wire Cut EDM",
-      desc: "Micron-level accuracy cutting for hard conductive metals, ideal for complex mould cavities.",
-      href: "/services/cnc-wire-cut",
-      icon: Zap
-    },
-    {
-      title: "DMC & Bakelite Moulds",
-      desc: "Custom tooling and manufacturing for heat-resistant DMC & Bakelite electrical components.",
-      href: "/services/backlite-dies-components",
-      icon: Component
-    },
-    {
-      title: "Jigs & Fixtures",
-      desc: "Custom workholding, assembly, and inspection fixtures to improve your production accuracy.",
-      href: "/services/jigs-fixtures",
-      icon: Wrench
-    },
-    {
-      title: "Press Tools",
-      desc: "High-speed progressive, compound, and forming dies for consistent sheet metal stamping.",
-      href: "/services/press-tools",
       icon: Hammer
     }
   ];
@@ -106,7 +65,7 @@ export default function ServicesPage() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">Services</span>
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
+              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
                 Our Core Services
               </h1>
               <p className="text-lg md:text-xl text-gray-200 font-light leading-relaxed max-w-2xl drop-shadow-lg">
@@ -147,7 +106,7 @@ export default function ServicesPage() {
       <section className="py-20 md:py-28 bg-white relative border-b border-gray-100">
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Uncompromising Manufacturing Standards</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">Uncompromising Manufacturing Standards</h2>
             <div className="prose prose-lg text-gray-600">
               <p>
                 At Shriniwas Tools & Equipments, our commitment to <strong>ISO 9001:2015 certified quality</strong> ensures every component we deliver meets or exceeds your specifications. We understand that in modern manufacturing, a micro-level deviation can halt a production line. That's why our entire workflow—from initial CAM programming to final VMC machining and CNC wire cut EDM—is executed in-house. 
@@ -163,7 +122,7 @@ export default function ServicesPage() {
       {/* Standardized Bottom CTA */}
       <section className="py-20 md:py-28 bg-brand-light border-t border-gray-100 text-center">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Ready to Start Your Project?</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">Ready to Start Your Project?</h2>
           <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
             Share your CAD files, drawings, or technical specifications with our engineering team for a comprehensive review and commercial quote.
           </p>

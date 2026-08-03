@@ -26,7 +26,7 @@ export default function QualityAssurance() {
               <ChevronRight className="w-4 h-4" />
               <span className="text-white">Quality Assurance</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black text-white mb-8 leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold text-white mb-8 leading-tight tracking-tight">
               Precision You Can <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-500">Measure.</span>
             </h1>
             <p className="text-lg md:text-2xl text-gray-400 font-light leading-relaxed mb-12 max-w-3xl">
@@ -36,15 +36,15 @@ export default function QualityAssurance() {
             {/* Hero KPIs */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-gray-800">
               <div>
-                <div className="text-3xl md:text-4xl font-black text-white mb-2">99.8<span className="text-brand-accent">%</span></div>
+                <div className="text-3xl md:text-4xl font-bold text-white mb-2">99.8<span className="text-brand-accent">%</span></div>
                 <div className="text-sm uppercase tracking-widest text-gray-500 font-bold">On-Time Delivery</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-black text-white mb-2">&lt;1<span className="text-brand-accent">%</span></div>
+                <div className="text-3xl md:text-4xl font-bold text-white mb-2">&lt;1<span className="text-brand-accent">%</span></div>
                 <div className="text-sm uppercase tracking-widest text-gray-500 font-bold">Rework Rate</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-black text-white mb-2">±0.01<span className="text-brand-accent">mm</span></div>
+                <div className="text-3xl md:text-4xl font-bold text-white mb-2">±0.01<span className="text-brand-accent">mm</span></div>
                 <div className="text-sm uppercase tracking-widest text-gray-500 font-bold">Micron Tolerances</div>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function QualityAssurance() {
       <section className="py-20 md:py-32 bg-brand-light border-y border-gray-200 relative">
         <div className="container mx-auto px-4 md:px-8">
           <div className="mb-20 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">The QA Pipeline</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">The QA Pipeline</h2>
             <p className="text-gray-600 text-lg">Quality isn&apos;t a final check—it&apos;s an interconnected process. Every part moves through our 4-stage pipeline before it ever reaches you.</p>
           </div>
 
@@ -232,7 +232,7 @@ export default function QualityAssurance() {
       <section className="py-20 md:py-32 bg-brand-light border-y border-gray-200">
         <div className="container mx-auto px-4 md:px-8">
           <div className="mb-16 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Inspection Instrument List</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">Inspection Instrument List</h2>
             <p className="text-gray-600 text-lg">The tools we use to guarantee every micron.</p>
           </div>
           
@@ -278,7 +278,7 @@ export default function QualityAssurance() {
       <section className="py-24 md:py-32 text-center relative overflow-hidden bg-white">
         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none" />
         <div className="container mx-auto px-4 md:px-8 max-w-4xl relative z-10">
-          <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-8">Ready to trust your tooling to the experts?</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-8">Ready to trust your tooling to the experts?</h2>
           <div className="mt-12">
             <Link href="/contact" className="inline-flex items-center justify-center px-12 py-6 bg-gradient-to-r from-brand-accent to-orange-500 hover:brightness-110 text-white font-bold rounded-full transition-all duration-500 hover:-translate-y-1 shadow-[0_0_40px_rgba(255,107,0,0.3)] hover:shadow-[0_0_60px_rgba(255,107,0,0.5)] uppercase tracking-widest text-sm text-center group">
               Talk to Our QA Team <PhoneCall className="w-5 h-5 ml-4 group-hover:scale-125 transition-transform" />

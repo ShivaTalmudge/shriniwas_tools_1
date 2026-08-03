@@ -168,7 +168,8 @@ export default function HomeClient() {
             src="/company_machines/eurocut_machines.png"
             alt="Precision Tooling & Mould Manufacturing Facility in Bhosari, Pune"
             fill
-            className="object-cover object-center opacity-80"
+            sizes="100vw"
+            className="object-cover object-center opacity-90"
             priority
           />
         </motion.div>
@@ -178,7 +179,7 @@ export default function HomeClient() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black tracking-tight mb-6 leading-[1.1] max-w-4xl drop-shadow-xl"
+            className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold tracking-tight mb-6 leading-[1.1] max-w-4xl drop-shadow-xl"
           >
             Precision Tooling &amp; Mould Manufacturing,{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400 drop-shadow-md">
@@ -236,7 +237,7 @@ export default function HomeClient() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Our Capabilities</h2>
-            <h3 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">What We Manufacture</h3>
+            <h3 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">What We Manufacture</h3>
             <p className="text-gray-600 text-lg">Six core capabilities, all handled in-house — from first design to finished, inspected tooling.</p>
           </div>
 
@@ -271,7 +272,7 @@ export default function HomeClient() {
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
             <div className="lg:w-1/2">
               <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Why Choose Us</h2>
-              <h3 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-8 leading-tight">Why Manufacturers Choose Us</h3>
+              <h3 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-8 leading-tight">Why Manufacturers Choose Us</h3>
 
               <div className="space-y-8">
                 {whyUs.map((item, i) => (
@@ -325,7 +326,7 @@ export default function HomeClient() {
           <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
             <div className="max-w-2xl">
               <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Components & Dies</h2>
-              <h3 className="text-3xl md:text-4xl font-heading font-black text-brand-dark leading-tight">Featured Manufactured Products</h3>
+              <h3 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark leading-tight">Featured Manufactured Products</h3>
             </div>
             <Link href="/products" className="inline-flex items-center justify-center px-6 py-3 bg-brand-primary text-white font-bold uppercase tracking-wider text-sm rounded hover:bg-brand-primary/90 transition-all duration-300 shadow-lg">
               View All Products <ArrowRight className="w-4 h-4 ml-2" />
@@ -378,7 +379,7 @@ export default function HomeClient() {
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-brand-light text-brand-primary text-xs font-bold uppercase tracking-widest mb-6">
                 <Factory className="w-4 h-4" /> State-of-the-art Infrastructure
               </div>
-              <h3 className="text-4xl md:text-4xl font-heading font-black text-brand-dark mb-6 leading-[1.1]">
+              <h3 className="text-4xl md:text-4xl font-heading font-bold text-brand-dark mb-6 leading-[1.1]">
                 Precision Built on <span className="text-brand-accent">Heavy Iron</span>
               </h3>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-xl">
@@ -456,7 +457,7 @@ export default function HomeClient() {
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Our Growth</h2>
-            <h3 className="text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Growing With Our Clients</h3>
+            <h3 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6 leading-tight">Growing With Our Clients</h3>
             <p className="text-gray-300 text-lg leading-relaxed">
               Since adding our first VMCs in 2018, we've scaled to a full-capacity tool room. This growth wasn't overnight—it was built steadily on clients who trusted us and kept coming back for their next tool.
             </p>
@@ -474,7 +475,7 @@ export default function HomeClient() {
               <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shrink-0">
                 <Cpu className="w-8 h-8 text-brand-accent" />
               </div>
-              <div className="text-3xl lg:text-4xl font-black text-white mb-3 tracking-tight whitespace-nowrap">3 VMCs</div>
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-3 tracking-tight whitespace-nowrap">3 VMCs</div>
               <p className="text-gray-400 font-medium">In-house High-Speed Machining</p>
             </motion.div>
 
@@ -489,7 +490,7 @@ export default function HomeClient() {
               <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shrink-0">
                 <Zap className="w-8 h-8 text-brand-accent" />
               </div>
-              <div className="text-3xl lg:text-4xl font-black text-white mb-3 tracking-tight whitespace-nowrap">9 Wire Cuts</div>
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-3 tracking-tight whitespace-nowrap">9 Wire Cuts</div>
               <p className="text-gray-400 font-medium">Massive Sparking Capacity</p>
             </motion.div>
 
@@ -504,7 +505,7 @@ export default function HomeClient() {
               <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shrink-0">
                 <ShieldCheck className="w-8 h-8 text-brand-accent" />
               </div>
-              <div className="text-3xl lg:text-4xl font-black text-white mb-3 tracking-tight whitespace-nowrap">ISO 9001</div>
+              <div className="text-3xl lg:text-4xl font-bold text-white mb-3 tracking-tight whitespace-nowrap">ISO 9001</div>
               <p className="text-gray-400 font-medium">Certified Quality Standards</p>
             </motion.div>
           </div>
@@ -524,7 +525,7 @@ export default function HomeClient() {
         <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary/95 to-brand-dark/90 z-0"></div>
 
         <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight tracking-tight">Have a component or tool to manufacture?</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6 leading-tight tracking-tight">Have a component or tool to manufacture?</h2>
           <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto font-light leading-relaxed">Tell us your spec — we&apos;ll get back to you with a quote.</p>
 
           <button

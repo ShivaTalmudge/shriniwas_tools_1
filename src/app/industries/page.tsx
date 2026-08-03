@@ -77,7 +77,7 @@ export default function Industries() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">Industries</span>
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
+              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
                 Industries We Serve
               </h1>
               <p className="text-lg md:text-xl text-gray-200 font-light leading-relaxed max-w-2xl mb-10 drop-shadow-lg">
@@ -146,17 +146,17 @@ export default function Industries() {
       <section className="py-24 bg-gradient-to-br from-brand-primary to-brand-secondary text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
         <div className="container mx-auto px-4 md:px-8 relative z-10">
-          <h2 className="text-4xl md:text-4xl font-heading font-black mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-4xl font-heading font-bold mb-8 tracking-tight">
             Ready to Build for Your Industry?
           </h2>
           <p className="text-xl md:text-2xl text-brand-light/90 mb-12 max-w-3xl mx-auto font-light">
             Contact us today for a technical consultation tailored to your sector's requirements.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-            <Link href="/quote" className="w-full sm:w-auto px-12 py-5 bg-white text-brand-primary font-black rounded-full hover:bg-gray-50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 uppercase tracking-widest text-lg">
+            <Link href="/quote" className="w-full sm:w-auto px-12 py-5 bg-white text-brand-primary font-bold rounded-full hover:bg-gray-50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 uppercase tracking-widest text-lg">
               Request a Quote
             </Link>
-            <Link href="/contact" className="w-full sm:w-auto px-12 py-5 bg-brand-dark/30 backdrop-blur-md border border-white/20 text-white font-black rounded-full hover:bg-brand-dark/50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex items-center justify-center gap-3 uppercase tracking-widest text-lg">
+            <Link href="/contact" className="w-full sm:w-auto px-12 py-5 bg-brand-dark/30 backdrop-blur-md border border-white/20 text-white font-bold rounded-full hover:bg-brand-dark/50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex items-center justify-center gap-3 uppercase tracking-widest text-lg">
               <PhoneCall className="w-6 h-6" /> Call Us Now
             </Link>
           </div>

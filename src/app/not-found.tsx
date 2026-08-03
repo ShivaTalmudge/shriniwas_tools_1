@@ -18,7 +18,7 @@ export default function NotFound() {
             <AlertCircle className="w-12 h-12" />
           </div>
           
-          <h1 className="text-[3.5rem] md:text-4xl font-heading font-black text-brand-primary mb-4 tracking-tighter">
+          <h1 className="text-[3.5rem] md:text-4xl font-heading font-bold text-brand-primary mb-4 tracking-tighter">
             404
           </h1>
           

@@ -12,7 +12,7 @@ const data: ServiceData = {
   hero: {
     title: "Jigs, Fixtures & Gauges",
     subtitle: "Custom-engineered tooling to guarantee repeatability, accuracy, and efficiency on your production line.",
-    bgImage: "/company_machines/surface_plate.jpg",
+    bgImage: "/company_machines/jigsandfixtures.png",
   },
   overview: {
     title: "Streamlining Your Assembly and Machining",

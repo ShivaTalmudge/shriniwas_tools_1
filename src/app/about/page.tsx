@@ -26,7 +26,7 @@ export default function About() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">About</span>
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
+              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
                 About Us
               </h1>
               <p className="text-lg md:text-xl text-gray-200 font-light leading-relaxed max-w-2xl mb-10 drop-shadow-lg">
@@ -150,7 +150,7 @@ export default function About() {
               <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Calendar className="w-8 h-8 text-brand-accent" />
               </div>
-              <h3 className="font-heading font-black text-3xl text-white mb-2">Since 2006</h3>
+              <h3 className="font-heading font-bold text-3xl text-white mb-2">Since 2006</h3>
               <p className="text-gray-400 font-medium">Manufacturing Excellence</p>
             </div>
 
@@ -158,7 +158,7 @@ export default function About() {
               <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Settings className="w-8 h-8 text-brand-accent" />
               </div>
-              <h3 className="font-heading font-black text-3xl text-white mb-2">9 Machines</h3>
+              <h3 className="font-heading font-bold text-3xl text-white mb-2">9 Machines</h3>
               <p className="text-gray-400 font-medium">CNC Wire Cut Setup</p>
             </div>
 
@@ -166,7 +166,7 @@ export default function About() {
               <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Factory className="w-8 h-8 text-brand-accent" />
               </div>
-              <h3 className="font-heading font-black text-3xl text-white mb-2">3 VMCs</h3>
+              <h3 className="font-heading font-bold text-3xl text-white mb-2">3 VMCs</h3>
               <p className="text-gray-400 font-medium">High-Speed Machining</p>
             </div>
 
@@ -174,7 +174,7 @@ export default function About() {
               <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <ShieldCheck className="w-8 h-8 text-brand-accent" />
               </div>
-              <h3 className="font-heading font-black text-3xl text-white mb-2">ISO 9001</h3>
+              <h3 className="font-heading font-bold text-3xl text-white mb-2">ISO 9001</h3>
               <p className="text-gray-400 font-medium">2015 Certified</p>
             </div>
 
@@ -211,7 +211,7 @@ export default function About() {
               <div className="w-20 h-20 bg-gray-100 rounded-full mb-4 mx-auto border-4 border-white shadow-md flex items-center justify-center overflow-hidden">
                  <span className="text-gray-400 font-bold text-3xl">N</span>
               </div>
-              <h3 className="font-heading font-black text-2xl text-brand-dark">Nagendra Sheregar</h3>
+              <h3 className="font-heading font-bold text-2xl text-brand-dark">Nagendra Sheregar</h3>
             </motion.div>
 
             {/* Desktop Connecting Lines */}
@@ -262,7 +262,7 @@ export default function About() {
       {/* 5. CTA Section */}
       <section className="py-20 md:py-28 bg-white border-t border-gray-100 text-center">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Want to see how we work?</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">Want to see how we work?</h2>
           <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
             From precision machining to final inspection, explore our fully-equipped tool room or request a quote for your project.
           </p>

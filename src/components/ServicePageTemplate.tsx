@@ -136,7 +136,7 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">{data.serviceName}</span>
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-black text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
                 {data.hero.title}
               </h1>
               <p className="text-lg md:text-xl text-gray-200 font-light leading-relaxed max-w-2xl mb-10 drop-shadow-lg">
@@ -187,6 +187,7 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
                 src={data.overview.image}
                 alt="Service Overview"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-contain p-8 mix-blend-multiply group-hover:scale-110 transition-transform duration-1000 ease-out"
               />
             </motion.div>
@@ -273,7 +274,7 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
       <section className="py-20 bg-white overflow-hidden relative">
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-brand-dark mb-6 tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-brand-dark mb-6 tracking-tight">
               Our Process
             </h2>
             <p className="text-gray-600 text-lg">
@@ -291,10 +292,10 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
                 transition={{ delay: i * 0.1 }}
                 className="bg-brand-light/30 border border-brand-light p-8 rounded-3xl relative overflow-hidden flex flex-col h-full group hover:bg-white hover:shadow-2xl hover:border-brand-primary/30 transition-all duration-500"
               >
-                <div className="text-7xl font-black text-brand-primary/5 absolute -right-4 -bottom-6 group-hover:text-brand-primary/10 transition-colors duration-500 select-none">
+                <div className="text-7xl font-bold text-brand-primary/5 absolute -right-4 -bottom-6 group-hover:text-brand-primary/10 transition-colors duration-500 select-none">
                   0{i + 1}
                 </div>
-                <div className="w-14 h-14 bg-white text-brand-primary font-black flex items-center justify-center rounded-2xl shadow-sm mb-6 border border-gray-100 group-hover:scale-110 group-hover:bg-brand-primary group-hover:text-white transition-all duration-500 relative z-10">
+                <div className="w-14 h-14 bg-white text-brand-primary font-bold flex items-center justify-center rounded-2xl shadow-sm mb-6 border border-gray-100 group-hover:scale-110 group-hover:bg-brand-primary group-hover:text-white transition-all duration-500 relative z-10">
                   {i + 1}
                 </div>
                 <h3 className="text-xl font-bold text-brand-dark mb-4 relative z-10">{step.title}</h3>
@@ -380,17 +381,17 @@ export default function ServicePageTemplate({ data }: { data: ServiceData }) {
       <section className="py-24 bg-gradient-to-br from-brand-primary to-brand-secondary text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
         <div className="container mx-auto px-4 md:px-8 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-heading font-black mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-8 tracking-tight">
             Ready to Start Your Project?
           </h2>
           <p className="text-xl md:text-2xl text-brand-light/90 mb-12 max-w-3xl mx-auto font-light">
             Contact us today for a technical consultation and discover high-quality, precision manufacturing solutions.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-            <button onClick={openQuoteModal} className="w-full sm:w-auto px-12 py-5 bg-white text-brand-primary font-black rounded-full hover:bg-gray-50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 uppercase tracking-widest text-lg">
+            <button onClick={openQuoteModal} className="w-full sm:w-auto px-12 py-5 bg-white text-brand-primary font-bold rounded-full hover:bg-gray-50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 uppercase tracking-widest text-lg">
               Request a Quote
             </button>
-            <Link href="/contact" className="w-full sm:w-auto px-12 py-5 bg-brand-dark/30 backdrop-blur-md border border-white/20 text-white font-black rounded-full hover:bg-brand-dark/50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex items-center justify-center gap-3 uppercase tracking-widest text-lg">
+            <Link href="/contact" className="w-full sm:w-auto px-12 py-5 bg-brand-dark/30 backdrop-blur-md border border-white/20 text-white font-bold rounded-full hover:bg-brand-dark/50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex items-center justify-center gap-3 uppercase tracking-widest text-lg">
               <PhoneCall className="w-6 h-6" /> Call Us Now
             </Link>
           </div>

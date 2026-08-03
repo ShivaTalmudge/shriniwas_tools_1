@@ -60,7 +60,7 @@ export default function Contact() {
               <ChevronRight className="w-4 h-4" />
               <span className="text-white">Contact Us</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black text-white mb-6 leading-[1.1] tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold text-white mb-6 leading-[1.1] tracking-tight">
               Get in Touch
             </h1>
             <div className="w-24 h-1 bg-brand-accent mb-6" />

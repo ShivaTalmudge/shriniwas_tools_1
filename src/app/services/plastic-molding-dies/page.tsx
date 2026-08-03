@@ -12,7 +12,7 @@ const data: ServiceData = {
   hero: {
     title: "Plastic Injection Molding Dies",
     subtitle: "High-durability multi-cavity moulds designed for flawless, high-volume thermoplastic production.",
-    bgImage: "/company_machines/hero_injection_machine.png",
+    bgImage: "/company_machines/horizontal_injection_moulding_machine.webp",
   },
   overview: {
     title: "Engineered for Millions of Flawless Cycles",
