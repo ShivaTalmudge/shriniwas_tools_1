@@ -274,16 +274,13 @@ export default function QualityAssurance() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 md:py-32 text-center relative overflow-hidden bg-white">
-        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay pointer-events-none" />
-        <div className="container mx-auto px-4 md:px-8 max-w-4xl relative z-10">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-8">Ready to trust your tooling to the experts?</h2>
-          <div className="mt-12">
-            <Link href="/contact" className="inline-flex items-center justify-center px-12 py-6 bg-gradient-to-r from-brand-accent to-orange-500 hover:brightness-110 text-white font-bold rounded-full transition-all duration-500 hover:-translate-y-1 shadow-[0_0_40px_rgba(255,107,0,0.3)] hover:shadow-[0_0_60px_rgba(255,107,0,0.5)] uppercase tracking-widest text-sm text-center group">
-              Talk to Our QA Team <PhoneCall className="w-5 h-5 ml-4 group-hover:scale-125 transition-transform" />
-            </Link>
-          </div>
+
+      <section className="py-8 bg-gray-50 border-t border-gray-100 mt-12">
+        <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-6">
+          <p className="text-lg font-heading font-bold text-brand-dark">Looking for a supplier with zero-defect commitment?</p>
+          <Link href="/contact" className="px-6 py-2.5 bg-brand-primary text-white text-sm font-bold rounded-full hover:bg-brand-dark transition-colors shadow-md">
+            Talk to QA
+          </Link>
         </div>
       </section>
     </div>

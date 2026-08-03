@@ -259,21 +259,13 @@ export default function About() {
         </div>
       </section>
 
-      {/* 5. CTA Section */}
-      <section className="py-20 md:py-28 bg-white border-t border-gray-100 text-center">
-        <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">Want to see how we work?</h2>
-          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            From precision machining to final inspection, explore our fully-equipped tool room or request a quote for your project.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-            <Link href="/infrastructure" className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-brand-accent to-orange-500 hover:brightness-110 text-white font-bold rounded-full transition-all duration-500 hover:-translate-y-1 shadow-lg hover:shadow-2xl shadow-brand-accent/40 flex items-center justify-center gap-2 uppercase tracking-wider text-sm text-center group">
-              View Our Infrastructure <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link href="/contact" className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-gray-50 border-2 border-brand-primary/20 text-brand-primary font-bold rounded-full transition-all duration-500 hover:-translate-y-1 shadow-md hover:shadow-xl hover:border-brand-primary/50 flex items-center justify-center gap-2 uppercase tracking-wider text-sm text-center group">
-              Get a Quote <Factory className="w-5 h-5 group-hover:scale-110 transition-transform" />
-            </Link>
-          </div>
+
+      <section className="py-8 bg-gray-50 border-t border-gray-100">
+        <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-6">
+          <p className="text-lg font-heading font-bold text-brand-dark">Want to partner with a trusted tooling expert?</p>
+          <Link href="/contact" className="px-6 py-2.5 bg-brand-primary text-white text-sm font-bold rounded-full hover:bg-brand-dark transition-colors shadow-md">
+            Get in Touch
+          </Link>
         </div>
       </section>
     </>

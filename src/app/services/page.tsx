@@ -119,18 +119,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Standardized Bottom CTA */}
-      <section className="py-20 md:py-28 bg-brand-light border-t border-gray-100 text-center">
-        <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">Ready to Start Your Project?</h2>
-          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Share your CAD files, drawings, or technical specifications with our engineering team for a comprehensive review and commercial quote.
-          </p>
-          <div className="flex justify-center">
-            <Link href="/contact" className="inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-brand-accent to-orange-500 hover:brightness-110 text-white font-bold rounded-full transition-all duration-500 hover:-translate-y-1 shadow-lg hover:shadow-2xl shadow-brand-accent/40 uppercase tracking-wider text-sm group">
-              Contact Our Engineers <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
+
+      <section className="py-8 bg-gray-50 border-t border-gray-100 mt-12">
+        <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-6">
+          <p className="text-lg font-heading font-bold text-brand-dark">Ready to utilize our machining services?</p>
+          <Link href="/contact" className="px-6 py-2.5 bg-brand-primary text-white text-sm font-bold rounded-full hover:bg-brand-dark transition-colors shadow-md">
+            Contact Us
+          </Link>
         </div>
       </section>
     </>

@@ -142,24 +142,13 @@ export default function Industries() {
         </div>
       </section>
 
-      {/* 4. CTA SECTION */}
-      <section className="py-24 bg-gradient-to-br from-brand-primary to-brand-secondary text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
-          <h2 className="text-4xl md:text-4xl font-heading font-bold mb-8 tracking-tight">
-            Ready to Build for Your Industry?
-          </h2>
-          <p className="text-xl md:text-2xl text-brand-light/90 mb-12 max-w-3xl mx-auto font-light">
-            Contact us today for a technical consultation tailored to your sector's requirements.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-            <Link href="/quote" className="w-full sm:w-auto px-12 py-5 bg-white text-brand-primary font-bold rounded-full hover:bg-gray-50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 uppercase tracking-widest text-lg">
-              Request a Quote
-            </Link>
-            <Link href="/contact" className="w-full sm:w-auto px-12 py-5 bg-brand-dark/30 backdrop-blur-md border border-white/20 text-white font-bold rounded-full hover:bg-brand-dark/50 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex items-center justify-center gap-3 uppercase tracking-widest text-lg">
-              <PhoneCall className="w-6 h-6" /> Call Us Now
-            </Link>
-          </div>
+
+      <section className="py-8 bg-gray-50 border-t border-gray-100">
+        <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-6">
+          <p className="text-lg font-heading font-bold text-brand-dark">Require tailored solutions for your sector?</p>
+          <Link href="/quote" className="px-6 py-2.5 bg-brand-primary text-white text-sm font-bold rounded-full hover:bg-brand-dark transition-colors shadow-md">
+            Request a Custom Quote
+          </Link>
         </div>
       </section>
     </div>

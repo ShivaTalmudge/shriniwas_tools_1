@@ -68,13 +68,12 @@ export default function Products() {
   return (
     <>
       {/* Unique Products Hero Section */}
-      <section className="relative min-h-[60vh] lg:min-h-[80vh] flex flex-col justify-center overflow-hidden pt-[160px] pb-16 md:pt-[180px] bg-brand-dark border-b border-gray-800">
-        <div className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-80" style={{ backgroundImage: 'url(/company_machines/horizontal_injection_moulding_machine.png)' }} />
+      <section className="relative min-h-[60vh] lg:min-h-[80vh] flex flex-col justify-start overflow-hidden pt-[120px] pb-16 md:pt-[140px] bg-brand-dark border-b border-gray-800">
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/70 to-brand-dark/20 z-10" />
         
         <div className="container mx-auto px-4 md:px-8 relative z-10 w-full flex flex-col lg:flex-row items-center justify-between">
           {/* Left Side Content */}
-          <div className="w-full lg:w-1/2 py-12 lg:pt-[180px] lg:pb-24 relative z-20">
+          <div className="w-full lg:w-1/2 relative z-20">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -205,18 +204,13 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Standardized Bottom CTA */}
-      <section className="py-20 md:py-28 bg-brand-light border-t border-gray-100 text-center">
-        <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Need Similar Components Manufactured?</h2>
-          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Whether you need a single complex mould or bulk machining for industrial parts, our engineering team is ready to review your specifications.
-          </p>
-          <div className="flex justify-center">
-            <Link href="/contact" className="inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-brand-accent to-orange-500 hover:brightness-110 text-white font-bold rounded-full transition-all duration-500 hover:-translate-y-1 shadow-lg hover:shadow-2xl shadow-brand-accent/40 uppercase tracking-wider text-sm group">
-              Request a Quote <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
+
+      <section className="py-8 bg-gray-50 border-t border-gray-100">
+        <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-6">
+          <p className="text-lg font-heading font-bold text-brand-dark">Need a similar product manufactured?</p>
+          <Link href="/quote" className="px-6 py-2.5 bg-brand-primary text-white text-sm font-bold rounded-full hover:bg-brand-dark transition-colors shadow-md">
+            Request Pricing
+          </Link>
         </div>
       </section>
     </>
