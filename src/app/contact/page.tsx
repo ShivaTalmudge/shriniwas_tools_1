@@ -60,7 +60,7 @@ export default function Contact() {
               <ChevronRight className="w-4 h-4" />
               <span className="text-white">Contact Us</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-6 leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black text-white mb-6 leading-[1.1] tracking-tight">
               Get in Touch
             </h1>
             <div className="w-24 h-1 bg-brand-accent mb-6" />
@@ -108,8 +108,8 @@ export default function Contact() {
                   <label className="text-xs font-bold text-gray-500 uppercase tracking-widest">Message</label>
                   <textarea rows={5} className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-all resize-none" placeholder="Tell us about your requirement..."></textarea>
                 </div>
-                <button type="button" className="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-4 px-8 rounded-lg w-full md:w-auto flex items-center justify-center gap-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl uppercase tracking-wider text-sm">
-                  <Send className="w-4 h-4" />
+                <button type="button" className="bg-gradient-to-r from-brand-accent to-orange-500 hover:brightness-110 text-white font-bold py-4 px-10 rounded-full w-full md:w-auto flex items-center justify-center gap-2 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl shadow-brand-accent/40 uppercase tracking-wider text-sm group">
+                  <Send className="w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
                   Send Message
                 </button>
               </form>

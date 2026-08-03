@@ -178,7 +178,7 @@ export default function HomeClient() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl sm:text-5xl md:text-6xl font-heading font-black tracking-tight mb-6 leading-tight max-w-4xl drop-shadow-xl"
+            className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black tracking-tight mb-6 leading-[1.1] max-w-4xl drop-shadow-xl"
           >
             Precision Tooling &amp; Mould Manufacturing,{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-orange-400 drop-shadow-md">
@@ -378,7 +378,7 @@ export default function HomeClient() {
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-brand-light text-brand-primary text-xs font-bold uppercase tracking-widest mb-6">
                 <Factory className="w-4 h-4" /> State-of-the-art Infrastructure
               </div>
-              <h3 className="text-4xl md:text-5xl font-heading font-black text-brand-dark mb-6 leading-[1.1]">
+              <h3 className="text-4xl md:text-4xl font-heading font-black text-brand-dark mb-6 leading-[1.1]">
                 Precision Built on <span className="text-brand-accent">Heavy Iron</span>
               </h3>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-xl">
@@ -456,25 +456,25 @@ export default function HomeClient() {
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3">Our Growth</h2>
-            <h3 className="text-3xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">Growing With Our Clients</h3>
+            <h3 className="text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">Growing With Our Clients</h3>
             <p className="text-gray-300 text-lg leading-relaxed">
               Since adding our first VMCs in 2018, we've scaled to a full-capacity tool room. This growth wasn't overnight—it was built steadily on clients who trusted us and kept coming back for their next tool.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 max-w-5xl mx-auto items-stretch">
             {/* Stat Card 1 */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md text-center hover:bg-white/10 transition-colors shadow-2xl group"
+              className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 backdrop-blur-md text-center hover:bg-white/10 transition-colors shadow-2xl group flex flex-col items-center justify-center h-full"
             >
-              <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shrink-0">
                 <Cpu className="w-8 h-8 text-brand-accent" />
               </div>
-              <div className="text-4xl md:text-5xl font-black text-white mb-3">3 VMCs</div>
+              <div className="text-3xl lg:text-4xl font-black text-white mb-3 tracking-tight whitespace-nowrap">3 VMCs</div>
               <p className="text-gray-400 font-medium">In-house High-Speed Machining</p>
             </motion.div>
 
@@ -484,12 +484,12 @@ export default function HomeClient() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md text-center hover:bg-white/10 transition-colors shadow-2xl group"
+              className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 backdrop-blur-md text-center hover:bg-white/10 transition-colors shadow-2xl group flex flex-col items-center justify-center h-full"
             >
-              <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shrink-0">
                 <Zap className="w-8 h-8 text-brand-accent" />
               </div>
-              <div className="text-4xl md:text-5xl font-black text-white mb-3">9 Wire Cuts</div>
+              <div className="text-3xl lg:text-4xl font-black text-white mb-3 tracking-tight whitespace-nowrap">9 Wire Cuts</div>
               <p className="text-gray-400 font-medium">Massive Sparking Capacity</p>
             </motion.div>
 
@@ -499,12 +499,12 @@ export default function HomeClient() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md text-center hover:bg-white/10 transition-colors shadow-2xl group"
+              className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 backdrop-blur-md text-center hover:bg-white/10 transition-colors shadow-2xl group flex flex-col items-center justify-center h-full"
             >
-              <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 mx-auto bg-brand-accent/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shrink-0">
                 <ShieldCheck className="w-8 h-8 text-brand-accent" />
               </div>
-              <div className="text-4xl md:text-5xl font-black text-white mb-3">ISO 9001</div>
+              <div className="text-3xl lg:text-4xl font-black text-white mb-3 tracking-tight whitespace-nowrap">ISO 9001</div>
               <p className="text-gray-400 font-medium">Certified Quality Standards</p>
             </motion.div>
           </div>

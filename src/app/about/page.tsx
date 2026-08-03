@@ -26,7 +26,7 @@ export default function About() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">About</span>
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-black text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
+              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
                 About Us
               </h1>
               <p className="text-lg md:text-xl text-gray-200 font-light leading-relaxed max-w-2xl mb-10 drop-shadow-lg">
@@ -40,13 +40,13 @@ export default function About() {
       {/* 2. Story & Mission Section */}
       <section className="py-20 md:py-28 bg-white relative">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
+          <div className="flex flex-col lg:flex-row gap-16 items-start">
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="lg:w-1/2 relative"
+              className="lg:w-5/12 relative sticky top-32"
             >
               <div className="aspect-square rounded-full overflow-hidden relative border-[12px] border-brand-light shadow-2xl">
                 <Image
@@ -62,32 +62,76 @@ export default function About() {
               </div>
             </motion.div>
 
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6 tracking-tight">Our Story</h2>
-              <div className="prose prose-lg text-gray-600 mb-10">
+            <div className="lg:w-7/12">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6 tracking-tight">Our Story & Heritage</h2>
+              <div className="prose prose-lg text-gray-600 mb-10 max-w-none">
                 <p>
-                  Shriniwas Tools & Equipments started in 2006 in Bhosari, Pune, developing and manufacturing thermoplastic and thermoset component moulds, moulded parts, jigs, fixtures, and engineering job work to customer specification. 
+                  <strong>Shriniwas Tools & Equipments</strong> was established in 2006 in the industrial hub of MIDC Bhosari, Pune. We started with a clear vision: developing and manufacturing high-precision thermoplastic and thermoset component moulds, moulded parts, jigs, fixtures, and specialized engineering job work tailored to exacting customer specifications.
                 </p>
                 <p>
-                  In 2014, the company was restructured under a new partnership, and by 2018 had partnered with Priya Industries and expanded to 2 VMCs and a drilling machine — the beginning of the tool room you see today.
+                  In 2014, the company underwent a strategic restructuring under a new partnership. By 2018, we formed a pivotal partnership with Priya Industries, expanding our floor with our first 2 VMCs and dedicated drilling machinery — marking the true genesis of the comprehensive, multi-layered tool room you see today.
                 </p>
                 <p>
-                  That expansion continued steadily: a 3rd VMC in early 2019, a 4th by October 2019, EDM and a surface grinder added in 2020, and ISO 9001:2015 certification the same year. Today we run 9 CNC wire cut machines, 3 VMCs, and a full mould assembly and inspection line — all added because clients kept coming back for more work, not because of a marketing plan.
+                  That expansion hasn't stopped. We added a 3rd VMC in early 2019 and a 4th by October 2019. In 2020, amidst global challenges, we invested heavily in EDM and surface grinding capabilities, and proudly achieved our <strong>ISO 9001:2015 certification</strong>. 
+                </p>
+                <p>
+                  Today, we operate a robust fleet of <strong>9 CNC wire cut machines, 3 advanced VMCs, and a full-scale mould assembly and inspection line</strong>. This growth wasn't driven by flashy marketing; it was built steadily, machine by machine, because our clients trusted our precision and consistently returned for their next critical tooling project.
                 </p>
               </div>
 
-              <div className="p-8 bg-brand-light rounded-2xl border border-gray-200 shadow-inner relative overflow-hidden group">
-                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-brand-accent to-orange-500" />
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center text-brand-primary group-hover:scale-110 transition-transform">
-                    <LayoutDashboard className="w-5 h-5" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                <div className="p-8 bg-brand-light rounded-2xl border border-gray-200 shadow-inner relative overflow-hidden group hover:shadow-md transition-shadow">
+                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-brand-primary to-blue-600" />
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center text-brand-primary">
+                      <ShieldCheck className="w-5 h-5" />
+                    </div>
+                    <h3 className="font-bold text-xl tracking-tight text-brand-dark">Our Quality Policy</h3>
                   </div>
-                  <h3 className="font-bold text-xl tracking-tight text-brand-dark">Our Mission</h3>
+                  <p className="text-gray-700 text-base">
+                    As an ISO 9001:2015 certified company, we maintain rigorous inspection protocols using digital verniers, micrometers, and bore gauges to ensure zero-defect delivery.
+                  </p>
                 </div>
-                <p className="text-gray-700 leading-relaxed text-lg italic">
-                  &quot;To provide reliable and cost-effective manufacturing solutions for the global market.&quot;
-                </p>
+
+                <div className="p-8 bg-brand-light rounded-2xl border border-gray-200 shadow-inner relative overflow-hidden group hover:shadow-md transition-shadow">
+                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-brand-accent to-orange-500" />
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-full bg-brand-accent/10 flex items-center justify-center text-brand-accent">
+                      <LayoutDashboard className="w-5 h-5" />
+                    </div>
+                    <h3 className="font-bold text-xl tracking-tight text-brand-dark">Our Mission</h3>
+                  </div>
+                  <p className="text-gray-700 text-base italic font-medium">
+                    "To provide reliable, highly-accurate, and cost-effective manufacturing solutions for the global market, bridging the gap between design and production."
+                  </p>
+                </div>
               </div>
+              
+              {/* New Core Values List */}
+              <div className="border-t border-gray-100 pt-8 mt-4">
+                <h3 className="text-2xl font-bold text-brand-dark mb-6">What Drives Us</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-4">
+                    <div className="mt-1 w-6 h-6 rounded-full bg-brand-primary/20 flex items-center justify-center shrink-0">
+                      <div className="w-2 h-2 rounded-full bg-brand-primary" />
+                    </div>
+                    <div>
+                      <strong className="text-brand-dark block mb-1">In-House Accountability</strong>
+                      <p className="text-gray-600 text-sm">From VMC machining to wire cut EDM, we keep critical processes under our own roof to maintain absolute control over lead times and tolerances.</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <div className="mt-1 w-6 h-6 rounded-full bg-brand-accent/20 flex items-center justify-center shrink-0">
+                      <div className="w-2 h-2 rounded-full bg-brand-accent" />
+                    </div>
+                    <div>
+                      <strong className="text-brand-dark block mb-1">Continuous Upgradation</strong>
+                      <p className="text-gray-600 text-sm">We constantly invest in heavier iron and better metrology to meet the increasingly tight specifications of modern aerospace, automotive, and electrical components.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </div>
@@ -141,19 +185,16 @@ export default function About() {
       {/* 4. Leadership Structure */}
       <section className="py-20 md:py-28 bg-brand-light">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-4">Leadership & Team</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-4">Leadership & Expert Team</h2>
             <div className="w-20 h-1 bg-brand-accent mx-auto mb-6" />
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto italic mb-8">
-              It&apos;s a flat structure by design — a design query or a tolerance question goes straight to the person who can answer it.
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto italic mb-4">
+              It&apos;s a flat structure by design — a design query or a tolerance question goes straight to the person who can answer it, ensuring zero communication lag on the shop floor.
             </p>
-            {/* Team Photo Placeholder */}
-            <div className="max-w-4xl mx-auto bg-white border-2 border-dashed border-gray-300 rounded-2xl h-80 flex flex-col items-center justify-center mb-12 hover:border-brand-primary transition-colors hover:bg-gray-50 cursor-pointer group shadow-sm">
-              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <Image src="/company_machines/programmer_office.png" alt="Upload Icon" width={32} height={32} className="opacity-40 object-cover rounded-full" />
-              </div>
-              <span className="text-gray-400 font-bold uppercase tracking-widest text-sm">[PLACEHOLDER: Upload Team Photo]</span>
-            </div>
+            <p className="text-base text-gray-500 max-w-2xl mx-auto">
+              Our workforce comprises highly skilled operators, rigorous quality inspectors, and experienced production supervisors who oversee every micron of our 9 CNC Wire Cut and 3 VMC machines.
+            </p>
+
           </div>
 
           <div className="max-w-5xl mx-auto flex flex-col items-center mt-8">

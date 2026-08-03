@@ -56,7 +56,7 @@ export default function Blog() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">Blog</span>
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-black text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
+              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black text-white mb-6 leading-[1.1] tracking-tight drop-shadow-xl">
                 Insights & Engineering
               </h1>
               <p className="text-lg md:text-xl text-gray-200 font-light leading-relaxed max-w-2xl mb-10 drop-shadow-lg">
@@ -71,7 +71,7 @@ export default function Blog() {
       <section className="py-20 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-brand-dark mb-6 tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-4xl font-heading font-bold text-brand-dark mb-6 tracking-tight">
               Latest Articles
             </h2>
             <p className="text-lg text-gray-600">
@@ -135,7 +135,7 @@ export default function Blog() {
       <section className="py-24 bg-gradient-to-br from-brand-primary to-brand-secondary text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
         <div className="container mx-auto px-4 md:px-8 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-heading font-black mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-4xl font-heading font-black mb-8 tracking-tight">
             Have a Technical Question?
           </h2>
           <p className="text-xl md:text-2xl text-brand-light/90 mb-12 max-w-3xl mx-auto font-light">

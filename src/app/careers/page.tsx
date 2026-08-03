@@ -47,7 +47,7 @@ export default function Careers() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">Careers</span>
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-black text-white mb-6 leading-[1.1] tracking-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black text-white mb-6 leading-[1.1] tracking-tight">
                 Build Your Career With Us
               </h1>
               <p className="text-lg md:text-xl text-gray-300 font-light leading-relaxed max-w-2xl">

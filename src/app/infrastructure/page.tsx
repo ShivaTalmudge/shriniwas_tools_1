@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ChevronRight, Factory } from "lucide-react";
+import { ChevronRight, Factory, ArrowRight } from "lucide-react";
 
 export default function Infrastructure() {
   return (
@@ -25,7 +25,7 @@ export default function Infrastructure() {
               <ChevronRight className="w-4 h-4" />
               <span className="text-white">Infrastructure</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-6 leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-black text-white mb-6 leading-[1.1] tracking-tight">
               Our Infrastructure & Machinery
             </h1>
             <div className="w-24 h-1 bg-brand-accent mb-6" />
@@ -40,7 +40,7 @@ export default function Infrastructure() {
       <section className="py-20 md:py-32 bg-gray-50 border-y border-gray-200">
         <div className="container mx-auto px-4 md:px-8">
           <div className="mb-16 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-heading font-black text-brand-dark mb-6">Manufacturing Capability</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Manufacturing Capability</h2>
             <div className="w-16 h-1 bg-brand-accent mx-auto mb-6"></div>
             <p className="text-gray-600 text-lg leading-relaxed">Our shop floor is equipped with high-end, precision machinery to handle everything from initial milling to micro-level sparking.</p>
           </div>
@@ -202,9 +202,9 @@ export default function Infrastructure() {
       <section className="py-20 md:py-28 bg-brand-light border-t border-gray-100 text-center">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Have a spec that needs this kind of capacity?</h2>
-          <div className="mt-10">
-            <Link href="/contact" className="inline-flex items-center justify-center px-10 py-5 bg-brand-accent hover:bg-orange-600 text-white font-bold rounded-md transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-xl uppercase tracking-wider text-sm text-center">
-              Get a Quote <ChevronRight className="w-5 h-5 ml-2" />
+          <div className="mt-10 flex justify-center">
+            <Link href="/contact" className="inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-brand-accent to-orange-500 hover:brightness-110 text-white font-bold rounded-full transition-all duration-500 hover:-translate-y-1 shadow-lg hover:shadow-2xl shadow-brand-accent/40 uppercase tracking-wider text-sm group">
+              Get a Quote <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>

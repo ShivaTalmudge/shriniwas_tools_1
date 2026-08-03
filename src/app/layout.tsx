@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
@@ -8,13 +8,8 @@ import FloatingActions from "@/components/FloatingActions";
 import QuoteModal from "@/components/QuoteModal";
 import Script from "next/script";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const space_grotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -156,7 +151,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${space_grotesk.variable} h-full antialiased scroll-smooth`}>
+    <html lang="en" className={`${montserrat.variable} h-full antialiased scroll-smooth`}>
       <Script
         id="organization-schema"
         type="application/ld+json"
