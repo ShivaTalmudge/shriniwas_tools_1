@@ -85,7 +85,7 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-brand-accent shrink-0 mt-0.5" />
                 <div className="flex flex-col text-sm text-gray-400 leading-relaxed break-all">
                   <a href="mailto:shriniwastools2020@gmail.com" className="hover:text-brand-accent transition-colors block">shriniwastools2020@gmail.com</a>
-                  <a href="mailto:Enquiry@shriniwastools.com" className="hover:text-brand-accent transition-colors block mt-0.5">Enquiry@shriniwastools.com</a>
+                  <a href="mailto:enquiry@shriniwastools.com" className="hover:text-brand-accent transition-colors block mt-0.5">enquiry@shriniwastools.com</a>
                   <a href="mailto:shriniwas_tools@rediffmail.com" className="hover:text-brand-accent transition-colors block mt-0.5">shriniwas_tools@rediffmail.com</a>
                 </div>
               </li>

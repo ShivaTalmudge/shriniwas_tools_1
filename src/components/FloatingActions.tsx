@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ArrowUp, MessageCircle } from "lucide-react";
+import { ArrowUp, MessageCircle, Phone, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function FloatingActions() {
@@ -21,12 +21,31 @@ export default function FloatingActions() {
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+      {/* Email Button */}
+      <a
+        href="mailto:enquiry@shriniwastools.com"
+        className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg shadow-blue-600/30 hover:-translate-y-1 transition-transform"
+        title="Email Us"
+      >
+        <Mail className="w-6 h-6" />
+      </a>
+
+      {/* Phone Button */}
+      <a
+        href="tel:+919860822818"
+        className="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center text-white shadow-lg shadow-orange-500/30 hover:-translate-y-1 transition-transform"
+        title="Call Us"
+      >
+        <Phone className="w-6 h-6" />
+      </a>
+
       {/* WhatsApp Button */}
       <a
         href="https://wa.me/919860822818"
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg shadow-green-500/30 hover:-translate-y-1 transition-transform"
+        title="WhatsApp Us"
       >
         <MessageCircle className="w-7 h-7" />
       </a>
