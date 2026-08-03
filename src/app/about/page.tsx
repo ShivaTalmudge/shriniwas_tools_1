@@ -50,8 +50,8 @@ export default function About() {
             >
               <div className="aspect-square rounded-full overflow-hidden relative border-[12px] border-brand-light shadow-2xl">
                 <Image
-                  src="/company_machines/programmer_office.png"
-                  alt="Factory Hero Photo"
+                  src="/company_machines/about_ourstory.png"
+                  alt="Our Story"
                   fill
                   className="object-cover"
                 />
