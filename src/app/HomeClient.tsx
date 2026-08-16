@@ -51,12 +51,12 @@ export default function HomeClient() {
         "Monday",
         "Tuesday",
         "Wednesday",
-        "Thursday",
         "Friday",
         "Saturday",
+        "Sunday",
       ],
-      opens: "09:00",
-      closes: "18:00",
+      opens: "00:00",
+      closes: "23:59",
     },
   };
 
@@ -307,7 +307,7 @@ export default function HomeClient() {
                 className="relative z-10 w-full h-full rounded-sm overflow-hidden shadow-2xl"
               >
                 <Image
-                  src="/company_machines/programmer_office.png"
+                  src="/company_machines/programmer_office_updated.jpg"
                   alt="Engineering Design and Quality Control at Shriniwas Tools"
                   fill
                   className="object-cover"

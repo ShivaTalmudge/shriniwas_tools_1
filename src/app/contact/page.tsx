@@ -28,12 +28,12 @@ export default function Contact() {
         "Monday",
         "Tuesday",
         "Wednesday",
-        "Thursday",
         "Friday",
-        "Saturday"
+        "Saturday",
+        "Sunday"
       ],
-      opens: "09:00",
-      closes: "18:00"
+      opens: "00:00",
+      closes: "23:59"
     }
   };
 
@@ -173,8 +173,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg mb-1">Business Hours</h4>
-                      <p className="text-gray-300">Mon - Sat: 9:00 AM to 6:00 PM</p>
-                      <p className="text-gray-400 text-sm mt-1">Sunday Closed</p>
+                      <p className="text-gray-300">Operations: 24 Hours / 6 Days</p>
+                      <p className="text-gray-400 text-sm mt-1">Closed on Thursdays</p>
                     </div>
                   </div>
                 </div>

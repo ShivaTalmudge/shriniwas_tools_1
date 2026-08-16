@@ -69,7 +69,7 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-2 w-full justify-center md:w-auto md:justify-end">
             <Clock className="w-3.5 h-3.5 text-brand-accent" />
-            <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+            <span>Operations: 24 Hours (Closed Thursdays)</span>
           </div>
         </div>
       </div>

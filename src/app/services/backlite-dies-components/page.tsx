@@ -12,7 +12,7 @@ const data: ServiceData = {
   hero: {
     title: "Bakelite Dies & Components",
     subtitle: "Highly polished, wear-resistant compression tooling for dimensionally stable phenolic resin components.",
-    bgImage: "/company_machines/hero_bakelite_mould.png",
+    bgImage: "/company_machines/bakelite_mould_real.jpg",
   },
   overview: {
     title: "Mastery in Phenolic Resin Molding",
@@ -29,7 +29,7 @@ const data: ServiceData = {
         </p>
       </>
     ),
-    image: "/company_machines/edm_drill.png",
+    image: "/company_machines/bakelite_mould_real.jpg",
   },
   keyFeatures: [
     { title: "Hardened Tooling", description: "Specialized steel inserts to combat the abrasive nature of phenolic resins.", icon: "ShieldCheck" },

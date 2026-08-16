@@ -29,7 +29,7 @@ const data: ServiceData = {
         </p>
       </>
     ),
-    image: "/company_machines/surface_grinder.png",
+    image: "/company_machines/press_machine_real.png",
   },
   keyFeatures: [
     { title: "Progressive Dies", description: "Multi-station tools for complex sheet metal forming in a single press stroke.", icon: "Layers" },
